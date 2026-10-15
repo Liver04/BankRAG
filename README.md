@@ -222,4 +222,4 @@ python -B scripts/train_context_intent.py --root D:\pythonProject\EduRAG_project
 - 候选源码、README、差异文档和配置模板扫描：Token 格式命中0，硬编码凭据赋值候选0。Git 忽略规则已验证会排除 `local_secrets.env`、`config.ini` 和历史备份；Docker 忽略规则也覆盖这些文件以及评测产物。
 - `docker compose --env-file local_secrets.env config --quiet` 通过。
 - 镜像构建状态：未完成。安全构建上下文已缩至56.28 kB，随后在下载 PyTorch（约532 MB）及 CUDA 依赖阶段主动中止，避免上传前检查继续拉取数 GB 依赖；未生成/启动应用容器。因此 Docker 镜像仍未验证。
-- 本项目目录尚无 `.git` 元数据；这次只检查工作区候选文件，不包括 Git 历史、暂存区或远端内容，因此尚未创建或上传 GitHub 仓库。
+- 2026-10-15 已将首个公开版本推送到 [GitHub 仓库](https://github.com/Liver04/BankRAG)，分支 `main`，首个提交 `22e9c00`。本地 API Key、配置文件、模型、Node 依赖和人工复核私有映射未纳入提交；首个提交前的候选文本凭据扫描为0命中。
