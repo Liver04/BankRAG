@@ -1,0 +1,1325 @@
+{
+  "schema_version": 1,
+  "review_kind": "coding_agent_source_crosscheck_not_human",
+  "reviewed_at": 20261013,
+  "approval_meaning": "Local demo source-check allowlist, not bank/legal or independent human approval",
+  "documents": {
+    "faq/开户销户FAQ__20261011.md": {
+      "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+      "questions": {
+        "7dede2f409e6ff10cdb16ee7f7b86eecf411cb2de9fd77c899bc1d57d8bf993d": {
+          "question": "中行个人银行账户分为哪几类？",
+          "answer_sha256": "8409654555a00270a6c6369d5ac16d91c7702a825e7758e9dcb0ccfc188bac1a",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "b3a12d9ddc7c4e9af8581cd716ec6c0651c0a59da2e8757dac56f92b55235aa9": {
+          "question": "一个人可以在中国银行开立几个Ⅰ类账户？",
+          "answer_sha256": "e869993c7ad2a57d46bbff812e863de997cdb832d44ccf06c9d128eba16d4b3a",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "75e2370719dffde4a6e270bff53f01c5d882a9cfc2dea27df100b6812a1bd7ea": {
+          "question": "开立个人账户需要出示什么证件？",
+          "answer_sha256": "b51923e60efc3b6607869dd0801afe89a8a99b22631a8ce74f3989371a776158",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "cd3ef2634a58c2556727ac6cdc48b34007778a85947add28868b40ad0971709b": {
+          "question": "16岁以下未成年人可以自己办理开户吗？",
+          "answer_sha256": "a2c514aa6afcfcafd179002302d455647e562f91157be22814047881203a6257",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Identity-age source page unavailable; needs independent source confirmation.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "798cb45622f97ff139483e2cc55ae185bff4b5d91b260b4ceffc70372c9465b1": {
+          "question": "16岁以上中国公民开户可以使用什么证件？",
+          "answer_sha256": "0b420bb9e1ff603def544daddbcdee454860e0b31d3b7a239b1f66f82949a200",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Identity-age source page unavailable; needs independent source confirmation.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "f11e172ebbe4ae6706a8704855d538b5576235729d843cd48ed11955d8ea7c53": {
+          "question": "港澳台居民和外国公民开户可以使用什么证件？",
+          "answer_sha256": "a3fc5169268da80b4ff876eaba0a95f38519a0a3a7aabcf19105494b9764c421",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Identity-age source page unavailable; needs independent source confirmation.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "1af0951c2f620d2fb6392c46ed8e7037b38e8a4b4c86931b35c66d0b72a52aaf": {
+          "question": "办理具有通存通兑或结算功能的账户时，是否需要设置密码？",
+          "answer_sha256": "5d49b7758c72faba5f5d8158fe07235b679dd59c07331a5f578e67b9953684b2",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "d31e47d30aac6dc6716988327592b05caaf5f7565a48be374db4c88d599e92ca": {
+          "question": "开户时预留手机号有什么用途？",
+          "answer_sha256": "7b21b3fc63499e3bec290af49fc2b5f06ed1c5052b8305a09acd0e7a52e2787f",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "a168fdb45d298fb14f4b683bf653281393c880c17657d4a66f442907d7420469": {
+          "question": "中行网银分为哪些版本？",
+          "answer_sha256": "d34b353f307c83e83ee6d92e88a05a13ef5cfd3a9d5913f9ecc65de8f72222ba",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "FAQ subset not reverified against exact official paragraph.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "a9821162d1a32d9c4c8a8e181d822c61bd0ee1759b1de733c90039650d7963c8": {
+          "question": "如何开通中行网银理财版？",
+          "answer_sha256": "5b4f21f04a5c2d15580c5ec8a0f4cc304a465020c2e14037338ef5148abc1ce1",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "FAQ subset not reverified against exact official paragraph.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "78a757323fbc9f0b4d3f2f5653f67ad860b017e7397d73169cf108d65c8463bc": {
+          "question": "一个身份证件可以开通几个网上银行？",
+          "answer_sha256": "b49fd5331264e08b138cc48c81b3a66a712f5198989128062da93e0d19447797",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "FAQ subset not reverified against exact official paragraph.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "eda2fa1b35f4c8f8524a91df222170a40e1564fb9d8c008008c34da4eacad345": {
+          "question": "中行网银可以关联他人账户吗？",
+          "answer_sha256": "c4f6b79d84d74affcacf40a5362e865336035e4c0a8ba94a0422fb9ae28d028c",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "FAQ subset not reverified against exact official paragraph.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "d93e428cd915938de0d342f2d6da5d18883337ca631d618ee7c902f98aff2122": {
+          "question": "忘记网银用户名或登录密码怎么办？",
+          "answer_sha256": "a5003e589f3e2ec502de8f2216ebc2021606c9af78a7da9601ca335c50016575",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "1e03b2bc7db7b08e342e1293d630b24b9d9b2c837503ee0e11072f1dd6ca4164": {
+          "question": "网银用户名可以修改吗？",
+          "answer_sha256": "7284dbf3ae351c23338b2bd2809db179f0c098fb6c12d2af2b820e2e445a2ee9",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "58f24a8c9de022c57f249a2807fd97a73a714fa1bdc9d9c376f42f9d77472ca4": {
+          "question": "网银密码可以修改吗？",
+          "answer_sha256": "f12fa80f802abf189b7670589e713010523ef2d8434b8072127c4b1659bb22c8",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "faq/开户销户FAQ__20261011.md",
+              "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+              "url": "https://www.bankofchina.com/ebanking/service/cs2/200810/t20081022_990709.html"
+            }
+          ]
+        },
+        "875ea8ecdcabba9855629033718aaac2f367fb309ccec1a50c0b82cfebaa0b6a": {
+          "question": "账户销户前需要处理哪些事项？",
+          "answer_sha256": "76aa88985eec894d2092fd12dabd03b44b64ae046c04c0a476c0b975919955e6",
+          "review_status": "demo_approved",
+          "jurisdiction": "AU",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Official Australia branch source; not eligible for default CN answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/销户业务规则__20261011.md",
+              "content_sha256": "9787dc31b90d9ebe4ae38a090686ffca274b92cc3acc25e7c198d7f13fc40589",
+              "url": "https://www.bankofchina.com/au/pbservice/pb1/201906/t20190627_15529780.html"
+            }
+          ]
+        },
+        "f06add4f8fd40e8cb19f52dabee6f942595ef5069b35e0a5c67f48a748aec766": {
+          "question": "账户还有欠款可以销户吗？",
+          "answer_sha256": "f7a40148e92561116cfabd7a98110c18d8205df9847bac2e50a05f8b4c2c3c15",
+          "review_status": "demo_approved",
+          "jurisdiction": "AU",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Official Australia branch source; not eligible for default CN answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/销户业务规则__20261011.md",
+              "content_sha256": "9787dc31b90d9ebe4ae38a090686ffca274b92cc3acc25e7c198d7f13fc40589",
+              "url": "https://www.bankofchina.com/au/pbservice/pb1/201906/t20190627_15529780.html"
+            }
+          ]
+        },
+        "2699bbdc366e34b1c2c4ee8b6bff8bb52525e8a087fc9e2daff4caddf9f5192f": {
+          "question": "账户关闭后还能重新开启吗？",
+          "answer_sha256": "86c91cda232521628c8d357a44aaac3b8ae743d115b9f3636c59c8ec172719dc",
+          "review_status": "demo_approved",
+          "jurisdiction": "AU",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Official Australia branch source; not eligible for default CN answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/销户业务规则__20261011.md",
+              "content_sha256": "9787dc31b90d9ebe4ae38a090686ffca274b92cc3acc25e7c198d7f13fc40589",
+              "url": "https://www.bankofchina.com/au/pbservice/pb1/201906/t20190627_15529780.html"
+            }
+          ]
+        },
+        "67f6524518cbbe7eef81b8ababa0cce1a9f44c4a41c976c01be469dae38a596f": {
+          "question": "长期不用且余额为零的账户会被清理吗？",
+          "answer_sha256": "000005b2315cf4d26aa64b147a40b4c6a267c18a22f46505e004f15d03a93274",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Cleanup announcement-specific details require separate official verification.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "6f811881972f6c64456a2b3a7aa74fba766f0511ae943343cfdeee6e839e4553": {
+          "question": "双零账户是什么意思？",
+          "answer_sha256": "1fbbd2ad942a0e81952101a95c6b7d4da33a8ee7da14f07f1e07c2ca685aa15e",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Cleanup announcement-specific details require separate official verification.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "63712b2ae7af6b8f1fb524cf3f84dadc702bf592a02b5e1c9a8c8fe73e734e3e": {
+          "question": "借记卡主账户被清理后，借记卡还能用吗？",
+          "answer_sha256": "8f4c4e4d2710f9efad409f2edd08857e8dfbda98aa11da3f13489f4562f0e865",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Cleanup announcement-specific details require separate official verification.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        }
+      }
+    },
+    "faq/转账汇款FAQ__20261011.md": {
+      "content_sha256": "2f41e3812525eebcfc624e8b56966a14c376818a717f6d2ac6cfdd18f8ceb1a7",
+      "questions": {
+        "81e38a150390c94fb0538a6d3d2a86adee5bbc4a44b1cf4b9516bb002c1c7e63": {
+          "question": "中国银行转账汇款包括哪些常见类型？",
+          "answer_sha256": "9eeb0354f3bef03f6997762970dca2bb9fb57ebf128525f9145584ef0c6d0b1e",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "5fd14c5cd1fc828dc9cf174e3f26ea4fc08dcdb82e8881bb874ba206f761872a": {
+          "question": "中行内转账选择“实时”“普通”“次日”分别多久到账？",
+          "answer_sha256": "477e06e447ced9e82343d73335d7e2c92e9c5f598859084c92f4c34aad2ef16c",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "1ef778936590c999fab0ca71b8f9673f18e6d8e677c937b2130397ad1b1416b1": {
+          "question": "跨行转账选择“实时”方式是否一定实时到账？",
+          "answer_sha256": "56ed347f5d25f24b1f804c19b5c7fa9202cc9db4183f65ae3bfb7349bff3f25f",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "99bb8cc35bf5693d04cdb1a9d7fe6b244f1b7b1c6bd3f21b7a8903d17728f458": {
+          "question": "跨行普通转账什么时候汇出？",
+          "answer_sha256": "707463ccfc6bacaa0c22d41e0a53b9bd152a1569e8a5219448142e66efcf2953",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "e1ffcb2ae01081ec4dacd5ae6832b77bd8e483847eb651553fe91c3be509c3b9": {
+          "question": "跨行次日转账什么时候发报？",
+          "answer_sha256": "05aff5827fcf30ca122b6134036b52c04a5cc91a2864ea6bd978463e78a75582",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "ed9999f24181825f47468d588b84b582a3c3dee71f3490474fe2ef05db6e268c": {
+          "question": "中国银行是否承诺跨行转账到账时间？",
+          "answer_sha256": "e14f633a6938d9943c7fa309fdb53154480b68d542f61f28492e534cc1fe6388",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "27af700c9c9962f51232f0d648b528d5765e69ce2724552580258b87bf5136fe": {
+          "question": "个人网银使用“动态口令+手机交易码”转账限额是多少？",
+          "answer_sha256": "1ed2ba38c4e27002b47a1e6520f5004fcd5fad89cc1d4a1dd1db1ca3c80ff4f8",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.boc.cn/ebanking/service/cs1/201609/t20160909_7702151.html"
+            }
+          ]
+        },
+        "fcdef1eeaa7387d1cbeb366a21cb600c61f6081c3bc2d06b8af645979af98200": {
+          "question": "个人网银使用手机交易码的转账限额是多少？",
+          "answer_sha256": "32bf3d5271879bdb9bd6619ca673a807647122f9848d11ba996d635ae4326ad4",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.boc.cn/ebanking/service/cs1/201609/t20160909_7702151.html"
+            }
+          ]
+        },
+        "53b4d2d4d303f4914aa777122571f924b84c0e1352c6f9236be23bc40960fc66": {
+          "question": "个人手机银行使用手机交易码的转账限额是多少？",
+          "answer_sha256": "baf0fb36ff7fdf2356ca61cfdfd535b8a50a8edd851082b7c62a892dcf9c0472",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/service/cs1/201609/t20160908_7648060.html"
+            }
+          ]
+        },
+        "09d85d8184846b6f7e53e18fe97043c9d4391b2b9869cc550b8d89f1f04723a1": {
+          "question": "个人手机银行使用中银E盾的转账限额是多少？",
+          "answer_sha256": "cec42e96ef256aad44d19988db14bc2062e40db08516e4295d85f3a41152b48b",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/service/cs1/201609/t20160908_7648060.html"
+            }
+          ]
+        },
+        "03d9ca497f6d8ef287015fcec1bfb9698210354492193220ce2912f9fee06d0e": {
+          "question": "线上自助注册手机银行的转账限额是多少？",
+          "answer_sha256": "2e973bbb777c986d406827606fbb208a4af715f53969abcd042d4c2f776b8fa9",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/service/cs1/201609/t20160908_7648060.html"
+            }
+          ]
+        },
+        "e7af4ccd814d94ff71a396878359b1ba5b5398448c96e2968a038074faf1fbce": {
+          "question": "电子银行日累计转账笔数上限是多少？",
+          "answer_sha256": "da6176eda54abf912b40c52e768aac1d15b7d0ec841730bdf00fd7f55146fa7b",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.boc.cn/ebanking/service/cs1/201609/t20160909_7702151.html"
+            }
+          ]
+        },
+        "2d9cb7cc0670a1258062dfbe35b16b52f65a454cc14d4120ff0ff607d4cc7ba9": {
+          "question": "什么是定向转账收款人签约功能？",
+          "answer_sha256": "f795689a5260729fe3611730fc13727e591f3fd0f6bc75b09d500c01ae54a292",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "4f723a7844878c3d7e4ed489809cd517725bf2e7a0a99787394dd34efb591808": {
+          "question": "定向收款人功能如何申请开通？",
+          "answer_sha256": "2c05dc7ae993cc05a9f021668e0620e2cb8dd104d25ee457398cda5656ed07c7",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "93dc4cbecdb37bcb9ec0a661d03ff7d9f72ce187a8b32c484ca56e17c53cae41": {
+          "question": "定向转账交易与普通转账交易有何不同？",
+          "answer_sha256": "6863d7585505fa3c9de615443a53580c7c7185fd7842978950bfc91a54e67d52",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "fb0f970a2779ba0e384b44839f4f40aac8739046a6518ca0b43eb19cde9e3cce": {
+          "question": "能否修改或删除已维护的定向收款人？",
+          "answer_sha256": "49e9c657ce0184dfa32920365e7566fb4b64d8cdd3950294f8dda8977d22ac6e",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "1c7ca9ad66dec8efa24538533778bc5f88e8268b2dbc7113db8390880c02fc9e": {
+          "question": "如何设置定向收款人限额？",
+          "answer_sha256": "18c451aaa20eff6dbe3fad0c3fe93e0e368c397bf48ad793da2f332b0dcf1261",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.boc.cn/ebanking/service/cs1/201609/t20160909_7702151.html"
+            }
+          ]
+        },
+        "849de2bb0b33d1a675afef75cf3cfb3dd193b471ddecde9246acc275e280d1b3": {
+          "question": "中行网银提供哪几种定向转账服务？",
+          "answer_sha256": "1c4b9d46564d7b563fe414dd74dedc929c905ad294ae20c9e4d678553617e1ed",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "bf044f1c446d83ecc10daebb55a654b3d2c9233bf1750bf4ae33afc7fc74ac4e": {
+          "question": "哪些账户可以维护成定向收款人账户？",
+          "answer_sha256": "6467f697123e8fd250427afe5e6affd980821d95c627e4a09febc4de02cfe2b1",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "a01569c7be4b853938e0c27a49dc79541e384659a6944f224a2daf0f4a5921a4": {
+          "question": "最多能维护多少个定向收款人？",
+          "answer_sha256": "b2bbd72c3d4c5e04e3b070a02c3420e2c64f1b50ef80c9f70f41b2e60746ab11",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "70e5338e3991ec0aeef51fff358779b8b4fb3452814858f6901be517b3f26069": {
+          "question": "开通定向转账功能是否收费？",
+          "answer_sha256": "f35f229f90725eb77878a331afcfbbb70c27c3e2351785591ebff37ff690cddc",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Historical base fees and current concessions not yet reconciled for this item.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://wap.bankofchina.com/bif/bi2/202204/t20220401_20948591.html"
+            }
+          ]
+        },
+        "bcb7fcb54b5dda44a1c45fd4c14895a514795eee5186f444a5cb5f3a67fdb07c": {
+          "question": "在柜台维护定向收款人后，能否直接通过网银转账？",
+          "answer_sha256": "b32de33a7b612d391d1a33ca571a40a3e84ae976fa5b0cc56c2057ff107782cc",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Detailed directed-recipient FAQ not reverified; do not auto-return.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/ebanking/bocmbs/mbs1/201210/t20121009_2109845.html"
+            }
+          ]
+        },
+        "c3173b6ca347f2a6f0e7ee9ff0cab4751d8712ea350ec13eb49e03fc0e801f37": {
+          "question": "电子银行国内跨行普通汇款如何收费？",
+          "answer_sha256": "492913ece24516d7e39954f948e7f80a49131bde0fba10cafe0a244b332a0344",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Historical base fees and current concessions not yet reconciled for this item.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://wap.bankofchina.com/bif/bi2/202204/t20220401_20948591.html"
+            }
+          ]
+        },
+        "231952fd051fcfb54d2bc0514c0db2a69884a5e40f9579e73030c4682a836359": {
+          "question": "电子银行国内跨行实时汇款如何收费？",
+          "answer_sha256": "30a403a251f0f16dee4e5235eb90f55da3e610bdec2d6ecd262f6e5524e99ce8",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Historical base fees and current concessions not yet reconciled for this item.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://wap.bankofchina.com/bif/bi2/202204/t20220401_20948591.html"
+            }
+          ]
+        },
+        "e30c1963b5e74cde69a6576585472d1c81d012155569ed985c030f3869157b9e": {
+          "question": "2023年1月1日起跨行柜台“实时”转账手续费如何收取？",
+          "answer_sha256": "149f19e7fedd62c411021391bb022910992fb4b076723765d4d5245213399c27",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Historical base fees and current concessions not yet reconciled for this item.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://wap.bankofchina.com/bif/bi2/202204/t20220401_20948591.html"
+            }
+          ]
+        },
+        "8d56ed29f4026b1fb79d1d73fe5162a7c0773e6298619137319af929a630ff37": {
+          "question": "跨境汇款电汇如何收费？",
+          "answer_sha256": "3976aed9ca0943a3d01bdbc89682d98269231bb6d998a6547a2f67acbbf7d6b4",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Historical base fees and current concessions not yet reconciled for this item.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://wap.bankofchina.com/bif/bi2/202204/t20220401_20948591.html"
+            }
+          ]
+        },
+        "e675f0bf57c258230881bea6dd4f92d2f9129b00281f1f714f50442f3df09e0b": {
+          "question": "转账汇出后可以撤销吗？",
+          "answer_sha256": "8edf0ea784d3252d21bb40d725fba1469290fab90df5e57b92e1f0fa61dc2b8b",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "b0d17b9098a1877932fb303e7cf8b148e65f45c034ecccec6f977406ae108e2d": {
+          "question": "汇款信息填写错误造成损失，由谁承担？",
+          "answer_sha256": "cfa262d4bff78ab781b8a7b6607771097483b2113352c570cd61c68d8184cdf4",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "c2b1825cc93c40a424104338c9b77b2a301cf1a314b2ff87a3eba9d2b798246a": {
+          "question": "密码汇款有效期是多久？",
+          "answer_sha256": "9411380ab94ae354260ed1f5bfbbc95b692c1b490c7e35e3bf8fb072cbcf4b0a",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "264b998866c19711a912244511ac349a854570854de9c45dcb5e1e341074ab44": {
+          "question": "密码汇款ATM收款有什么限制？",
+          "answer_sha256": "ba50a609f4d18ff987507a33c8f561801c68ddd4832867f69acc1cb2b9050fe1",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        },
+        "02a6b9c08f3b6a64689944d652d1fce1129b21042a1b6e6a2119a93148659539": {
+          "question": "密码汇款收款人连续输错密码怎么办？",
+          "answer_sha256": "42fdab546e5a10d8e4913e9ade5c96bc3a748d63127a777f1899b52570934e98",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/转账汇款业务规则__20261011.md",
+              "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+              "url": "https://www.bankofchina.com/pbservice/pb4/200806/P020210723329842714469.pdf"
+            }
+          ]
+        }
+      }
+    },
+    "faq/银行常见问题_自建演示数据.md": {
+      "content_sha256": "dca5f272e8bf370c298ec70172e2ebd50c0bc5aa24b35d496dafa2805c6f67f6",
+      "questions": {
+        "9ed759715f190c5713c3966d927e84602c61f4bc6432a84986431c0d7bc2ebde": {
+          "question": "整存整取定期存款最低起存金额是多少？",
+          "answer_sha256": "c5d64e9f2d044a9fd2d7bc64a2528a34da1b79464b6e2bdb34a4752e220958b5",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/整存整取定期存款产品说明__20260923.md",
+              "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_699.html"
+            }
+          ]
+        },
+        "74b3c6788f8a7cf01e97d5ff2b21133cc5ff75a2af8fc3e73b8c88fb4c7bc75e": {
+          "question": "整存整取定期存款有哪些存期可选？",
+          "answer_sha256": "caa922c6fbbbae0004725255afe27009534a8641fdee3738bf8ddc07fdc640a7",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/整存整取定期存款产品说明__20260923.md",
+              "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_699.html"
+            }
+          ]
+        },
+        "9bcc985c9411747216345ce740c20ab96e8e2b7b675e1e344dba7c825442c528": {
+          "question": "整存整取定期存款提前支取如何计息？",
+          "answer_sha256": "ebac99e1a5383ea69200b273c83237629331b842d5e31a80ec2c7de8874e1ad7",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/整存整取定期存款产品说明__20260923.md",
+              "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_699.html"
+            }
+          ]
+        },
+        "1880930260d2690c7e82a7a2f15df8faa50b19476d520ebf68fdff08c2f7f80d": {
+          "question": "整存整取定期存款到期后会自动转存吗？",
+          "answer_sha256": "fd49127fad2a3206fb3de3de2c05fc03c5f2023a7d8a0e852565d6c45cd3628a",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/整存整取定期存款产品说明__20260923.md",
+              "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_699.html"
+            }
+          ]
+        },
+        "42ec406888090754fd4bc22f85e5d96cfc5ae2785753325813f9a7c5952a72c3": {
+          "question": "大额存单起存金额是多少？",
+          "answer_sha256": "9374ab079614241abbf3524df0cf209e240c755235ab445d6dae8e093de90052",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        },
+        "d773c328fd28e787faebb916c91a55a5fa2e8514302c0e3c561ed252757734cd": {
+          "question": "大额存单有哪些存期可选？",
+          "answer_sha256": "7cfa482aeb772a8d1964af8d28c15658cc5e7c808694a280191e0d6876b2f1da",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        },
+        "8c99505ab345d9c90f2a02c1503cbad37cc7db875b6ad3e1fe54a7dfc89bcc6f": {
+          "question": "大额存单可以提前支取吗？",
+          "answer_sha256": "d0eaadc777eacbe105fc8f6e777ffee58a7fb6a9fc177f9eea9b5c0f8f03adc8",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        },
+        "c180edb652947463e84a2e2e3e02d2cc31bb7d7851e20858808f9beb8249ef0c": {
+          "question": "大额存单到期后会自动转存吗？",
+          "answer_sha256": "1bf6e4cc594e4bd6b113e25444a88cf3d4ba51bc84c344f74be83063cc4e0b96",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        },
+        "f188c9ec3a9d7dd5c0bf4935567a2f9d6c351289636c0bd385c3242e1603d50d": {
+          "question": "零存整取存款是什么？如何计息？",
+          "answer_sha256": "e9454ec7f50acbf284c0f830471a7003774debd3a7fe26bcda6ef7a7ccdcafff",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/零存整取存款产品说明__20260923.md",
+              "content_sha256": "1ca1f61bf0928029e55158bb1d151e9481770b517d9b08cacc1eb70a277ae7bb",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_705.html"
+            }
+          ]
+        },
+        "7ce3130de285346c95622ce9093d70b2bbad3c51972d0eb8bf7caf054d8155c1": {
+          "question": "零存整取存款漏存了一个月怎么办？",
+          "answer_sha256": "209bf65b9ef6cb5a226289af922952706a95a8770a0d2cdfe9328a738c0ba297",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/零存整取存款产品说明__20260923.md",
+              "content_sha256": "1ca1f61bf0928029e55158bb1d151e9481770b517d9b08cacc1eb70a277ae7bb",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_705.html"
+            }
+          ]
+        },
+        "0fa3b78cf3a4df16adb38a2362179b4b8ea71eec57f6de62d0932edff7aa95fe": {
+          "question": "通知存款最低起存金额和存期是怎样的？",
+          "answer_sha256": "ac4213c50c42f2d785bf21c5cef0f3b9c51c99ac34d468c276629942ae9e8180",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/通知存款产品说明__20261011.md",
+              "content_sha256": "b1ec6d2358e5ba9c387cc8d5e7f8b5b97860bf1cfdb354d03915d20ceb5ab403",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080626_707.html"
+            }
+          ]
+        },
+        "447f507e4101ccb6a956356500c663534d33005040bc07cc61537742b7ad31f3": {
+          "question": "人民币活期存款利率是多少？",
+          "answer_sha256": "6a06fecf2b6e3be50ec947285fd31da889f40c4fa01813e1466333d94e120026",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "99b9130cd53e53947f617c8a664c370e4daeb75f75ccf441816852d30ac321c7": {
+          "question": "定期存款利率和活期存款利率哪个更高？",
+          "answer_sha256": "f5dc639e099211f4db9f66e8e3284d5ea8981d31abcbf98575570e54d0c3cd04",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "2c1c556c61c414b5200fa7cebf0a3426f85ef81dfbf56e068805514d1239b4fd": {
+          "question": "存款保险最高能保障多少金额？",
+          "answer_sha256": "272c719e9ac948b51281d3b39f525ad6784c08677cbe623ac1ef08929846e871",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "regulation/存款保险条例__20150501.md",
+              "content_sha256": "3a551d34270a4433a69fafd69e4633c5c542fb1a2cf51fe005febeddb0e99ee8",
+              "url": "https://wzdt.pbc.gov.cn/eportal/ui?msgDataId=d3f5c72a0157407e97b4998676c34ef2&pageId=77c3557bd521439ea5cd869f5393ba98"
+            }
+          ]
+        },
+        "943393369b0d3ef83ec61fe9be54344183293777e403188081c8d1e76d4a14ce": {
+          "question": "哪些存款受存款保险保障？",
+          "answer_sha256": "ff8c9312bb1ce14462f5d1e59d1e9add9edc3bedb6aa10e8b13e53580104b117",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "regulation/存款保险条例__20150501.md",
+              "content_sha256": "3a551d34270a4433a69fafd69e4633c5c542fb1a2cf51fe005febeddb0e99ee8",
+              "url": "https://wzdt.pbc.gov.cn/eportal/ui?msgDataId=d3f5c72a0157407e97b4998676c34ef2&pageId=77c3557bd521439ea5cd869f5393ba98"
+            },
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        },
+        "ea71c3358ce96ec33da035fef5bd64a6e56de87882a3ac6fc7d49c8689227c01": {
+          "question": "银行卡丢了怎么办理挂失？",
+          "answer_sha256": "c28341081c714f332a2e355c2b80c3791d4002a658d5220b92653a2b89a42a97",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Deposit voucher loss page must not silently stand for every debit card process.",
+          "sources": [
+            {
+              "document_path": "business_rule/存款挂失服务__20260923.md",
+              "content_sha256": "db622c6cfb03785262a44b0df4e0b21968a54fb4f26feee82324ed61f823aa87",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200807/t20080704_769.html"
+            }
+          ]
+        },
+        "ec47c2c48ced3208d7480524bb509891111e5594b197fb339ebcb80ec59a706a": {
+          "question": "临时挂失有效期是多久？",
+          "answer_sha256": "e5922522050cb874155f2b76815a6cf0e97a1300fbd039432edb83ff9cbf9a7a",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/存款挂失服务__20260923.md",
+              "content_sha256": "db622c6cfb03785262a44b0df4e0b21968a54fb4f26feee82324ed61f823aa87",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200807/t20080704_769.html"
+            }
+          ]
+        },
+        "9e624fdfd40ae29fc20272a37953dc1d9adf7643fe80101757e1bd211c89c653": {
+          "question": "存折丢失了怎么处理？",
+          "answer_sha256": "32035301b8abcfc8ae9d8dd6c39961f5e55dcde0e44b2257937b3772f7556fe3",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "business_rule/存款挂失服务__20260923.md",
+              "content_sha256": "db622c6cfb03785262a44b0df4e0b21968a54fb4f26feee82324ed61f823aa87",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200807/t20080704_769.html"
+            }
+          ]
+        },
+        "4dfe8591b4d48bedeea19b367b64408a3f55a09d2099490ff12e2f8b7b4b468d": {
+          "question": "存款利息怎么计算？",
+          "answer_sha256": "b44b22b94aac7f6a7ddaee3b441434111ed6afbecac53876f0df44386626d008",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "6138f4ce95adacada68989b930303aaa62d1850d4da5ae446bae94caafca294d": {
+          "question": "在银行存钱有限额吗？",
+          "answer_sha256": "3c1e2b4b4e019736ec3acda9481f40418e6bb7acb3ef70851819a382468b0bd6",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "c19b1f8434ff852ff8ea90ba541a9033c26cda4acd0bce0d9d0bf69a3e73f8b8": {
+          "question": "网上银行可以办理定期存款吗？",
+          "answer_sha256": "5182bb9335af195d7e55c61c22e1030129b58c7dc85697a05165ad6a0965dcd2",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "61f27582e6407387f83556d0cbdbb39f122d2c7998a99f6a247bec06c04cd73f": {
+          "question": "不同银行的存款利率一样吗？",
+          "answer_sha256": "b74621bb34893ae0b22eb0e9c47f3840e6a7f5c957aff8c2e30b6d16262b7e58",
+          "review_status": "pending",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "No verified current or complete source; excluded from automatic answers.",
+          "sources": [
+            {
+              "document_path": "business_rule/个人开户业务规则__20261011.md",
+              "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+              "url": "https://pic.bankofchina.com/bocappd/pbservice/202601/P020260109615510106614.pdf"
+            }
+          ]
+        },
+        "aae1f26616b3a8c47e0b0f4e8a8704f7df9dfd99ef67542f8fc428c457ff93c3": {
+          "question": "定期存款到期后不取会怎样？",
+          "answer_sha256": "7468fe26224f3229865ddeb915b476d129352facc46923c8b5f83123f9983247",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "product/整存整取定期存款产品说明__20260923.md",
+              "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+              "url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080625_699.html"
+            }
+          ]
+        },
+        "035e57ed7f42a928e379ebcfcaae537cbb388f9b345fb168aea95f7734ff64f9": {
+          "question": "港币存款有存款保险保障吗？",
+          "answer_sha256": "80b3fda4d27d5717db620ce271fe40072e42ee01a859e5b76286bfbadff76c13",
+          "review_status": "demo_approved",
+          "jurisdiction": "CN",
+          "effective_date": 0,
+          "expiry_date": 20270111,
+          "reviewed_at": 20261013,
+          "reason": "Source correspondence checked against public official page or named local excerpt; not human/legal approval.",
+          "sources": [
+            {
+              "document_path": "regulation/存款保险条例__20150501.md",
+              "content_sha256": "3a551d34270a4433a69fafd69e4633c5c542fb1a2cf51fe005febeddb0e99ee8",
+              "url": "https://wzdt.pbc.gov.cn/eportal/ui?msgDataId=d3f5c72a0157407e97b4998676c34ef2&pageId=77c3557bd521439ea5cd869f5393ba98"
+            },
+            {
+              "document_path": "product/个人大额存单产品说明__20260923.md",
+              "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+              "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# 敏感文件
+.env
+.env.local
+config.ini
+*.log
+
+# 训练/评测产物
+intent_bert_results/
+intent_bert_logs/
+ragas_evaluation_results.csv
+ragas_test_results.json
+compliance_evaluation_results.json
+intent_evaluation_results.json
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# IDE
+.idea/
+.vscode/
+
+# 模型文件（运行时挂载）
+rag_qa/models/
+
+# Local migration backups
+runtime_backups/
+.remediation_backups/
+local_secrets.env
+.context_upgrade_backups/
+.correctness_backups/
+.first_eval_backups/
+.quality_backups/
+evaluation/results/worklist_20261014/before/
+# JavaScript tooling and local review workspace
+node_modules/
+evaluation/review_quality_v3/.ai_review_work/
+evaluation/review_quality_v3/private_mapping.json
+evaluation/review_quality_v3/pending_status.json
+evaluation/review_quality_v3/outputs/
+/python
+**/private_mapping.json
+**/pending_status.json

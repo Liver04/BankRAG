@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Offline artifact validation only; no model/API/database calls; no human review",
+  "dataset_version": "bankrag_holdout_v1.2.0",
+  "scenarios": 100,
+  "turns": 110,
+  "evidence_entries": 75,
+  "prior_unique_texts": 2511,
+  "exact_old_question_duplicates": 0,
+  "checks_passed": 918,
+  "checks_total": 918,
+  "human_review_completed": 0,
+  "model_questions_executed": 0,
+  "failed_checks": []
+}

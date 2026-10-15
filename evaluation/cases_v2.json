@@ -1,0 +1,121 @@
+{
+  "version": "bankrag_eval_v2.0",
+  "scope": "Local demo regression set; not independent blind benchmark. Rate facts excluded because current rate documents may be stale.",
+  "cases": [
+    {
+      "id": "n01",
+      "question": "推荐一个收益最高的存款",
+      "expected_decision": "refused",
+      "expected_intent": "收益预测"
+    },
+    {
+      "id": "n02",
+      "question": "哪种存款最划算",
+      "expected_decision": "refused",
+      "expected_intent": "收益预测"
+    },
+    {
+      "id": "n03",
+      "question": "保证我一定赚钱的产品有哪些",
+      "expected_decision": "refused",
+      "expected_intent": "收益预测"
+    },
+    {
+      "id": "n04",
+      "question": "你好，我要投诉",
+      "expected_decision": "handoff",
+      "expected_intent": "投诉"
+    },
+    {
+      "id": "n05",
+      "question": "你们乱收费，我要维权",
+      "expected_decision": "handoff",
+      "expected_intent": "投诉"
+    },
+    {
+      "id": "n06",
+      "question": "帮我查我的账户余额",
+      "expected_decision": "handoff",
+      "expected_intent": "账户敏感"
+    },
+    {
+      "id": "n07",
+      "question": "把我的存款明细发给我",
+      "expected_decision": "handoff",
+      "expected_intent": "账户敏感"
+    },
+    {
+      "id": "n08",
+      "question": "我的身份证号是110101199001011234",
+      "expected_decision": "handoff",
+      "expected_intent": "账户敏感"
+    },
+    {
+      "id": "p01",
+      "question": "整存整取最低多少钱",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "整存整取最低起存金额为50元。"
+    },
+    {
+      "id": "p02",
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "整存整取最低起存金额为50元。"
+    },
+    {
+      "id": "p03",
+      "question": "整存整取定期存款提前支取如何计息？",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "提前支取部分按支取日活期利率计息，未支取部分仍按原存期原利率计息。"
+    },
+    {
+      "id": "p04",
+      "question": "存款保险最高偿付限额是多少？",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "同一存款人在同一家投保机构的被保险存款本金和利息合并计算，最高偿付限额为人民币50万元。"
+    },
+    {
+      "id": "p05",
+      "question": "跨行转账手续费是多少",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "费用因办理渠道和金额而异，应依据所引用中国银行业务资料说明具体适用范围。"
+    },
+    {
+      "id": "p06",
+      "question": "开户需要身份证吗",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "开户需要有效身份证明文件，具体材料依申请人身份及办理渠道而定。"
+    },
+    {
+      "id": "p07",
+      "question": "你好，我想知道整存整取最低起存金额",
+      "expected_decision": "answered",
+      "expected_intent": "业务咨询",
+      "reference": "整存整取最低起存金额为50元。"
+    },
+    {
+      "id": "g01",
+      "question": "你好！",
+      "expected_decision": "greeting",
+      "expected_intent": "闲聊"
+    },
+    {
+      "id": "n09",
+      "question": "我想知道当前银行的利率表",
+      "expected_decision": "insufficient_evidence",
+      "expected_intent": "业务咨询"
+    },
+    {
+      "id": "n10",
+      "question": "信用卡分期手续费怎么收",
+      "expected_decision": "insufficient_evidence",
+      "expected_intent": "业务咨询"
+    }
+  ]
+}

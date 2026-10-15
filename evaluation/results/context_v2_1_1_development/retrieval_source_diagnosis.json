@@ -1,0 +1,41 @@
+{
+  "meaning": "Frozen provisional gold quote matched to parent_content, NOT child text; runtime candidate IDs then compared. Gold still awaits independent human verification.",
+  "target_parents": [
+    {
+      "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+      "doc_id": "427eda3a7de6fa47892d4ecb3c788370"
+    }
+  ],
+  "rows": [
+    {
+      "transport": "http",
+      "target_parent_recalled": true,
+      "target_rerank_records": [
+        {
+          "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+          "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+          "raw_score": 0.03753801807761192,
+          "adjusted_score": 0.03753801807761192,
+          "threshold": 0.15,
+          "reason": "below_threshold"
+        }
+      ],
+      "all_returned_below_threshold": true
+    },
+    {
+      "transport": "websocket",
+      "target_parent_recalled": true,
+      "target_rerank_records": [
+        {
+          "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+          "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+          "raw_score": 0.03753801807761192,
+          "adjusted_score": 0.03753801807761192,
+          "threshold": 0.15,
+          "reason": "below_threshold"
+        }
+      ],
+      "all_returned_below_threshold": true
+    }
+  ]
+}

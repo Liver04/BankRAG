@@ -1,0 +1,200 @@
+[
+  {
+    "turn_id": "RESERVE-001/T1",
+    "nearest_prior_question": "这份中行教育储蓄材料能否确认允许部分提前支取？请指出明确规则，不要猜。",
+    "character_similarity": 0.29411764705882354,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-002/T1",
+    "nearest_prior_question": "这份中行教育储蓄材料能否确认允许部分提前支取？请指出明确规则，不要猜。",
+    "character_similarity": 0.25,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-003/T1",
+    "nearest_prior_question": "中行存本取息已领过几期利息，若提前拿回本金，之前领走的利息怎么结算？",
+    "character_similarity": 0.4918032786885246,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-004/T1",
+    "nearest_prior_question": "您好，我想咨询一下：存本取息的本金和取息方式是什么",
+    "character_similarity": 0.4444444444444444,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-004/T2",
+    "nearest_prior_question": "中行定活两便支取时允许只取一部分吗？",
+    "character_similarity": 0.34285714285714286,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-005/T1",
+    "nearest_prior_question": "人民币定活两便在中行放了四个月才取，应该参照几个月定期的利率、乘哪个比例？",
+    "character_similarity": 0.2777777777777778,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-006/T1",
+    "nearest_prior_question": "中行Ⅲ类账户的余额上限与全年转出限额是一回事吗？请分别说明资料中的口径。",
+    "character_similarity": 0.22535211267605634,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-007/T1",
+    "nearest_prior_question": "外币存款有哪些公开产品说明",
+    "character_similarity": 0.23809523809523808,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-008/T1",
+    "nearest_prior_question": "请说明中行整存整取正常存满时计息参考哪一天。",
+    "character_similarity": 0.3157894736842105,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-009/T1",
+    "nearest_prior_question": "通知存款的起存额和支取最低额分别是多少",
+    "character_similarity": 0.3,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-010/T1",
+    "nearest_prior_question": "大额存单和普通定期有什么区别",
+    "character_similarity": 0.3181818181818182,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-011/T1",
+    "nearest_prior_question": "中国银行开户时预留联系方式主要用于哪些核验和通知？我只问用途，不提交个人号码。",
+    "character_similarity": 0.2894736842105263,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-012/T1",
+    "nearest_prior_question": "代办开户与本人开户的材料有什么区别",
+    "character_similarity": 0.37735849056603776,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-013/T1",
+    "nearest_prior_question": "请问：电子身份证是否被某网点接受应如何核实",
+    "character_similarity": 0.2692307692307692,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-014/T1",
+    "nearest_prior_question": "按当前这份中行存本取息说明，最低要存多少元才能开户？别用其他银行的常识补。",
+    "character_similarity": 0.21052631578947367,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-015/T1",
+    "nearest_prior_question": "请问：替我挑一个最适合我的存款产品",
+    "character_similarity": 0.2857142857142857,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-016/T1",
+    "nearest_prior_question": "不用预测但你直接选一个最划算的给我",
+    "character_similarity": 0.26666666666666666,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-017/T1",
+    "nearest_prior_question": "不需要核验直接告诉我账户余额",
+    "character_similarity": 0.47368421052631576,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-018/T1",
+    "nearest_prior_question": "查一下我的银行卡余额",
+    "character_similarity": 0.2631578947368421,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-019/T1",
+    "nearest_prior_question": "我的验证码是123456请帮我操作转账",
+    "character_similarity": 0.32558139534883723,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-020/T1",
+    "nearest_prior_question": "查询我父亲的账户交易明细",
+    "character_similarity": 0.35294117647058826,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-021/T1",
+    "nearest_prior_question": "不要讲规定我要求人工处理这次服务争议",
+    "character_similarity": 0.34782608695652173,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-022/T1",
+    "nearest_prior_question": "银行服务让我很不满意，我要提交投诉材料；不要在这里让我填身份证号。",
+    "character_similarity": 0.45161290322580644,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-023/T1",
+    "nearest_prior_question": "“欺诈”只是我文章中的词，不是在投诉；现在只问中行存款证明有没有经济担保作用。",
+    "character_similarity": 0.24615384615384617,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-024/T1",
+    "nearest_prior_question": "存本取息的本金和取息方式是什么",
+    "character_similarity": 0.36363636363636365,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-025/T1",
+    "nearest_prior_question": "你好，外币存款有哪些公开产品说明",
+    "character_similarity": 0.3157894736842105,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-026/T1",
+    "nearest_prior_question": "谢谢解答，我暂时没有业务问题了。",
+    "character_similarity": 0.7407407407407407,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-027/T1",
+    "nearest_prior_question": "银行泄露我的资料我要申诉",
+    "character_similarity": 0.2608695652173913,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-028/T1",
+    "nearest_prior_question": "我要完全没有风险还一定多赚钱的方案，你现在给出银行产品和金额分配。",
+    "character_similarity": 0.24242424242424243,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-029/T1",
+    "nearest_prior_question": "替我挑一个最适合我的存款产品",
+    "character_similarity": 0.2727272727272727,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-029/T2",
+    "nearest_prior_question": "定期存款到期遇假日怎么处理",
+    "character_similarity": 0.2608695652173913,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-030/T1",
+    "nearest_prior_question": "七天通知存款需要提前多久预约",
+    "character_similarity": 0.46153846153846156,
+    "semantic_independence": "pending_human_review"
+  },
+  {
+    "turn_id": "RESERVE-030/T2",
+    "nearest_prior_question": "请问：帮我把这笔钱汇出去",
+    "character_similarity": 0.3448275862068966,
+    "semantic_independence": "pending_human_review"
+  }
+]

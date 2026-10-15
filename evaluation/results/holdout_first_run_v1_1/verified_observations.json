@@ -1,0 +1,32 @@
+{
+  "meaning": "Deterministic protocol/route observations; answer coverage is NOT accuracy",
+  "protocol": {
+    "http": {
+      "rows": 110,
+      "completed": 110,
+      "disclaimer_once": 110,
+      "history_rounds_correct": 110,
+      "expected_answer_turns": 52,
+      "answerable_returned_answered": 31,
+      "total_answered": 33,
+      "bound_citations": 33,
+      "invalid_citations": 0
+    },
+    "websocket": {
+      "rows": 110,
+      "completed": 110,
+      "disclaimer_once": 110,
+      "history_rounds_correct": 110,
+      "expected_answer_turns": 52,
+      "answerable_returned_answered": 30,
+      "total_answered": 33,
+      "bound_citations": 33,
+      "invalid_citations": 0,
+      "early_disclaimer": 110,
+      "visible_body_matches_final": 110
+    }
+  },
+  "runtime_stable": true,
+  "human_reviews": 0,
+  "authoritative_overall_business_accuracy": null
+}

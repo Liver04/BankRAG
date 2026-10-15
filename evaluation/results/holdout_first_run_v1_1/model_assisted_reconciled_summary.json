@@ -1,0 +1,172 @@
+{
+  "meaning": "Model-assisted provisional diagnosis only; no independent human scoring",
+  "total_rows": 220,
+  "scored": 217,
+  "judge_errors": 3,
+  "provisional_passed": 115,
+  "human_scored": 0,
+  "error_labels": {
+    "INCOMPLETE_ANSWER": 52,
+    "RETRIEVAL_MISS": 67,
+    "INTENT_FALSE_REFUSAL": 60,
+    "CITATION_UNSUPPORTED": 38,
+    "KB_FACT_CONFLICT": 3,
+    "FRESHNESS": 2,
+    "KB_SCOPE": 9,
+    "HISTORY_REFERENCE": 3,
+    "PRIVACY": 22
+  },
+  "hard_failure_flags": {
+    "HF01": 7,
+    "HF04": 11,
+    "HF02": 7,
+    "HF03": 7,
+    "HF05": 7
+  },
+  "by_transport": {
+    "http": {
+      "passed": 58,
+      "total": 110,
+      "judge_errors": 2,
+      "actions": {
+        "answer": {
+          "passed": 10,
+          "total": 52
+        },
+        "abstain": {
+          "passed": 9,
+          "total": 16
+        },
+        "greet": {
+          "passed": 5,
+          "total": 5
+        },
+        "handoff": {
+          "passed": 19,
+          "total": 20
+        },
+        "refuse": {
+          "passed": 14,
+          "total": 14
+        },
+        "clarify": {
+          "passed": 1,
+          "total": 3
+        }
+      },
+      "multi_turn_scenarios": {
+        "passed": 3,
+        "total": 10
+      },
+      "latency_seconds": {
+        "n": 110,
+        "p50": 0.38691020000260323,
+        "p95": 33.88097060000291,
+        "method": "nearest_rank; includes failure durations"
+      }
+    },
+    "websocket": {
+      "passed": 57,
+      "total": 110,
+      "judge_errors": 1,
+      "actions": {
+        "answer": {
+          "passed": 10,
+          "total": 52
+        },
+        "abstain": {
+          "passed": 8,
+          "total": 16
+        },
+        "greet": {
+          "passed": 5,
+          "total": 5
+        },
+        "handoff": {
+          "passed": 19,
+          "total": 20
+        },
+        "refuse": {
+          "passed": 14,
+          "total": 14
+        },
+        "clarify": {
+          "passed": 1,
+          "total": 3
+        }
+      },
+      "multi_turn_scenarios": {
+        "passed": 2,
+        "total": 10
+      },
+      "latency_seconds": {
+        "n": 110,
+        "p50": 0.37251249997643754,
+        "p95": 32.299784899980295,
+        "method": "nearest_rank; includes failure durations"
+      }
+    }
+  },
+  "by_category": {
+    "B": {
+      "passed": 2,
+      "total": 24,
+      "judge_errors": 0
+    },
+    "C": {
+      "passed": 5,
+      "total": 12,
+      "judge_errors": 0
+    },
+    "F": {
+      "passed": 9,
+      "total": 20,
+      "judge_errors": 0
+    },
+    "G": {
+      "passed": 8,
+      "total": 8,
+      "judge_errors": 0
+    },
+    "L": {
+      "passed": 12,
+      "total": 12,
+      "judge_errors": 0
+    },
+    "M": {
+      "passed": 22,
+      "total": 40,
+      "judge_errors": 2
+    },
+    "N": {
+      "passed": 8,
+      "total": 16,
+      "judge_errors": 0
+    },
+    "P": {
+      "passed": 6,
+      "total": 28,
+      "judge_errors": 1
+    },
+    "R": {
+      "passed": 24,
+      "total": 24,
+      "judge_errors": 0
+    },
+    "S": {
+      "passed": 18,
+      "total": 20,
+      "judge_errors": 0
+    },
+    "U": {
+      "passed": 1,
+      "total": 16,
+      "judge_errors": 0
+    }
+  },
+  "transport_decision_consistency": {
+    "same_decision": 108,
+    "paired_turns": 110,
+    "meaning": "Decision equality only, not full semantic equivalence"
+  }
+}

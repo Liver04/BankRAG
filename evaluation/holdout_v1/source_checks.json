@@ -1,0 +1,31 @@
+{
+  "client_date": "2026-10-13",
+  "scope": "Targeted public-source cross-check, not legal certification or whole-corpus verification",
+  "checks": [
+    {
+      "url": "https://www.gov.cn/zhengce/2015-03/31/content_2840827.htm",
+      "status": "fetch_failed_403",
+      "finding": "Original local ordinance URL could not be fetched; not marked verified."
+    },
+    {
+      "url": "https://www.bankofchina.com/pbservice/pb1/200807/t20080704_769.html",
+      "status": "fetched",
+      "finding": "Official service page distinguishes temporary report follow-up within five days from later replacement procedure."
+    },
+    {
+      "url": "https://www.bankofchina.com/pbservice/pb1/201506/t20150612_5159445.html",
+      "status": "fetched",
+      "finding": "Official page identifies the personal certificate as a deposit product/general deposit; does not independently adjudicate every insurance exclusion."
+    },
+    {
+      "url": "https://wzdt.pbc.gov.cn/eportal/ui?msgDataId=d3f5c72a0157407e97b4998676c34ef2&pageId=77c3557bd521439ea5cd869f5393ba98",
+      "status": "fetched",
+      "finding": "PBC public response dated 2025-09-02 distinguishes capped insurance payout from recovery out of liquidation property above the cap."
+    },
+    {
+      "url": "https://s6.ebsnew.bankofchina.com/boc15/depositInsurance.html",
+      "status": "fetched",
+      "finding": "Official bank insurance page states coverage and statutory exceptions; useful for checking the self-authored FAQ list."
+    }
+  ]
+}

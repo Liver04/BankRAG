@@ -1,0 +1,95 @@
+{
+  "status": "candidate_trained_not_promoted",
+  "device": "cpu",
+  "full_encoder_finetuned": true,
+  "epochs": 5,
+  "seconds": 223.49168610572815,
+  "train_rows": 384,
+  "validation_rows": 96,
+  "semantic_group_overlap": 0,
+  "data_sha256": "6e4c66f8bf6008e51d48a5ab2652ef7228a63d80b65989552480d99f2a04ffef",
+  "accuracy": 1.0,
+  "classification_report": {
+    "闲聊": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "业务咨询": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 32.0
+    },
+    "收益预测": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "投诉": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "账户敏感": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 96.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 96.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      16,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      32,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      16,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      16
+    ]
+  ],
+  "limits": "Synthetic development validation; neither independent human labels nor blind generalization accuracy"
+}

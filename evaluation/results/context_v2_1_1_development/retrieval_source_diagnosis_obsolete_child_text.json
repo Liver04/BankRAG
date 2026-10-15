@@ -1,0 +1,114 @@
+[
+  {
+    "turn_id": "H-B01/T1",
+    "transport": "http",
+    "candidates": [
+      {
+        "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+        "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+        "raw_score": 0.03753801807761192,
+        "adjusted_score": 0.03753801807761192,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "个人开户业务规则",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+        "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+        "raw_score": 0.0297178253531456,
+        "adjusted_score": 0.0297178253531456,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "人民币银行结算账户管理办法",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+        "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+        "raw_score": 0.008669004775583744,
+        "adjusted_score": 0.008669004775583744,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "未成年人开户规则",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+        "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+        "raw_score": 0.03795843571424484,
+        "adjusted_score": 0.03795843571424484,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "人民币银行结算账户管理办法",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+        "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+        "raw_score": 0.021511027589440346,
+        "adjusted_score": 0.021511027589440346,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "通知存款产品说明",
+        "contains_contact_purpose": false
+      }
+    ]
+  },
+  {
+    "turn_id": "H-B01/T1",
+    "transport": "websocket",
+    "candidates": [
+      {
+        "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+        "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+        "raw_score": 0.03753801807761192,
+        "adjusted_score": 0.03753801807761192,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "个人开户业务规则",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+        "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+        "raw_score": 0.0297178253531456,
+        "adjusted_score": 0.0297178253531456,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "人民币银行结算账户管理办法",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+        "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+        "raw_score": 0.008669004775583744,
+        "adjusted_score": 0.008669004775583744,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "未成年人开户规则",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+        "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+        "raw_score": 0.03795843571424484,
+        "adjusted_score": 0.03795843571424484,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "人民币银行结算账户管理办法",
+        "contains_contact_purpose": false
+      },
+      {
+        "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+        "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+        "raw_score": 0.021511027589440346,
+        "adjusted_score": 0.021511027589440346,
+        "threshold": 0.15,
+        "reason": "below_threshold",
+        "title": "通知存款产品说明",
+        "contains_contact_purpose": false
+      }
+    ]
+  }
+]

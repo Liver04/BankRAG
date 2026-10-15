@@ -1,0 +1,66 @@
+[
+  {
+    "turn_id": "H-N07/T1",
+    "transport": "http",
+    "counterfactual_only_not_live": true,
+    "guard": {
+      "version": "bounded_evidence_v1_1",
+      "passed": false,
+      "issues": [
+        "unsupported_identity_or_deployment_claim"
+      ],
+      "required_conditions": [],
+      "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+    }
+  },
+  {
+    "turn_id": "H-P07/T1",
+    "transport": "http",
+    "counterfactual_only_not_live": true,
+    "guard": {
+      "version": "bounded_evidence_v1_1",
+      "passed": false,
+      "issues": [
+        "missing_condition:withdrawal_minimum",
+        "unsupported_numeric_atom"
+      ],
+      "required_conditions": [
+        "withdrawal_minimum",
+        "remaining_minimum"
+      ],
+      "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+    }
+  },
+  {
+    "turn_id": "H-N07/T1",
+    "transport": "websocket",
+    "counterfactual_only_not_live": true,
+    "guard": {
+      "version": "bounded_evidence_v1_1",
+      "passed": false,
+      "issues": [
+        "unsupported_identity_or_deployment_claim"
+      ],
+      "required_conditions": [],
+      "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+    }
+  },
+  {
+    "turn_id": "H-P07/T1",
+    "transport": "websocket",
+    "counterfactual_only_not_live": true,
+    "guard": {
+      "version": "bounded_evidence_v1_1",
+      "passed": false,
+      "issues": [
+        "missing_condition:withdrawal_minimum",
+        "unsupported_numeric_atom"
+      ],
+      "required_conditions": [
+        "withdrawal_minimum",
+        "remaining_minimum"
+      ],
+      "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "backend": "deterministic_fixtures",
+  "total": 51,
+  "passed": 51,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "syntax_files": 52,
+  "credential_logic_unchanged": true
+}

@@ -1,0 +1,47 @@
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -34,8 +34,16 @@
+       - ./rag_qa/data:/app/rag_qa/data
+       - ./logs:/app/logs
+     depends_on:
+-      - mysql
+-      - redis
++      mysql:
++        condition: service_healthy
++      redis:
++        condition: service_healthy
++    healthcheck:
++      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8090/health"]
++      interval: 20s
++      timeout: 5s
++      retries: 3
++      start_period: 45s
+     restart: unless-stopped
+ 
+   mysql:
+@@ -51,6 +59,12 @@
+     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+     volumes:
+       - mysql_data:/var/lib/mysql
++    healthcheck:
++      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
++      interval: 10s
++      timeout: 5s
++      retries: 12
++      start_period: 30s
+     restart: unless-stopped
+ 
+   redis:
+@@ -61,6 +75,12 @@
+     command: redis-server --requirepass 1234
+     volumes:
+       - redis_data:/data
++    healthcheck:
++      test: ["CMD-SHELL", "redis-cli -h 127.0.0.1 -p 6379 -a \"$$REDIS_PASSWORD\" ping | grep -q PONG"]
++      interval: 10s
++      timeout: 5s
++      retries: 12
++      start_period: 10s
+     restart: unless-stopped
+ 
+ volumes:

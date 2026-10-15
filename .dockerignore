@@ -1,0 +1,39 @@
+# 模型文件（体积大，运行时通过 volume 挂载，不打进镜像）
+rag_qa/models/
+
+# 知识库数据（运行时挂载）
+rag_qa/data/
+
+# 日志
+logs/
+
+# 训练中间产物与缓存
+intent_bert_results/
+intent_bert_logs/
+bert_results/
+bert_logs/
+ragas_evaluation_results.csv
+__pycache__/
+*.pyc
+
+# 版本控制与 IDE
+.git/
+.idea/
+.vscode/
+
+# 环境变量文件（含 API Key，不打进镜像）
+.env
+
+# 数据/知识库原始文件（在 Bank_RAG_code 上级目录，此处保险）
+*.csv
+*.pdf
+*.txt.tmp
+.env.*
+config.ini
+local_secrets.env
+.context_upgrade_backups/
+.correctness_backups/
+.first_eval_backups/
+.quality_backups/
+.remediation_backups/
+evaluation/results/

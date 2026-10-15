@@ -1,0 +1,12 @@
+{
+  "kind": "offline_tokenizer_reproduction_same_frozen_parent",
+  "effective_max_length": 512,
+  "full_pair_tokens": 746,
+  "target_fragment_visible_in_truncated_parent": false,
+  "target_fragment_in_winning_window": true,
+  "window_pair_tokens": 178,
+  "scores": {
+    "parent": 0.03753801807761192,
+    "window": 0.9834660291671753
+  }
+}

@@ -1,0 +1,56 @@
+test_cross_owner_denied (test_api.APITests) ... ok
+test_event_loop_not_blocked (test_api.APITests) ... ok
+test_greeting_fullmatch (test_api.APITests) ... ok
+test_health_degraded (test_api.APITests) ... ok
+test_health_ready (test_api.APITests) ... ok
+test_http_history (test_api.APITests) ... ok
+test_http_injection (test_api.APITests) ... ok
+test_trace_actual_context (test_api.APITests) ... ok
+test_trace_protected (test_api.APITests) ... ok
+test_ws_foreign_denied (test_api.APITests) ... ok
+test_ws_injection (test_api.APITests) ... ok
+test_ws_owned_and_refusal (test_api.APITests) ... ok
+test_all_decisions_have_disclaimer (test_compliance.ComplianceTests) ... ok
+test_cache_hit_revalidated (test_compliance.ComplianceTests) ... ok
+test_citations_reject (test_compliance.ComplianceTests) ... ok
+test_expired_faq (test_compliance.ComplianceTests) ... ok
+test_faq_cannot_bypass (test_compliance.ComplianceTests) ... ok
+test_faq_metadata_and_disclaimer (test_compliance.ComplianceTests) ... ok
+test_greeting_does_not_swallow (test_compliance.ComplianceTests) ... ok
+test_knowledge_version (test_compliance.ComplianceTests) ... ok
+test_missing_model_fails_closed (test_compliance.ComplianceTests) ... ok
+test_never_downgrade_sensitive (test_compliance.ComplianceTests) ... ok
+test_pending_faq (test_compliance.ComplianceTests) ... ok
+test_public_alias_validated (test_compliance.ComplianceTests) ... ok
+test_public_questions (test_compliance.ComplianceTests) ... ok
+test_source_restricts_faq (test_compliance.ComplianceTests) ... ok
+test_stream_exception (test_compliance.ComplianceTests) ... ok
+test_unsafe_faq_output (test_compliance.ComplianceTests) ... ok
+test_customer_manager_not_refusal (test_evaluation.EvaluationTests) ... ok
+test_forged_status_not_enough (test_evaluation.EvaluationTests) ... ok
+test_reference_binding (test_evaluation.EvaluationTests) ... ok
+test_effective_vs_collected (test_knowledge.KnowledgeTests) ... ok
+test_equal_scores (test_knowledge.KnowledgeTests) ... ok
+test_filter_whitelist (test_knowledge.KnowledgeTests) ... ok
+test_retire_previous (test_knowledge.KnowledgeTests) ... ok
+test_single_candidate_threshold (test_knowledge.KnowledgeTests) ... ok
+test_stable_chunks (test_knowledge.KnowledgeTests) ... ok
+test_stale_rejected (test_knowledge.KnowledgeTests) ... ok
+test_unknown_document_pending (test_knowledge.KnowledgeTests) ... ok
+test_disclaimer_once (test_policy.PolicyTests) ... ok
+test_expiry_boundary (test_policy.PolicyTests) ... ok
+test_pending (test_policy.PolicyTests) ... ok
+test_redaction (test_policy.PolicyTests) ... ok
+test_source_injection (test_policy.PolicyTests) ... ok
+test_current_rates_never_faq (test_storage.StorageTests) ... ok
+test_normalized_question_key (test_storage.StorageTests) ... ok
+test_redact_log_query (test_storage.StorageTests) ... ok
+test_scope_boundary (test_storage.StorageTests) ... ok
+test_snapshot_failure_does_not_publish (test_storage.StorageTests) ... ok
+test_snapshot_idempotent (test_storage.StorageTests) ... ok
+test_sql_rollback (test_storage.StorageTests) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 3.419s
+
+OK

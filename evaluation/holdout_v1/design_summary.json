@@ -1,0 +1,36 @@
+{
+  "version": "bankrag_holdout_v1.0.0",
+  "as_of_date": 20261013,
+  "scenarios": 100,
+  "turns": 110,
+  "multi_turn_scenarios": 10,
+  "categories": {
+    "P": 14,
+    "B": 12,
+    "C": 6,
+    "U": 8,
+    "R": 12,
+    "S": 10,
+    "L": 6,
+    "F": 10,
+    "N": 8,
+    "G": 4,
+    "M": 10
+  },
+  "expected_actions": {
+    "answer": 52,
+    "refuse": 14,
+    "handoff": 20,
+    "abstain": 16,
+    "clarify": 3,
+    "greet": 5
+  },
+  "evidence_entries": 75,
+  "turns_with_evidence": 64,
+  "novelty_status_counts": {
+    "no_high_lexical_match": 110
+  },
+  "runtime_evaluation_status": "not_run",
+  "human_review_status": "pending",
+  "author_exposure": "Author has read implementation, training inventory and development regression. Post-development holdout candidates, not independent double-blind benchmark."
+}

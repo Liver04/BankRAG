@@ -1,0 +1,3439 @@
+[
+  {
+    "turn_id": "H-B01/T1",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "直接检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0322809219360352
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.0202172994613647
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.0174461603164673
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5534869432449341
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.5474110841751099
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "hybrid_score": 0.5454544425010681
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5435841679573059
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.5420452952384949
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5413687229156494
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5388035774230957
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.03753801807761192,
+                  "adjusted_score": 0.03753801807761192,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.0297178253531456,
+                  "adjusted_score": 0.0297178253531456,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.008669004775583744,
+                  "adjusted_score": 0.008669004775583744,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "raw_score": 0.03795843571424484,
+                  "adjusted_score": 0.03795843571424484,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.021511027589440346,
+                  "adjusted_score": 0.021511027589440346,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 0
+            }
+          ],
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "直接检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0322809219360352
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.0202172994613647
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.0174461603164673
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5534869432449341
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.5474110841751099
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "hybrid_score": 0.5454544425010681
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5435841679573059
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.5420452952384949
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5413687229156494
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5388035774230957
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.03753801807761192,
+                  "adjusted_score": 0.03753801807761192,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.0297178253531456,
+                  "adjusted_score": 0.0297178253531456,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.008669004775583744,
+                  "adjusted_score": 0.008669004775583744,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "raw_score": 0.03795843571424484,
+                  "adjusted_score": 0.03795843571424484,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.021511027589440346,
+                  "adjusted_score": 0.021511027589440346,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 0
+            }
+          ],
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "turn_id": "H-C06/T1",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.054683804512024
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0517977476119995
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0465890169143677
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.039583683013916
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0383450984954834
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 1.0368996858596802
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 1.029313564300537
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5858023166656494
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5559825897216797
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.553926408290863
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.38009557127952576,
+                  "adjusted_score": 0.38009557127952576,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9353390336036682,
+                  "adjusted_score": 0.9353390336036682,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.01807803474366665,
+                  "adjusted_score": 0.01807803474366665,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.28670185804367065,
+                  "adjusted_score": 0.28670185804367065,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.673198401927948,
+                  "adjusted_score": 0.673198401927948,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.007878812029957771,
+                  "adjusted_score": 0.007878812029957771,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0792884826660156
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 1.076659917831421
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0637458562850952
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0536233186721802
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 1.0461454391479492
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5729461312294006
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.5638518929481506
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.5632020235061646
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.5631669759750366
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5611229538917542
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9876683354377747,
+                  "adjusted_score": 0.9876683354377747,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.9286171197891235,
+                  "adjusted_score": 0.9286171197891235,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.4850831627845764,
+                  "adjusted_score": 0.4850831627845764,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.2714560329914093,
+                  "adjusted_score": 0.2714560329914093,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.897955596446991,
+                  "adjusted_score": 0.897955596446991,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.038003019988536835,
+                  "adjusted_score": 0.038003019988536835,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.6276008486747742,
+                  "adjusted_score": 0.6276008486747742,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0708709955215454
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0666100978851318
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0584845542907715
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0515333414077759
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.046871542930603
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0413532257080078
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 0.5574944019317627
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5574579834938049
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "86cd78bdb02a8144a770cf1bf1099bca5a3cdf7396085db1",
+                  "hybrid_score": 0.5566135048866272
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5561383366584778
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.9756161570549011,
+                  "adjusted_score": 0.9756161570549011,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9295315742492676,
+                  "adjusted_score": 0.9295315742492676,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.9412322044372559,
+                  "adjusted_score": 0.9412322044372559,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.761997640132904,
+                  "adjusted_score": 0.761997640132904,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.07297641783952713,
+                  "adjusted_score": 0.07297641783952713,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "86cd78bdb02a8144a770cf1bf1099bca5a3cdf7396085db1",
+                  "raw_score": 0.3719715476036072,
+                  "adjusted_score": 0.3719715476036072,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.6576317548751831,
+                  "adjusted_score": 0.6576317548751831,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0630601644515991
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0581227540969849
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0555415153503418
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0480483770370483
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.041886568069458
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.040757417678833
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0321874618530273
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5632162094116211
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "38fa7ddfc31300a57bfd057eb428d9d901794a0d74116fc7",
+                  "hybrid_score": 0.548280656337738
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.5432944893836975
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9620674848556519,
+                  "adjusted_score": 0.9620674848556519,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.9020769000053406,
+                  "adjusted_score": 0.9020769000053406,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.7651337385177612,
+                  "adjusted_score": 0.7651337385177612,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.9264406561851501,
+                  "adjusted_score": 0.9264406561851501,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "38fa7ddfc31300a57bfd057eb428d9d901794a0d74116fc7",
+                  "raw_score": 0.14940765500068665,
+                  "adjusted_score": 0.14940765500068665,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.3518697917461395,
+                  "adjusted_score": 0.3518697917461395,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              2,
+              1,
+              2
+            ],
+            "context_count": 4
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": true,
+            "issues": [],
+            "required_conditions": [],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.054683804512024
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0517977476119995
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0465890169143677
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.039583683013916
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0383450984954834
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 1.0368996858596802
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 1.029313564300537
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5858023166656494
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5559825897216797
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.553926408290863
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.38009557127952576,
+                  "adjusted_score": 0.38009557127952576,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9353390336036682,
+                  "adjusted_score": 0.9353390336036682,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.01807803474366665,
+                  "adjusted_score": 0.01807803474366665,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.28670185804367065,
+                  "adjusted_score": 0.28670185804367065,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.673198401927948,
+                  "adjusted_score": 0.673198401927948,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.007878812029957771,
+                  "adjusted_score": 0.007878812029957771,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0833940505981445
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 1.0713672637939453
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0603346824645996
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.027429461479187
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 1.0195274353027344
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0137616395950317
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5514611005783081
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 0.5427795648574829
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.5421175360679626
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.5412439107894897
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9713811874389648,
+                  "adjusted_score": 0.9713811874389648,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.8947585821151733,
+                  "adjusted_score": 0.8947585821151733,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.08602935820817947,
+                  "adjusted_score": 0.08602935820817947,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.3556666970252991,
+                  "adjusted_score": 0.3556666970252991,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.0269609484821558,
+                  "adjusted_score": 0.0269609484821558,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0496896505355835
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0436122417449951
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0436065196990967
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0354652404785156
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.035394549369812
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0331329107284546
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.0282642841339111
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "hybrid_score": 0.5551347732543945
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "6e51b02396b322a6157fc4053c7012f2786b04b0bda10538",
+                  "hybrid_score": 0.5549609065055847
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5517355799674988
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.840897798538208,
+                  "adjusted_score": 0.840897798538208,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.8107529878616333,
+                  "adjusted_score": 0.8107529878616333,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.8382324576377869,
+                  "adjusted_score": 0.8382324576377869,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.16212771832942963,
+                  "adjusted_score": 0.16212771832942963,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "62bd002920fb9aa56eaef5610e3c49224d98440614c6f6c5",
+                  "raw_score": 0.02476399764418602,
+                  "adjusted_score": 0.02476399764418602,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "6e51b02396b322a6157fc4053c7012f2786b04b0bda10538",
+                  "raw_score": 0.11994513869285583,
+                  "adjusted_score": 0.11994513869285583,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.08667904883623123,
+                  "adjusted_score": 0.08667904883623123,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0560688972473145
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0321425199508667
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0279546976089478
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0269042253494263
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0254377126693726
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0242093801498413
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5434061288833618
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.541446328163147
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.533897876739502
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.533747673034668
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.7625691890716553,
+                  "adjusted_score": 0.7625691890716553,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.9470193982124329,
+                  "adjusted_score": 0.9470193982124329,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.7169269919395447,
+                  "adjusted_score": 0.7169269919395447,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.27545419335365295,
+                  "adjusted_score": 0.27545419335365295,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.06063340976834297,
+                  "adjusted_score": 0.06063340976834297,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              1,
+              2,
+              1,
+              1,
+              2
+            ],
+            "context_count": 4
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": true,
+            "issues": [],
+            "required_conditions": [],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "turn_id": "H-P07/T1",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "evidence_guard_failed",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0514659881591797
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0385150909423828
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0239254236221313
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0123231410980225
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5550361275672913
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.5520675778388977
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.550051212310791
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "hybrid_score": 0.5489394068717957
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5436264872550964
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 0.542570173740387
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.8751413822174072,
+                  "adjusted_score": 0.8751413822174072,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.0760236456990242,
+                  "adjusted_score": 0.0760236456990242,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.0601315014064312,
+                  "adjusted_score": 0.0601315014064312,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.2027457356452942,
+                  "adjusted_score": 0.2027457356452942,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "raw_score": 0.03305444493889809,
+                  "adjusted_score": 0.03305444493889809,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.22167716920375824,
+                  "adjusted_score": 0.22167716920375824,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "raw_score": 0.04228665679693222,
+                  "adjusted_score": 0.04228665679693222,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0708262920379639
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0462783575057983
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.0369609594345093
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.031179666519165
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0170087814331055
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0156190395355225
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0037282705307007
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5552157759666443
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5417532324790955
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5389165878295898
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.9952425956726074,
+                  "adjusted_score": 0.9952425956726074,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.6541677713394165,
+                  "adjusted_score": 0.6541677713394165,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.8412137627601624,
+                  "adjusted_score": 0.8412137627601624,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.5268496870994568,
+                  "adjusted_score": 0.5268496870994568,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.019416647031903267,
+                  "adjusted_score": 0.019416647031903267,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.2734059691429138,
+                  "adjusted_score": 0.2734059691429138,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0701754093170166
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0429601669311523
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0329351425170898
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.0311012268066406
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.027440071105957
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.016086459159851
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0133016109466553
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5417993664741516
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5360040068626404
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5353127717971802
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.9936944842338562,
+                  "adjusted_score": 0.9936944842338562,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.15160608291625977,
+                  "adjusted_score": 0.15160608291625977,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.3707251250743866,
+                  "adjusted_score": 0.3707251250743866,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.1262052208185196,
+                  "adjusted_score": 0.1262052208185196,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.03774240240454674,
+                  "adjusted_score": 0.03774240240454674,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.11801008135080338,
+                  "adjusted_score": 0.11801008135080338,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0578265190124512
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.053223967552185
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.034900188446045
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.031065821647644
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0298388004302979
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.0243620872497559
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5435379147529602
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5425369143486023
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 0.5398200750350952
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "hybrid_score": 0.5370827317237854
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.9125953316688538,
+                  "adjusted_score": 0.9125953316688538,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.048529624938964844,
+                  "adjusted_score": 0.048529624938964844,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.016418710350990295,
+                  "adjusted_score": 0.016418710350990295,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.03416512906551361,
+                  "adjusted_score": 0.03416512906551361,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.008644108660519123,
+                  "adjusted_score": 0.008644108660519123,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "raw_score": 0.014464898966252804,
+                  "adjusted_score": 0.014464898966252804,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              1
+            ],
+            "context_count": 5
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": false,
+            "issues": [
+              "missing_condition:withdrawal_minimum",
+              "unsupported_numeric_atom"
+            ],
+            "required_conditions": [
+              "withdrawal_minimum",
+              "remaining_minimum"
+            ],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "evidence_guard_failed",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0514659881591797
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0385150909423828
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0239254236221313
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0123231410980225
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5550361275672913
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.5520675778388977
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.550051212310791
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "hybrid_score": 0.5489394068717957
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5436264872550964
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 0.542570173740387
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.8751413822174072,
+                  "adjusted_score": 0.8751413822174072,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.0760236456990242,
+                  "adjusted_score": 0.0760236456990242,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.0601315014064312,
+                  "adjusted_score": 0.0601315014064312,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.2027457356452942,
+                  "adjusted_score": 0.2027457356452942,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "1e976c87260d8fbae1941e4ed7224d05",
+                  "block_id": "5fc1a24d8ff348d8e75b2509db3b19a40234dacd4473623e",
+                  "raw_score": 0.03305444493889809,
+                  "adjusted_score": 0.03305444493889809,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.22167716920375824,
+                  "adjusted_score": 0.22167716920375824,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "raw_score": 0.04228665679693222,
+                  "adjusted_score": 0.04228665679693222,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0708262920379639
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0462783575057983
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.0369609594345093
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.031179666519165
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0170087814331055
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0156190395355225
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0037282705307007
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5552157759666443
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5417532324790955
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5389165878295898
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.9952425956726074,
+                  "adjusted_score": 0.9952425956726074,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.6541677713394165,
+                  "adjusted_score": 0.6541677713394165,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.8412137627601624,
+                  "adjusted_score": 0.8412137627601624,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.5268496870994568,
+                  "adjusted_score": 0.5268496870994568,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.019416647031903267,
+                  "adjusted_score": 0.019416647031903267,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.2734059691429138,
+                  "adjusted_score": 0.2734059691429138,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0701754093170166
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0429601669311523
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0329351425170898
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.0311012268066406
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.027440071105957
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.016086459159851
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0133016109466553
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5417993664741516
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5360040068626404
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5353127717971802
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.9936944842338562,
+                  "adjusted_score": 0.9936944842338562,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.15160608291625977,
+                  "adjusted_score": 0.15160608291625977,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.3707251250743866,
+                  "adjusted_score": 0.3707251250743866,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.1262052208185196,
+                  "adjusted_score": 0.1262052208185196,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.03774240240454674,
+                  "adjusted_score": 0.03774240240454674,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.11801008135080338,
+                  "adjusted_score": 0.11801008135080338,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0742881298065186
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.048876166343689
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0447580814361572
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 1.0340265035629272
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0230779647827148
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.559400737285614
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "hybrid_score": 0.5490043759346008
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 0.5485354065895081
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 0.5468358993530273
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.5454834699630737
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.949651837348938,
+                  "adjusted_score": 0.949651837348938,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.024085616692900658,
+                  "adjusted_score": 0.024085616692900658,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.07774170488119125,
+                  "adjusted_score": 0.07774170488119125,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "b1af3f54d2fdee7627147c76cec9f0d8",
+                  "block_id": "364fd37400b22842426fb85f91dc5009b5184374b26a453c",
+                  "raw_score": 0.015167785808444023,
+                  "adjusted_score": 0.015167785808444023,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.007814302109181881,
+                  "adjusted_score": 0.007814302109181881,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              1,
+              1
+            ],
+            "context_count": 5
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": false,
+            "issues": [
+              "missing_condition:withdrawal_minimum",
+              "unsupported_numeric_atom"
+            ],
+            "required_conditions": [
+              "withdrawal_minimum",
+              "remaining_minimum"
+            ],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "turn_id": "H-N07/T1",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "missing_or_invalid_citation",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0347063541412354
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0299975872039795
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0279474258422852
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0270847082138062
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0240824222564697
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0224814414978027
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.020829439163208
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.015165090560913
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.5461708903312683
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5434675216674805
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.12576162815093994,
+                  "adjusted_score": 0.12576162815093994,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.16539382934570312,
+                  "adjusted_score": 0.16539382934570312,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.11539848893880844,
+                  "adjusted_score": 0.11539848893880844,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.09579487890005112,
+                  "adjusted_score": 0.09579487890005112,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.0934281125664711,
+                  "adjusted_score": 0.0934281125664711,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.008920084685087204,
+                  "adjusted_score": 0.008920084685087204,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.46011269092559814,
+                  "adjusted_score": 0.46011269092559814,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 2
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0370688438415527
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0320823192596436
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.031670093536377
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0285533666610718
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.027868628501892
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0194180011749268
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.555092990398407
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5492137670516968
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 0.545387327671051
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5439234375953674
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.19827570021152496,
+                  "adjusted_score": 0.19827570021152496,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.19614796340465546,
+                  "adjusted_score": 0.19614796340465546,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.18344490230083466,
+                  "adjusted_score": 0.18344490230083466,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.16964851319789886,
+                  "adjusted_score": 0.16964851319789886,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.037913162261247635,
+                  "adjusted_score": 0.037913162261247635,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.6740397810935974,
+                  "adjusted_score": 0.6740397810935974,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.043548453599214554,
+                  "adjusted_score": 0.043548453599214554,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.08408006280660629,
+                  "adjusted_score": 0.08408006280660629,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.014578104019165
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.9931874871253967
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.5323680639266968
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5311846733093262
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.5294026136398315
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5285863876342773
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5256720185279846
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5255715250968933
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5245789885520935
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "7f3c7558f59b05c3c3a7f2f825b2a815b461930b939daeba",
+                  "hybrid_score": 0.5239465832710266
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.1989014893770218,
+                  "adjusted_score": 0.1989014893770218,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.00299032568000257,
+                  "adjusted_score": 0.00299032568000257,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.0011288293171674013,
+                  "adjusted_score": 0.0011288293171674013,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.03736197575926781,
+                  "adjusted_score": 0.03736197575926781,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.049478378146886826,
+                  "adjusted_score": 0.049478378146886826,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.04553332179784775,
+                  "adjusted_score": 0.04553332179784775,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.02937699481844902,
+                  "adjusted_score": 0.02937699481844902,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "7f3c7558f59b05c3c3a7f2f825b2a815b461930b939daeba",
+                  "raw_score": 0.0016799368895590305,
+                  "adjusted_score": 0.0016799368895590305,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.003899335861206
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.994490385055542
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.98464035987854
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5333318710327148
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.5322607755661011
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5311808586120605
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "81e30cc4122465f5b6ca9647ff526689c4b028ec72db8bf7",
+                  "hybrid_score": 0.5285738110542297
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.5282767415046692
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5273886322975159
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.5262575745582581
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.031483884900808334,
+                  "adjusted_score": 0.031483884900808334,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.006589263211935759,
+                  "adjusted_score": 0.006589263211935759,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.0010467541869729757,
+                  "adjusted_score": 0.0010467541869729757,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.017123034223914146,
+                  "adjusted_score": 0.017123034223914146,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "81e30cc4122465f5b6ca9647ff526689c4b028ec72db8bf7",
+                  "raw_score": 0.0012080208398401737,
+                  "adjusted_score": 0.0012080208398401737,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.004552600905299187,
+                  "adjusted_score": 0.004552600905299187,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.005892585031688213,
+                  "adjusted_score": 0.005892585031688213,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.002885779133066535,
+                  "adjusted_score": 0.002885779133066535,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 0
+            }
+          ],
+          "citation_check": {
+            "numbers": [],
+            "context_count": 3
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "error_code": "missing_or_invalid_citation",
+        "diagnostics": {
+          "strategy": "子查询检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0347063541412354
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0299975872039795
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0279474258422852
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0270847082138062
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0240824222564697
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0224814414978027
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.020829439163208
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 1.015165090560913
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.5461708903312683
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5434675216674805
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.12576162815093994,
+                  "adjusted_score": 0.12576162815093994,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.16539382934570312,
+                  "adjusted_score": 0.16539382934570312,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.11539848893880844,
+                  "adjusted_score": 0.11539848893880844,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.09579487890005112,
+                  "adjusted_score": 0.09579487890005112,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.0934281125664711,
+                  "adjusted_score": 0.0934281125664711,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.008920084685087204,
+                  "adjusted_score": 0.008920084685087204,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.46011269092559814,
+                  "adjusted_score": 0.46011269092559814,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 2
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.0370688438415527
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.0320823192596436
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.031670093536377
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 1.0285533666610718
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "hybrid_score": 1.027868628501892
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 1.0194180011749268
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.555092990398407
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5492137670516968
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "hybrid_score": 0.545387327671051
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5439234375953674
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+                  "raw_score": 0.19827570021152496,
+                  "adjusted_score": 0.19827570021152496,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.19614796340465546,
+                  "adjusted_score": 0.19614796340465546,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.18344490230083466,
+                  "adjusted_score": 0.18344490230083466,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.16964851319789886,
+                  "adjusted_score": 0.16964851319789886,
+                  "threshold": 0.15,
+                  "reason": "outside_top_m"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.037913162261247635,
+                  "adjusted_score": 0.037913162261247635,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.6740397810935974,
+                  "adjusted_score": 0.6740397810935974,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+                  "block_id": "126b13885de7119abf0f0a039f29803ceabf6158cef66f6b",
+                  "raw_score": 0.043548453599214554,
+                  "adjusted_score": 0.043548453599214554,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.08408006280660629,
+                  "adjusted_score": 0.08408006280660629,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 3
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.014578104019165
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.9931874871253967
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "hybrid_score": 0.5323680639266968
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5311846733093262
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.5294026136398315
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5285863876342773
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5256720185279846
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5255715250968933
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5245789885520935
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "7f3c7558f59b05c3c3a7f2f825b2a815b461930b939daeba",
+                  "hybrid_score": 0.5239465832710266
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.1989014893770218,
+                  "adjusted_score": 0.1989014893770218,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.00299032568000257,
+                  "adjusted_score": 0.00299032568000257,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "fa62059d17dae6d08fdebe57c3c0eaaac4f2d54e3ba57c28",
+                  "raw_score": 0.0011288293171674013,
+                  "adjusted_score": 0.0011288293171674013,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.03736197575926781,
+                  "adjusted_score": 0.03736197575926781,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.049478378146886826,
+                  "adjusted_score": 0.049478378146886826,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.04553332179784775,
+                  "adjusted_score": 0.04553332179784775,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.02937699481844902,
+                  "adjusted_score": 0.02937699481844902,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "7f3c7558f59b05c3c3a7f2f825b2a815b461930b939daeba",
+                  "raw_score": 0.0016799368895590305,
+                  "adjusted_score": 0.0016799368895590305,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            },
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 1.003899335861206
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.994490385055542
+                },
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "hybrid_score": 0.98464035987854
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "hybrid_score": 0.5333318710327148
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "hybrid_score": 0.5322607755661011
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "hybrid_score": 0.5311808586120605
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "81e30cc4122465f5b6ca9647ff526689c4b028ec72db8bf7",
+                  "hybrid_score": 0.5285738110542297
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "hybrid_score": 0.5282767415046692
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "hybrid_score": 0.5273886322975159
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "hybrid_score": 0.5262575745582581
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "bbdd6858dfb8cd20031f5fe8d582cae0",
+                  "block_id": "f9380f2e89f61b3dbaaabe330d57a2fdc66c4a24887d9a55",
+                  "raw_score": 0.031483884900808334,
+                  "adjusted_score": 0.031483884900808334,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "raw_score": 0.006589263211935759,
+                  "adjusted_score": 0.006589263211935759,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0748404afe50ab02eb45ae1b7ec6fcdd78e12cb43de6487",
+                  "raw_score": 0.0010467541869729757,
+                  "adjusted_score": 0.0010467541869729757,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "817a3ab2a7d93648bac0077144bb4b5d2a8126a2e4fae15d",
+                  "raw_score": 0.017123034223914146,
+                  "adjusted_score": 0.017123034223914146,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "81e30cc4122465f5b6ca9647ff526689c4b028ec72db8bf7",
+                  "raw_score": 0.0012080208398401737,
+                  "adjusted_score": 0.0012080208398401737,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "raw_score": 0.004552600905299187,
+                  "adjusted_score": 0.004552600905299187,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "3c7cbdf74c3ce2e72c8b7c50a9282e917f25d80da8058d53",
+                  "raw_score": 0.005892585031688213,
+                  "adjusted_score": 0.005892585031688213,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "e1501ae9fcbe00f34eb1176c02c91cb0",
+                  "block_id": "f0e65c6b319037f44b61a86b207c527c136c243d52d3e480",
+                  "raw_score": 0.002885779133066535,
+                  "adjusted_score": 0.002885779133066535,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 0
+            }
+          ],
+          "citation_check": {
+            "numbers": [],
+            "context_count": 3
+          },
+          "reference_resolution": {
+            "status": "not_needed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "turn_id": "H-M01/T2",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "直接检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0696189403533936
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0570297241210938
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.039346694946289
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 1.0217576026916504
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.00035560131073
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 0.5401371121406555
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.5385295152664185
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.535563051700592
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5332155823707581
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5320409536361694
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.9903990030288696,
+                  "adjusted_score": 0.9903990030288696,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.05606153607368469,
+                  "adjusted_score": 0.05606153607368469,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "raw_score": 0.020113922655582428,
+                  "adjusted_score": 0.020113922655582428,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.009208761155605316,
+                  "adjusted_score": 0.009208761155605316,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.005242709536105394,
+                  "adjusted_score": 0.005242709536105394,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.0025267174933105707,
+                  "adjusted_score": 0.0025267174933105707,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              1
+            ],
+            "context_count": 1
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": true,
+            "issues": [],
+            "required_conditions": [],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "resolved",
+            "product": "零存整取",
+            "history_turns_used": 1
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "error_code": "",
+        "diagnostics": {
+          "strategy": "直接检索",
+          "searches": [
+            {
+              "filter_expression": "(review_status == \"demo_approved\") and (jurisdiction == \"CN\") and (effective_date <= 20261013) and ((expiry_date == 0 or expiry_date >= 20261013))",
+              "collection": "finance_deposit_v1_active",
+              "candidates": [
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0696189403533936
+                },
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "hybrid_score": 1.0570297241210938
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 1.039346694946289
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 1.0217576026916504
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "hybrid_score": 1.00035560131073
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "hybrid_score": 0.5401371121406555
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "hybrid_score": 0.5385295152664185
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.535563051700592
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "hybrid_score": 0.5332155823707581
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "hybrid_score": 0.5320409536361694
+                }
+              ],
+              "rerank": [
+                {
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "raw_score": 0.9903990030288696,
+                  "adjusted_score": 0.9903990030288696,
+                  "threshold": 0.15,
+                  "reason": "selected"
+                },
+                {
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "7cf359d8e3030fc0c9d2ed0fc471844b2930f81a1c697c6b",
+                  "raw_score": 0.05606153607368469,
+                  "adjusted_score": 0.05606153607368469,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "69ab2fdc6f929f942f2fdf6463ac408d",
+                  "block_id": "21a25defad2a2a2b9b1f849383c1a776a743cf844aa68eb3",
+                  "raw_score": 0.020113922655582428,
+                  "adjusted_score": 0.020113922655582428,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+                  "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+                  "raw_score": 0.009208761155605316,
+                  "adjusted_score": 0.009208761155605316,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "raw_score": 0.005242709536105394,
+                  "adjusted_score": 0.005242709536105394,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                },
+                {
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "raw_score": 0.0025267174933105707,
+                  "adjusted_score": 0.0025267174933105707,
+                  "threshold": 0.15,
+                  "reason": "below_threshold"
+                }
+              ],
+              "status": "complete",
+              "selected_count": 1
+            }
+          ],
+          "citation_check": {
+            "numbers": [
+              1
+            ],
+            "context_count": 1
+          },
+          "evidence_check": {
+            "version": "bounded_evidence_v1_1",
+            "passed": true,
+            "issues": [],
+            "required_conditions": [],
+            "limits": "Numbers/selected assertions/selected conditions only; no complete semantic proof"
+          },
+          "reference_resolution": {
+            "status": "resolved",
+            "product": "零存整取",
+            "history_turns_used": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "turn_id": "H-R09/T1",
+    "rows": [
+      {
+        "transport": "http",
+        "intent": "收益预测",
+        "decision": "refused",
+        "error_code": "",
+        "diagnostics": {
+          "reference_resolution": {
+            "status": "not_attempted_policy_gate"
+          }
+        }
+      },
+      {
+        "transport": "websocket",
+        "intent": "收益预测",
+        "decision": "refused",
+        "error_code": "",
+        "diagnostics": {
+          "reference_resolution": {
+            "status": "not_attempted_policy_gate"
+          }
+        }
+      }
+    ]
+  }
+]

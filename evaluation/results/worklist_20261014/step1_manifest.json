@@ -1,0 +1,12 @@
+{
+  "changed_files": [
+    "base/safety.py",
+    "rag_qa/core/query_classifier.py",
+    "integrated_qa.py",
+    "base/evidence_guard.py",
+    "rag_qa/core/prompts.py",
+    "base/clarification.py"
+  ],
+  "backup_dir": "D:\\pythonProject\\EduRAG_project\\Bank_RAG_code\\qa_system\\evaluation\\results\\worklist_20261014\\before",
+  "scope": "step1 source-support and clarification safeguards"
+}

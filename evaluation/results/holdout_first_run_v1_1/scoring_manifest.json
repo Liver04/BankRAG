@@ -1,0 +1,15 @@
+{
+  "status": "partially_scored",
+  "judge_model": "qwen-plus",
+  "same_model_family_as_generator": true,
+  "review_kind": "model_assisted_not_human",
+  "independent_human_scored": 0,
+  "trace_sha256": "0b97dfed2702e733d8288a3be0d882eae29af90ef8cd11f02b1fae94c3ff8fb9",
+  "gold_sha256": "32210b3b2e10cd417f6e5890aa207bca3bf457dc596df3f881705810213d099d",
+  "scorer_sha256": "13da0d8271b0486315ba468795783787bacdd843392ed4f1ac51d1dc621559bc",
+  "started_at": "2026-10-13T14:21:33.245195+08:00",
+  "total": 220,
+  "scored": 165,
+  "judge_errors": 55,
+  "finished_at": "2026-10-13T14:30:37.411916+08:00"
+}

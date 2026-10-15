@@ -1,0 +1,108 @@
+[
+  {
+    "turn_id": "H-B05/T1",
+    "transport": "http",
+    "unsupported_atom": [
+      "2E+3",
+      "元"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [
+      1
+    ],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-C05/T1",
+    "transport": "http",
+    "unsupported_atom": [
+      "5E+5",
+      "元"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [
+      1
+    ],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-P08/T1",
+    "transport": "http",
+    "unsupported_atom": [
+      "4",
+      "月"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-P09/T1",
+    "transport": "http",
+    "unsupported_atom": [
+      "2",
+      "年"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [
+      5
+    ],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-C05/T1",
+    "transport": "websocket",
+    "unsupported_atom": [
+      "5E+5",
+      "元"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [
+      1
+    ],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-P08/T1",
+    "transport": "websocket",
+    "unsupported_atom": [
+      "4",
+      "月"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-P08/T1",
+    "transport": "websocket",
+    "unsupported_atom": [
+      "6E+1",
+      "%"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  },
+  {
+    "turn_id": "H-P09/T1",
+    "transport": "websocket",
+    "unsupported_atom": [
+      "2",
+      "年"
+    ],
+    "scope": null,
+    "atom_in_any_cited_document": [],
+    "atom_in_any_retrieved_document": [
+      5
+    ],
+    "interpretation": "With no numeric scope or scenario, presence in a globally cited doc but rejection indicates a sentence-local reference mismatch; this is not proof the bank fact itself is false. Without rejected raw text, no broader semantic conclusion."
+  }
+]

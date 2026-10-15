@@ -1,0 +1,24 @@
+{
+  "version": "context_v2",
+  "seed": 20261013,
+  "labels": [
+    "闲聊",
+    "业务咨询",
+    "收益预测",
+    "投诉",
+    "账户敏感"
+  ],
+  "rows": 480,
+  "base_requests": 120,
+  "train_groups": 96,
+  "validation_groups": 24,
+  "data_sha256": "7220eef4997287e20826c4e8436cb9c60b663f59fbe5950ef1387352bf4039f0",
+  "old_random_split_data_used": false,
+  "exact_holdout_overlap": 0,
+  "independent_blind_benchmark": false,
+  "limitations": [
+    "Synthetic agent-authored labels await human review",
+    "Semantic groups are authored base requests, not a proof of cross-topic independence",
+    "Prior evaluation informed development; report validation only as development score"
+  ]
+}

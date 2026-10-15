@@ -1,0 +1,160 @@
+{
+  "old_first": {
+    "run": "holdout_first_run_v1_1",
+    "planned": 220,
+    "completed": 220,
+    "runtime_stable": true,
+    "scope": "full_100_scenarios",
+    "transports": {
+      "http": {
+        "turns": 110,
+        "transport_completed": 110,
+        "disclaimer_once": 110,
+        "history_round_count_correct": 110,
+        "answerable_total_provisional": 52,
+        "answerable_returned_answer": 31,
+        "answered_total": 33,
+        "bound_citations_valid": 33,
+        "decision_matches_provisional": 61,
+        "intent_matches_provisional": 60,
+        "generation_errors": 0
+      },
+      "websocket": {
+        "turns": 110,
+        "transport_completed": 110,
+        "disclaimer_once": 110,
+        "history_round_count_correct": 110,
+        "answerable_total_provisional": 52,
+        "answerable_returned_answer": 30,
+        "answered_total": 33,
+        "bound_citations_valid": 33,
+        "decision_matches_provisional": 60,
+        "intent_matches_provisional": 60,
+        "generation_errors": 0,
+        "early_disclaimer": 110,
+        "visible_body_matches_final": 110
+      }
+    },
+    "error_codes": {
+      "": 212,
+      "fabricated_title": 3,
+      "missing_or_invalid_citation": 4,
+      "unsafe_output": 1
+    },
+    "independent_human_scored": 0,
+    "meaning": "Protocol/coverage/label counts only; NOT semantic correctness or compliance certification"
+  },
+  "full_before_final_guard_patch": {
+    "run": "context_v2_1_regression",
+    "planned": 220,
+    "completed": 220,
+    "runtime_stable": true,
+    "scope": "full_100_scenarios",
+    "transports": {
+      "http": {
+        "turns": 110,
+        "transport_completed": 110,
+        "disclaimer_once": 110,
+        "history_round_count_correct": 110,
+        "answerable_total_provisional": 52,
+        "answerable_returned_answer": 38,
+        "answered_total": 39,
+        "bound_citations_valid": 39,
+        "decision_matches_provisional": 92,
+        "intent_matches_provisional": 109,
+        "generation_errors": 0
+      },
+      "websocket": {
+        "turns": 110,
+        "transport_completed": 110,
+        "disclaimer_once": 110,
+        "history_round_count_correct": 110,
+        "answerable_total_provisional": 52,
+        "answerable_returned_answer": 41,
+        "answered_total": 43,
+        "bound_citations_valid": 43,
+        "decision_matches_provisional": 94,
+        "intent_matches_provisional": 109,
+        "generation_errors": 0,
+        "early_disclaimer": 110,
+        "visible_body_matches_final": 110
+      }
+    },
+    "error_codes": {
+      "": 184,
+      "missing_or_invalid_citation": 27,
+      "fabricated_title": 2,
+      "evidence_guard_failed": 7
+    },
+    "independent_human_scored": 0,
+    "meaning": "Protocol/coverage/label counts only; NOT semantic correctness or compliance certification"
+  },
+  "final_guard_targeted": {
+    "run": "context_v2_1_1_targeted",
+    "planned": 22,
+    "completed": 22,
+    "runtime_stable": true,
+    "scope": "targeted_development_regression_subset",
+    "transports": {
+      "http": {
+        "turns": 11,
+        "transport_completed": 11,
+        "disclaimer_once": 11,
+        "history_round_count_correct": 11,
+        "answerable_total_provisional": 6,
+        "answerable_returned_answer": 4,
+        "answered_total": 4,
+        "bound_citations_valid": 4,
+        "decision_matches_provisional": 9,
+        "intent_matches_provisional": 11,
+        "generation_errors": 0
+      },
+      "websocket": {
+        "turns": 11,
+        "transport_completed": 11,
+        "disclaimer_once": 11,
+        "history_round_count_correct": 11,
+        "answerable_total_provisional": 6,
+        "answerable_returned_answer": 4,
+        "answered_total": 4,
+        "bound_citations_valid": 4,
+        "decision_matches_provisional": 9,
+        "intent_matches_provisional": 11,
+        "generation_errors": 0,
+        "early_disclaimer": 11,
+        "visible_body_matches_final": 11
+      }
+    },
+    "error_codes": {
+      "": 16,
+      "missing_or_invalid_citation": 4,
+      "evidence_guard_failed": 2
+    },
+    "independent_human_scored": 0,
+    "meaning": "Protocol/coverage/label counts only; NOT semantic correctness or compliance certification"
+  },
+  "deterministic_tests_passed": 140,
+  "bert_development_comparison": {
+    "meaning": "Development regression with provisional labels; NOT blind independent accuracy",
+    "models": {
+      "old": {
+        "bert_only_correct": 57,
+        "pipeline_correct": 80,
+        "model_sha256": "c84d6dcf898090afe8de8cb2242aa4e890879c32f9c44704bd9da9567c44083b"
+      },
+      "candidate": {
+        "bert_only_correct": 106,
+        "pipeline_correct": 109,
+        "model_sha256": "bd1a46cb3f403ea8db63814c618ee2640e66743ee99d99ff3f975e824ef7b48a"
+      }
+    },
+    "turns": 110
+  },
+  "human_reviews": 0,
+  "new_reserve": {
+    "cases": 30,
+    "turns": 33,
+    "executed": false,
+    "gold_status": "pending_independent_human_review"
+  }
+}

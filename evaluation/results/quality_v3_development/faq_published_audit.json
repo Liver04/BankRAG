@@ -1,0 +1,222 @@
+{
+  "kind": "Real serving-code finite checks, not independent factual audit",
+  "eligible": 43,
+  "passed": 43,
+  "rows": [
+    {
+      "question": "中行个人银行账户分为哪几类？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "一个人可以在中国银行开立几个Ⅰ类账户？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "开立个人账户需要出示什么证件？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "办理具有通存通兑或结算功能的账户时，是否需要设置密码？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "开户时预留手机号有什么用途？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "忘记网银用户名或登录密码怎么办？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "网银用户名可以修改吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "网银密码可以修改吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "中国银行转账汇款包括哪些常见类型？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "中行内转账选择“实时”“普通”“次日”分别多久到账？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "跨行转账选择“实时”方式是否一定实时到账？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "跨行普通转账什么时候汇出？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "跨行次日转账什么时候发报？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "中国银行是否承诺跨行转账到账时间？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "个人网银使用“动态口令+手机交易码”转账限额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "个人网银使用手机交易码的转账限额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "个人手机银行使用手机交易码的转账限额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "个人手机银行使用中银E盾的转账限额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "线上自助注册手机银行的转账限额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "电子银行日累计转账笔数上限是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "如何设置定向收款人限额？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "转账汇出后可以撤销吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "汇款信息填写错误造成损失，由谁承担？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "密码汇款有效期是多久？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "密码汇款ATM收款有什么限制？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "密码汇款收款人连续输错密码怎么办？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "整存整取定期存款有哪些存期可选？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "整存整取定期存款提前支取如何计息？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "整存整取定期存款到期后会自动转存吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "大额存单起存金额是多少？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "大额存单有哪些存期可选？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "大额存单可以提前支取吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "大额存单到期后会自动转存吗？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "零存整取存款是什么？如何计息？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "零存整取存款漏存了一个月怎么办？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "通知存款最低起存金额和存期是怎样的？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "存款保险最高能保障多少金额？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "哪些存款受存款保险保障？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "临时挂失有效期是多久？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "存折丢失了怎么处理？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "定期存款到期后不取会怎样？",
+      "passed": true,
+      "issues": []
+    },
+    {
+      "question": "港币存款有存款保险保障吗？",
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

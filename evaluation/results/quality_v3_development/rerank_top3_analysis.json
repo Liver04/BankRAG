@@ -1,0 +1,8 @@
+{
+  "meaning": "Derived top-3 support-document retention proxy, not semantic accuracy",
+  "counts": {
+    "parent": 48,
+    "window": 50
+  },
+  "denominator": 52
+}

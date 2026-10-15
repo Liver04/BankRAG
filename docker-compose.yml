@@ -1,0 +1,88 @@
+# 金融问答系统部署编排（完整容器化版）。
+# app + mysql + redis 全部容器化；Milvus 太重（需 etcd/minio），沿用宿主机已有实例。
+# 依赖拉取需要配置 Docker 镜像加速器（国内访问 Docker Hub 困难），见 README 或部署说明。
+services:
+  app:
+    build: .
+    image: bank-rag:1.0
+    container_name: bank-rag-app
+    ports:
+      - "8090:8090"
+    environment:
+      # MySQL（容器内的 mysql 服务）
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=bank_rag
+      - MYSQL_PASSWORD=${BANKRAG_MYSQL_PASSWORD:?BANKRAG_MYSQL_PASSWORD_required}
+      - MYSQL_DATABASE=bank_rag
+      # Redis（容器内的 redis 服务，金融项目用 DB 1 隔离）
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${BANKRAG_REDIS_PASSWORD:?BANKRAG_REDIS_PASSWORD_required}
+      - REDIS_DB=1
+      # Milvus（宿主机已有的 19530）
+      - MILVUS_HOST=host.docker.internal
+      - MILVUS_PORT=19530
+      - MILVUS_DATABASE_NAME=default
+      - MILVUS_COLLECTION_NAME=finance_deposit_v1
+      # LLM
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY:?DASHSCOPE_API_KEY_required}
+      - LLM_MODEL=qwen-plus
+      - DASHSCOPE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+    volumes:
+      - ./rag_qa/models:/app/rag_qa/models
+      - ./rag_qa/data:/app/rag_qa/data
+      - ./logs:/app/logs
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8090/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 45s
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: bank-rag-mysql
+    ports:
+      - "3308:3306"   # 宿主机 3308 映射，避免与本机 3307 冲突
+    environment:
+      - MYSQL_ROOT_PASSWORD=${BANKRAG_MYSQL_ROOT_PASSWORD:?BANKRAG_MYSQL_ROOT_PASSWORD_required}
+      - MYSQL_DATABASE=bank_rag
+      - MYSQL_USER=bank_rag
+      - MYSQL_PASSWORD=${BANKRAG_MYSQL_PASSWORD:?BANKRAG_MYSQL_PASSWORD_required}
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7
+    container_name: bank-rag-redis
+    ports:
+      - "6380:6379"   # 宿主机 6380 映射，避免与本机 6379 冲突
+    command: ["redis-server", "--requirepass", "${BANKRAG_REDIS_PASSWORD:?BANKRAG_REDIS_PASSWORD_required}"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -h 127.0.0.1 -p 6379 -a \"$$REDIS_PASSWORD\" ping | grep -q PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  redis_data:

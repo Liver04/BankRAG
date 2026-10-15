@@ -1,0 +1,52 @@
+C:\Users\wangyufan\anaconda3\envs\EduRAG\lib\site-packages\jieba\_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+test_bare_percentage_not_from_discount (tests.test_correctness_v4.NumericContextTests) ... ok
+test_cap_equal_term_not_negated (tests.test_correctness_v4.NumericContextTests) ... ok
+test_decimal_discount (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_comma_equivalence (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_equivalence_cannot_change_to_annual_rate (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_equivalence_must_match (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_inline_equivalence (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_is_not_annual_rate (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_multiplier_is_not_reverse_annual_rate (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_not_fee (tests.test_correctness_v4.NumericContextTests) ... ok
+test_discount_ratio_supported (tests.test_correctness_v4.NumericContextTests) ... ok
+test_elapsed_at_clause_start (tests.test_correctness_v4.NumericContextTests) ... ok
+test_elapsed_not_new_contract (tests.test_correctness_v4.NumericContextTests) ... ok
+test_elapsed_period_as_scenario (tests.test_correctness_v4.NumericContextTests) ... ok
+test_elapsed_period_not_product_fixed_term (tests.test_correctness_v4.NumericContextTests) ... ok
+test_elapsed_period_without_copula (tests.test_correctness_v4.NumericContextTests) ... ok
+test_explicit_other_bank_cannot_supply_amount (tests.test_correctness_v4.NumericContextTests) ... ok
+test_explicit_other_product_cannot_supply_amount (tests.test_correctness_v4.NumericContextTests) ... ok
+test_fee_discount_cannot_support_interest_factor (tests.test_correctness_v4.NumericContextTests) ... ok
+test_fee_negation_not_licensed (tests.test_correctness_v4.NumericContextTests) ... ok
+test_fold_percentage_normalization (tests.test_correctness_v4.NumericContextTests) ... ok
+test_interest_discount_cannot_support_fee_factor (tests.test_correctness_v4.NumericContextTests) ... ok
+test_large_certificate_cannot_borrow_unrelated_minimum (tests.test_correctness_v4.NumericContextTests) ... ok
+test_large_certificate_remaining_threshold_cross_reference (tests.test_correctness_v4.NumericContextTests) ... ok
+test_matching_bank_and_product_allowed (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_causal_duration_above_cap (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_causal_duration_contrast_not_negative (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_causal_duration_without_cap (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_causal_term_not_in_query (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_term_cannot_cross_but_positive (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_term_rather_than (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negated_term_with_intervening_scenario (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negation_supported_by_explicit_cap (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negation_without_cap_rejected (tests.test_correctness_v4.NumericContextTests) ... ok
+test_negation_wrong_product_cap_rejected (tests.test_correctness_v4.NumericContextTests) ... ok
+test_only_held_duration_is_bank_rule_not_scenario (tests.test_correctness_v4.NumericContextTests) ... ok
+test_other_elapsed_not_allowed (tests.test_correctness_v4.NumericContextTests) ... ok
+test_other_sentence_citation_cannot_launder (tests.test_correctness_v4.NumericContextTests) ... ok
+test_out_of_range_discount_not_silently_ignored (tests.test_correctness_v4.NumericContextTests) ... ok
+test_placed_elapsed_months (tests.test_correctness_v4.NumericContextTests) ... ok
+test_positive_two_year_still_rejected (tests.test_correctness_v4.NumericContextTests) ... ok
+test_sentence_local_wrong_citation_diagnostic (tests.test_correctness_v4.NumericContextTests) ... ok
+test_unmentioned_negated_term_rejected (tests.test_correctness_v4.NumericContextTests) ... ok
+test_user_supplied_deposit_term_can_be_repeated_with_cited_rate_rule (tests.test_correctness_v4.NumericContextTests) ... ok
+test_wrong_discount_rejected (tests.test_correctness_v4.NumericContextTests) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.021s
+
+OK

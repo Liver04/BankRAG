@@ -1,0 +1,484 @@
+--- before/base/retrieval_windows.py
++++ after/base/retrieval_windows.py
+@@ -0,0 +1,32 @@
++"""Source-only overlapping windows avoid silently truncating long parent tails."""
++import hashlib
++WINDOW_CHARS=240
++WINDOW_OVERLAP=60
++def evidence_windows(text,size=WINDOW_CHARS,overlap=WINDOW_OVERLAP):
++    if size<=overlap or overlap<0:raise ValueError('invalid_window_size')
++    if not text:return []
++    return [{'text':text[start:start+size],'start':start,'end':min(len(text),start+size),
++             'sha256':hashlib.sha256(text[start:start+size].encode()).hexdigest()}
++            for start in range(0,max(1,len(text)-overlap),size-overlap)]
++
++def score_parents(reranker,query,docs,mode='window_max'):
++    """Return original parents and evidence scores; windows never become citations."""
++    if mode not in ('parent','window_max'):raise ValueError('unknown_rerank_mode')
++    pairs=[];owners=[];windows=[]
++    for i,doc in enumerate(docs):
++        chunks=[{'text':doc.page_content,'start':0,'end':len(doc.page_content),'sha256':hashlib.sha256(doc.page_content.encode()).hexdigest()}] if mode=='parent' else evidence_windows(doc.page_content)
++        for w in chunks:
++            pairs.append([query,w['text']]);owners.append(i);windows.append(w)
++    scores=list(reranker.predict(pairs)) if pairs else []
++    if len(scores)!=len(pairs):raise ValueError('reranker_score_count_mismatch')
++    output=[{'score':float('-inf'),'window_count':0,'winning_window':None} for _ in docs]
++    import math
++    for owner,window,value in zip(owners,windows,scores):
++        value=float(value)
++        if not math.isfinite(value):raise ValueError('non_finite_rerank_score')
++        result=output[owner];result['window_count']+=1
++        if value>result['score']:
++            result['score']=value;result['winning_window']={k:v for k,v in window.items() if k!='text'}
++    for result in output:
++        if not result['window_count']:result['score']=0.0
++    return output
+--- before/base/claim_support.py
++++ after/base/claim_support.py
+@@ -0,0 +1,110 @@
++"""Bounded numeric provenance: cited rules, explicit scenarios, exact subtraction.
++
++Customer-supplied rates/fees are never promoted to bank facts. This is not a
++general semantic entailment system or a financial calculation engine.
++"""
++import re
++from decimal import Decimal
++
++RULE_SCOPES={
++    'minimum_opening':r'起存|最低存入|开户最低金额',
++    'minimum_withdrawal':r'最低支取|最小支取|最低取款|支取下限',
++    'minimum_remaining':r'最低留存|最低剩余|留存下限|剩余(?:金额)?.{0,4}(?:不得低于|不低于|至少)',
++    'fee':r'手续费|服务费|收费金额|收取费用',
++    'rate':r'年利率|挂牌利率|年化利率|利率为|利率是',
++}
++def quantities(text):
++    from base.evidence_guard import NUM,CN_NUMBER,numeric_atoms
++    found=[]
++    patterns=[NUM,re.compile('('+CN_NUMBER+r')\s*(元|个月|月|年|天|%|％)'),re.compile('百分之('+CN_NUMBER+')')]
++    for pattern in patterns:
++        for m in pattern.finditer(text):
++            atoms=numeric_atoms(m[0])
++            if len(atoms)==1:found.append({'start':m.start(),'end':m.end(),'atom':next(iter(atoms)),'raw':m[0]})
++    result=[]
++    for q in sorted(found,key=lambda x:(x['start'],-x['end'])):
++        if any(q['start']>=x['start'] and q['end']<=x['end'] for x in result):continue
++        result.append(q)
++    return result
++
++def money_scenario(query):
++    values={};items=[q for q in quantities(query) if q['atom'][1]=='元']
++    if any(q['start'] and query[q['start']-1] in '-−' for q in items):return {'status':'invalid','values':{}}
++    for q in items:
++        prefix=query[max(0,q['start']-14):q['start']];suffix=query[q['end']:q['end']+5]
++        role=None
++        if re.search(r'(?:剩(?:余|下)?|留存)(?:了|为|是|有|金额)?$',prefix):role='remaining'
++        elif re.search(r'(?:支取|取(?:出|走|了)?)(?:了|金额为|金额是)?$',prefix):role='withdrawal'
++        elif re.search(r'(?:存(?:入|了|有|着)?|本金|原有|余额|账户里有)(?:为|是|了|有)?$',prefix) or re.match(r'(?:支取|取)',suffix):role='total'
++        if role:values.setdefault(role,set()).add(q['atom'][0])
++    if any(len(v)>1 for v in values.values()):return {'status':'ambiguous','values':{}}
++    data={k:Decimal(next(iter(v))) for k,v in values.items()}
++    if any(v<0 for v in data.values()):return {'status':'invalid','values':{}}
++    derived=False
++    if 'total' in data and 'withdrawal' in data:
++        remaining=data['total']-data['withdrawal']
++        if remaining<0:return {'status':'inconsistent','values':{}}
++        if 'remaining' in data and data['remaining']!=remaining:return {'status':'inconsistent','values':{}}
++        if 'remaining' not in data:data['remaining']=remaining;derived=True
++    return {'status':'parsed' if data else 'not_found','values':{k:str(v.normalize()) for k,v in data.items()},'remaining_derived':derived}
++
++def _source_supports(atom,scope,evidence):
++    from base.evidence_guard import numeric_atoms
++    if atom not in numeric_atoms(evidence):return False
++    if scope is None:return True
++    # The same cited sentence must contain both the quantity and its attribute.
++    for s in re.split(r'[。；;\n，,]',evidence):
++        for q in quantities(s):
++            if q['atom']!=atom:continue
++            prefix=s[:q['start']]
++            matched=[(m.start(),key) for key,pattern in RULE_SCOPES.items() for m in re.finditer(pattern,prefix)]
++            if matched and max(matched)[1]==scope:return True
++            if '均' in prefix and re.search(RULE_SCOPES[scope],prefix) and len(numeric_atoms(s))==1:return True
++    return False
++
++def _scenario_role(prefix):
++    if re.search(r'最低|不得低于|不低于|至少|上限|下限',prefix):return None
++    if re.search(r'(?:支取后)?(?:剩余|剩下|留存)(?:金额)?(?:为|是|有)?$',prefix):return 'remaining'
++    if re.search(r'(?:本次支取|本次取出|取出|支取)(?:金额)?(?:为|是|有)?$',prefix):return 'withdrawal'
++    if re.search(r'(?:原金额|原有|存入|本金)(?:金额)?(?:为|是|有)?$',prefix):return 'total'
++    return None
++
++def numeric_support(query,text,docs,refs):
++    scenario=money_scenario(query);checks=[];unsupported=[]
++    qnums=quantities(query)
++    # Keep decimal points intact; only split sentence punctuation and line breaks.
++    for sentence in re.split(r'[。！？；;\n]',text):
++        explicit=[int(n) for n in re.findall(r'\[(\d+)\]',sentence)]
++        local_refs=[i for i in explicit if i in refs] if explicit else refs
++        evidence='\n'.join(docs[i-1].page_content for i in local_refs)
++        for clause in re.split(r'[，,]',sentence):
++            clean=re.sub(r'\[\d+\]','',clause)
++            for q in quantities(clean):
++                atom=q['atom'];prefix=clean[:q['start']]
++                # Use the closest attribute before the value, not a keyword in an
++                # unrelated later clause.
++                matched=[(m.start(),key) for key,pattern in RULE_SCOPES.items() for m in re.finditer(pattern,prefix)]
++                scope=max(matched)[1] if matched else None
++                role=_scenario_role(prefix) if scope is None else None
++                if scope is None and role is None:
++                    inherited=[kind for kind in ('fee','rate') if re.search(RULE_SCOPES[kind],query)]
++                    if len(inherited)==1:scope=inherited[0]
++                origin=None
++                controlled_scenario=scope is None and atom[1]=='元' and scenario['status']=='parsed' and role in scenario['values']
++                if controlled_scenario:
++                    if scenario['values'][role]==atom[0]:origin='derived_subtraction' if role=='remaining' and scenario.get('remaining_derived') else 'explicit_scenario'
++                elif _source_supports(atom,scope,evidence):origin='cited_rule'
++                if origin is None and scope is None and atom[1]=='元' and scenario['status']=='parsed':
++                    if re.search(r'按题设|按您提供|假设',clause) and role is None:
++                        if atom[0] in scenario['values'].values():origin='explicit_scenario'
++                    elif role and scenario['values'].get(role)==atom[0]:origin='derived_subtraction' if role=='remaining' and scenario.get('remaining_derived') else 'explicit_scenario'
++                # Allow only an explicitly repeated elapsed/missed-deposit duration,
++                # never a bank term, required notice period, fee or quoted rate.
++                if origin is None and scope is None and atom[1]=='月' and re.search(r'漏存|漏缴|中断缴存',prefix) and not re.search(r'必须|规定|要求|最少|最多|期限|允许|仅需',prefix):
++                    if any(x['atom']==atom and re.search(r'漏存|漏缴|中断缴存',query[max(0,x['start']-10):x['start']]) for x in qnums):origin='explicit_missed_deposit_scenario'
++                if origin is None and scope is None and atom[1] in ('月','年','天') and re.search(r'按题设|本例|实际|已存|存了|留了|经过|过了',prefix) and not re.search(r'必须|规定|要求|最少|最多|允许|约定|合同|产品期限',prefix):
++                    if any(x['atom']==atom and re.search(r'已存|存了|留了|经过|过了|持有|存满',query[max(0,x['start']-12):x['start']]) for x in qnums):origin='explicit_elapsed_duration_scenario'
++                if origin is None:unsupported.append({'atom':list(atom),'scope':scope})
++                checks.append({'atom':list(atom),'origin':origin or 'unsupported','scope':scope})
++    return {'passed':not unsupported,'checks':checks,'unsupported':unsupported,'scenario':scenario,
++            'limits':'Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment'}
+--- before/base/condition_plan.py
++++ after/base/condition_plan.py
+@@ -0,0 +1,56 @@
++"""Source-bound condition plans; deterministic notice-deposit example analysis."""
++import re
++from decimal import Decimal
++from base.safety import Answer,finalize,citation,render_citations,eligible
++from base.claim_support import quantities,money_scenario
++
++def condition_plan(query,docs,refs=None):
++    refs=list(range(1,len(docs)+1)) if refs is None else refs;requirements=[];rules={}
++    if '通知存款' in query and re.search(r'部分|取出|支取|取.{0,12}万元|剩|留存',query):
++        for i in refs:
++            d=docs[i-1]
++            if '通知存款' not in d.metadata.get('title','') or not eligible(d.metadata):continue
++            for line in d.page_content.splitlines():
++                if re.search(r'美元|外币|港币|英镑|欧元|USD|HKD|EUR|GBP',line,re.I):continue
++                kinds=[k for k,pattern in [('withdrawal_minimum',r'最低支取|最低取款'),('remaining_minimum',r'最低留存|最低剩余')] if re.search(pattern,line)]
++                amounts=[q for q in quantities(line) if q['atom'][1]=='元']
++                # A shared minimum must explicitly say 均; separate clauses are
++                # handled individually. Conflicting versions disable calculation.
++                if len(amounts)==1 and (len(kinds)==1 or '均' in line):
++                    for kind in kinds:rules.setdefault(kind,[]).append({'amount':amounts[0]['atom'][0],'number':i,'quote':line.strip()})
++        for kind in ('withdrawal_minimum','remaining_minimum'):
++            entries=rules.get(kind,[])
++            if entries:requirements.append(kind)
++    if re.search(r'代理.*开户|开户.*代理',query):
++        evidence='\n'.join(docs[i-1].page_content for i in refs)
++        for kind,pattern in [('agent_identity',r'代理人的?有效身份证件|代理人、被代理人的有效身份证件'),('principal_identity',r'被代理人的?有效身份证件|代理人、被代理人的有效身份证件'),('authorization',r'合法委托书')]:
++            if re.search(pattern,evidence):requirements.append(kind)
++    return {'requirements':requirements,'rules':rules,'profile':'source_bound_conditions_v2'}
++
++def missing_conditions(plan,text):
++    patterns={'withdrawal_minimum':r'最低支取|最小支取|最低取款|支取下限|取款下限',
++              'remaining_minimum':r'最低留存|最低剩余|留存下限|剩余.{0,12}(?:低于|不低于|不足)|留存.{0,12}(?:低于|不低于|不足)',
++              'agent_identity':r'代理人|代办人', 'principal_identity':r'被代理人|开户人|账户本人|委托人', 'authorization':r'委托书|授权书'}
++    return [kind for kind in plan['requirements'] if not re.search(patterns[kind],text)]
++
++def notice_answer(query,docs,intent):
++    if '通知存款' not in query or re.search(r'美元|外币|港币|南非|英镑|欧元|澳元|加元|USD|HKD|EUR|GBP',query,re.I):return None
++    if not re.search(r'满足|符合|要求|能否|是否|可以|能不能|条件|限制',query):return None
++    scenario=money_scenario(query);plan=condition_plan(query,docs)
++    if not all(k in plan['rules'] for k in ('withdrawal_minimum','remaining_minimum')):return None
++    if scenario['status'] in ('inconsistent','ambiguous','invalid'):
++        return Answer(finalize('您给出的金额条件不一致或存在多个数值，请明确原金额、支取金额和剩余金额。'),'rag',intent,'clarify',diagnostics={'condition_plan':plan})
++    if not all(k in scenario['values'] for k in ('withdrawal','remaining')):return None
++    picked={}
++    for kind in ('withdrawal_minimum','remaining_minimum'):
++        options=plan['rules'][kind]
++        if len({x['amount'] for x in options})!=1:return None
++        picked[kind]=options[0]
++    fmt=lambda x:format(Decimal(x),'f')+'元'
++    lines=['以下仅按题设金额核对已引用资料中的人民币通知存款条件：'];passed=[];refs=[]
++    for kind,role,label in [('withdrawal_minimum','withdrawal','最低支取金额'),('remaining_minimum','remaining','最低留存金额')]:
++        rule=picked[kind];value=scenario['values'][role];ok=Decimal(value)>=Decimal(rule['amount']);passed.append(ok);refs.append(rule['number'])
++        actual='本次支取金额' if role=='withdrawal' else '支取后剩余金额'
++        lines.append(f"- {label}：资料规定{fmt(rule['amount'])}。[{rule['number']}] {actual}为{fmt(value)}，{'不低于' if ok else '低于'}该门槛，{'满足' if ok else '不满足'}这一项。[{rule['number']}]")
++    lines.append('结论：'+('上述两项金额条件均满足；预约通知、账户及其他办理条件仍须另行核对，不能据此保证办理成功。' if all(passed) else '上述金额条件未全部满足，不能直接认定符合资料中的部分支取要求；实际办理需按银行官方流程核实。'))
++    return {'raw':'\n'.join(lines),'plan':plan,'scenario':scenario,'numbers':list(dict.fromkeys(refs)),'mode':'source_bound_deterministic_notice_conditions'}
+--- before/base/evidence_guard.py
++++ after/base/evidence_guard.py
+@@ -39,7 +39,9 @@
+     return atoms
+ def check_evidence(query,text,docs,refs):
+     evidence='\n'.join(docs[i-1].page_content for i in refs);issues=[]
+-    if numeric_atoms(text)-numeric_atoms(evidence):issues.append('unsupported_numeric_atom')
++    from base.claim_support import numeric_support
++    numeric=numeric_support(query,text,docs,refs)
++    if not numeric['passed']:issues.append('unsupported_numeric_atom')
+     assertions=[r'(?:电子身份证|电子证件).{0,35}(?:不属于|不能|不支持|不接受|可以|支持|认可)',r'(?:全国|所有城市|各网点).{0,35}(?:统一|支持|接受|不支持|尚未|不能)',r'(?:必须|须|需要).{0,20}(?:身份证件|身份证).{0,6}原件']
+     for pattern in assertions:
+         for claim in re.findall(pattern,text):
+@@ -50,4 +52,8 @@
+         if re.search(r'剩余|留存|留在账户|保留',evidence):conditions.append(('remaining_minimum',r'剩余|留存|留在账户|保留'))
+         for name,pattern in conditions:
+             if not re.search(pattern,text):issues.append('missing_condition:'+name)
+-    return {'version':'bounded_evidence_v1_1','passed':not issues,'issues':sorted(set(issues)),'required_conditions':[name for name,_ in conditions],'limits':'Numbers/selected assertions/selected conditions only; no complete semantic proof'}
++    from base.condition_plan import condition_plan,missing_conditions
++    plan=condition_plan(query,docs,refs)
++    for kind in missing_conditions(plan,text):issues.append('missing_condition:'+kind)
++    return {'version':'bounded_evidence_v2','passed':not issues,'issues':sorted(set(issues)),'required_conditions':list(dict.fromkeys([name for name,_ in conditions]+plan['requirements'])),
++        'numeric_support':numeric,'condition_plan':plan,'limits':'Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof'}
+--- before/rag_qa/core/vector_store.py
++++ after/rag_qa/core/vector_store.py
+@@ -7,6 +7,7 @@
+ from base.config import config
+ from base.safety import today_int,validate_source,APPROVED
+ from base.knowledge import digest
++from base.retrieval_windows import score_parents
+ SOURCE_BIAS={'faq':-.6}
+ _today_int=today_int
+ 
+@@ -141,11 +142,13 @@
+ 
+     def rerank(self,query,docs,trace=None):
+         if not docs:return []
+-        scores=self.reranker.predict([[query,d.page_content] for d in docs])
++        scored=score_parents(self.reranker,query,docs)
++        scores=[r['score'] for r in scored]
+         if trace is not None:
+             trace['rerank']=[{'doc_id':d.metadata.get('doc_id'),'block_id':d.metadata.get('parent_id'),
+                 'raw_score':float(score),'adjusted_score':float(score)+SOURCE_BIAS.get(d.metadata.get('source'),0),
+-                'threshold':config.RERANK_THRESHOLD,'reason':'eligible' if float(score)>=config.RERANK_THRESHOLD else 'below_threshold'} for score,d in zip(scores,docs)]
++                'threshold':config.RERANK_THRESHOLD,'score_mode':'source_window_max','window_count':info['window_count'],
++                'winning_window':info['winning_window'],'reason':'eligible' if float(score)>=config.RERANK_THRESHOLD else 'below_threshold'} for score,d,info in zip(scores,docs,scored)]
+         ranked=[(float(score)+SOURCE_BIAS.get(d.metadata.get('source'),0),d) for score,d in zip(scores,docs)
+             if float(score)>=config.RERANK_THRESHOLD]
+         result=[d for _,d in sorted(ranked,key=lambda x:x[0],reverse=True)][:config.CANDIDATE_M]
+--- before/rag_qa/core/rag_system.py
++++ after/rag_qa/core/rag_system.py
+@@ -8,6 +8,7 @@
+ from rag_qa.core.query_classifier import QueryClassifier
+ from rag_qa.core.strategy_selector import StrategySelector
+ from base.evidence_guard import check_evidence
++from base.condition_plan import condition_plan,notice_answer
+ 
+ class RAGSystem:
+     def __init__(self,vector_store,llm,llm_stream=None,classifier=None,strategy_selector=None):
+@@ -116,13 +117,36 @@
+             docs=self.retrieve_and_merge(query,source_filter=source_filter,trace=trace)
+             contexts=[{'text':d.page_content,**d.metadata} for d in docs]
+             if not docs:return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',diagnostics=trace)
++            structured=notice_answer(query,docs,intent)
++            if isinstance(structured,Answer):
++                structured.contexts=contexts;structured.diagnostics.update(trace)
++                return structured
++            plan=condition_plan(query,docs)
++            trace['condition_plan']=plan
+             prompt=self.rag_prompt.format(context=self._format_context(docs),question=query,
+                 history=self._format_history(history),phone=config.CUSTOMER_SERVICE_PHONE)
++            if plan['requirements']:
++                prompt+='\n【服务端条件核对清单】\n'+str(plan['requirements'])+'\n逐项回答并在每项旁标注对应上下文编号；不能把一项条件当成另一项。'
+             # Buffer model streaming until citations and output rules pass.
+-            raw=''.join(self.llm_stream(prompt)) if use_stream else self.llm(prompt)
++            if structured:
++                raw=structured['raw'];trace.update(generation_mode=structured['mode'],scenario=structured['scenario'])
++            else:
++                raw=''.join(self.llm_stream(prompt)) if use_stream else self.llm(prompt)
++                trace['generation_mode']='vendor_stream_buffered' if use_stream else 'vendor_completion'
+             try: citations=self._validated(raw,docs,query,trace)
+             except ValueError as e:
+-                return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(e),diagnostics=trace)
++                check=trace.get('evidence_check',{})
++                # One bounded repair, only for omitted supported conditions. No
++                # repair of unsafe text, invented numbers/titles or invalid refs.
++                if str(e)=='evidence_guard_failed' and check.get('issues') and all(x.startswith('missing_condition:') for x in check['issues']) and not structured:
++                    trace['repair']={'attempts':1,'initial_issues':check['issues']}
++                    raw=self.llm(prompt+'\n【重新作答】\n首次回答遗漏了以下受原文支持的条件：'+str(check['issues'])+'。请根据相同上下文重新完整回答，不增加新事实。')
++                    try:citations=self._validated(raw,docs,query,trace);trace['repair']['passed']=True
++                    except ValueError as repaired:
++                        trace['repair']['passed']=False
++                        return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(repaired),diagnostics=trace)
++                else:
++                    return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(e),diagnostics=trace)
+             return Answer(finalize(raw+'\n\n【服务端来源】\n'+render_citations(citations)),
+                 'rag',intent,'answered',citations,contexts,diagnostics=trace)
+         except Exception:
+--- before/integrated_qa.py
++++ after/integrated_qa.py
+@@ -7,6 +7,7 @@
+ from rag_qa.core.rag_system import RAGSystem
+ from base.conversation import resolve_query
+ from base.evidence_guard import check_evidence
++from base.claim_support import money_scenario
+ from base.faq_provenance import load_faq_sources
+ from pathlib import Path
+ 
+@@ -52,7 +53,8 @@
+                     intent,blocked=self.rag_system.gate(effective_query)
+             if blocked:result=blocked
+             else:
+-                row=None if current_rate_query(effective_query) else self.bm25_search.search_record(effective_query,config.FAQ_THRESHOLD,source_filter)
++                has_notice_scenario='通知存款' in effective_query and money_scenario(effective_query)['status']!='not_found'
++                row=None if current_rate_query(effective_query) or has_notice_scenario else self.bm25_search.search_record(effective_query,config.FAQ_THRESHOLD,source_filter)
+                 if row and eligible(row) and not safe_answer_text(row['answer']):
+                     result=Answer(finalize('资料未通过输出规则检查，请联系人工客服。'),'faq',intent,'insufficient_evidence',error_code='unsafe_faq_output')
+                 elif row and eligible(row):
+--- before/tests/test_quality_v3.py
++++ after/tests/test_quality_v3.py
+@@ -0,0 +1,114 @@
++import unittest
++from unittest.mock import Mock
++from types import SimpleNamespace
++from langchain_core.documents import Document
++from base.retrieval_windows import evidence_windows,score_parents
++from base.claim_support import money_scenario
++from base.evidence_guard import check_evidence
++from base.condition_plan import notice_answer
++from base.config import config
++from tests.support import META,build_system,faq_row
++
++def notice_doc(text='人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。'):
++    return Document(page_content=text,metadata=dict(META,title='通知存款产品说明'))
++
++class WindowTests(unittest.TestCase):
++    def test_tail_covered_by_source_substrings(self):
++        text='开户信息'*250+'预留手机号用于接收交易通知'
++        windows=evidence_windows(text)
++        self.assertTrue(any('预留手机号' in w['text'] for w in windows))
++        for w in windows:self.assertEqual(w['text'],text[w['start']:w['end']])
++    def test_short_parent_one_prediction(self):
++        model=Mock();model.predict.return_value=[.3]
++        result=score_parents(model,'问题',[notice_doc()]);self.assertEqual(result[0]['window_count'],1)
++        model.predict.assert_called_once()
++    def test_best_window_score(self):
++        doc=notice_doc('a'*500);model=Mock();model.predict.return_value=[.01,.9,.02]
++        result=score_parents(model,'问题',[doc]);self.assertEqual(result[0]['score'],.9)
++    def test_nonfinite_rejected(self):
++        with self.assertRaises(ValueError):score_parents(SimpleNamespace(predict=lambda x:[float('nan')]),'q',[notice_doc()])
++    def test_wrong_score_count_rejected(self):
++        with self.assertRaises(ValueError):score_parents(SimpleNamespace(predict=lambda x:[]),'q',[notice_doc()])
++    def test_invalid_window_size(self):
++        with self.assertRaises(ValueError):evidence_windows('abc',size=3,overlap=3)
++
++class NumericSupportTests(unittest.TestCase):
++    def check(self,q,text,source):return check_evidence(q,text,[Document(page_content=source,metadata=META.copy())],[1])
++    def test_missed_month_restatement(self):
++        result=self.check('零存整取漏存了一个月怎么办','如漏存一个月，应在次月补存。[1]','每月存入固定金额，中途漏存应在次月补存。')
++        self.assertTrue(result['passed']);self.assertEqual(result['numeric_support']['checks'][0]['origin'],'explicit_missed_deposit_scenario')
++    def test_missed_month_not_bank_permission(self):
++        self.assertFalse(self.check('漏存一个月怎么办','银行规定允许漏存一个月。[1]','每月存入固定金额，漏存应次月补存。')['passed'])
++    def test_elapsed_duration_restatement(self):
++        self.assertTrue(self.check('这笔存款留了十三个月','按题设实际已存十三个月。[1]','计息规则需按实际存期核对。')['passed'])
++    def test_elapsed_duration_not_bank_term(self):
++        self.assertFalse(self.check('这笔存款留了十三个月','合同规定产品期限十三个月。[1]','期限一年、三年、五年。')['passed'])
++    def test_question_rate_not_bank_fact(self):
++        self.assertFalse(self.check('假设银行利率是5%，这是真的吗','银行利率是5%。[1]','实际利率需查看公告。')['passed'])
++    def test_question_fee_not_bank_fact(self):
++        self.assertFalse(self.check('假设转账手续费5元','转账手续费5元。[1]','开户起存5元。')['passed'])
++    def test_cannot_borrow_amount_from_other_attribute(self):
++        self.assertFalse(self.check('手续费多少','手续费为5元。[1]','手续费0元，起存5元。')['passed'])
++    def test_elliptical_fee_inherits_question_scope(self):
++        self.assertFalse(self.check('转账手续费多少','5元。[1]','起存5元。')['passed'])
++    def test_explicit_scenario_amount_allowed(self):
++        self.assertTrue(self.check('通知存款七万元取三万元后剩四万元','按题设，本次支取30000元。[1]','通知存款规则。')['passed'])
++    def test_exact_remaining_derived(self):
++        q='通知存款存入7万元，支取3万元，剩余金额是多少'
++        result=self.check(q,'按题设支取后剩余金额为40000元。[1]','通知存款公开说明。')
++        self.assertTrue(result['passed']);self.assertTrue(result['numeric_support']['scenario']['remaining_derived'])
++    def test_arbitrary_calculation_not_allowed(self):
++        self.assertFalse(self.check('通知存款存入7万元，支取3万元','支取后剩余金额为60000元。[1]','通知存款公开说明。')['passed'])
++    def test_cannot_borrow_bank_minimum_as_remaining(self):
++        self.assertFalse(self.check('存入7万元，支取3万元','按题设支取后剩余金额为50000元。[1]','最低留存金额5万元。')['passed'])
++    def test_scenario_marker_does_not_allow_wrong_role(self):
++        self.assertFalse(self.check('存入7万元，支取3万元','按题设剩余金额为30000元。[1]','公开说明。')['passed'])
++    def test_scenario_cannot_launder_fee(self):
++        self.assertFalse(self.check('通知存款七万元取三万元后剩四万元','手续费30000元。[1]','最低支取金额5万元。')['passed'])
++    def test_scenario_inconsistency(self):
++        self.assertEqual(money_scenario('存入7万元，支取3万元，剩余5万元')['status'],'inconsistent')
++    def test_negative_amount(self):
++        self.assertEqual(money_scenario('存入-7万元，支取3万元')['status'],'invalid')
++
++class ConditionTests(unittest.TestCase):
++    def test_both_conditions_answered_with_exact_bindings(self):
++        s=build_system(docs=[notice_doc()]);s.rag_system.llm=Mock(side_effect=AssertionError('no model needed'))
++        r=s.query_result('按通知存款说明，七万元取三万元后剩四万元，符合留存要求吗')
++        self.assertEqual(r.decision,'answered');self.assertIn('最低支取金额',r.answer);self.assertIn('最低留存金额',r.answer)
++        self.assertIn('30000元',r.answer);self.assertIn('40000元',r.answer);self.assertEqual(r.citations[0]['block_id'],META['parent_id'])
++        self.assertEqual(r.diagnostics['generation_mode'],'source_bound_deterministic_notice_conditions')
++    def test_true_conditions_do_not_guarantee_operation(self):
++        s=build_system(docs=[notice_doc()]);r=s.query_result('通知存款存入12万元，支取5万元，是否符合金额条件')
++        self.assertEqual(r.decision,'answered');self.assertIn('不能据此保证办理成功',r.answer)
++    def test_inconsistent_amount_clarifies(self):
++        r=build_system(docs=[notice_doc()]).query_result('通知存款存入7万元取3万元后剩5万元，是否满足要求')
++        self.assertEqual(r.decision,'clarify');self.assertIn(config.DISCLAIMER,r.answer)
++    def test_conflicting_source_minima_disable_deterministic(self):
++        docs=[notice_doc('最低支取金额5万元。\n最低支取金额10万元。\n最低留存金额5万元。')]
++        self.assertIsNone(notice_answer('通知存款存入7万元取3万元后剩4万元，是否满足要求',docs,'业务咨询'))
++    def test_missing_condition_source_not_invented(self):
++        self.assertIsNone(notice_answer('通知存款存入7万元取3万元后剩4万元，是否满足要求',[notice_doc('最低支取金额5万元。')],'业务咨询'))
++    def test_foreign_currency_not_assumed_rmb(self):
++        self.assertIsNone(notice_answer('通知存款存入7万美元取3万美元是否满足要求',[notice_doc()],'业务咨询'))
++    def test_foreign_currency_source_not_used_as_rmb(self):
++        source=notice_doc('美元通知存款最低支取金额和最低留存金额均为5万元。')
++        self.assertIsNone(notice_answer('通知存款存入7万元取3万元后剩4万元，是否满足要求',[source],'业务咨询'))
++    def test_interest_question_not_replaced_by_condition_answer(self):
++        self.assertIsNone(notice_answer('通知存款存入7万元取3万元后剩4万元，利息怎么算',[notice_doc()],'业务咨询'))
++    def test_scenario_not_answered_by_generic_faq(self):
++        q='通知存款存入7万元取3万元后剩4万元，是否满足要求'
++        s=build_system(rows=[faq_row(q)],docs=[notice_doc()]);s.bm25_search.search_record=Mock(side_effect=AssertionError('no generic FAQ'))
++        self.assertEqual(s.query_result(q).decision,'answered');s.bm25_search.search_record.assert_not_called()
++    def test_structured_stream_same_validation(self):
++        s=build_system(docs=[notice_doc()]);text=''.join(x[0] for x in s.query_stream('通知存款存入7万元取3万元后剩4万元，是否满足要求'))
++        self.assertIn('最低支取金额',text);self.assertEqual(text.count(config.DISCLAIMER),1)
++    def test_agent_conditions_repair_once(self):
++        doc=Document(page_content='代理开户：出具代理人、被代理人的有效身份证件及合法委托书。',metadata=META.copy())
++        s=build_system(docs=[doc]);s.rag_system.llm=Mock(side_effect=['代理人需出示有效身份证件。[1]','代理人和被代理人需出示各自有效身份证件，并提供合法委托书。[1]'])
++        r=s.query_result('代理开户需要哪些材料');self.assertEqual(r.decision,'answered');self.assertEqual(s.rag_system.llm.call_count,2);self.assertTrue(r.diagnostics['repair']['passed'])
++    def test_invalid_citation_not_repaired(self):
++        s=build_system(answer='需要代理人身份证。[9]');s.rag_system.llm=Mock(return_value='需要代理人身份证。[9]')
++        self.assertEqual(s.query_result('代理开户需要哪些材料').decision,'insufficient_evidence');self.assertEqual(s.rag_system.llm.call_count,1)
++    def test_investment_gate_precedes_deterministic(self):
++        r=build_system(docs=[notice_doc()]).query_result('推荐通知存款，我存入7万元取3万元是否划算')
++        self.assertEqual(r.decision,'refused')
+--- before/scripts/compare_rerank_windows.py
++++ after/scripts/compare_rerank_windows.py
+@@ -0,0 +1,39 @@
++"""Offline same-candidate replay, no generation, tuning, or reserve access."""
++import argparse,json,sys,hashlib
++from pathlib import Path
++import torch
++from langchain_core.documents import Document
++from sentence_transformers import CrossEncoder
++ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
++from base.retrieval_windows import score_parents,WINDOW_CHARS,WINDOW_OVERLAP
++from rag_qa.core.document_processor import process_documents
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();torch.set_num_threads(8)
++    model=CrossEncoder(str(a.root/'rag_qa/models/bge-reranker-large'),device='cpu')
++    chunks=process_documents(str(a.root/'rag_qa/data/finance'));parents={}
++    for c in chunks:parents[(c.metadata['doc_id'],c.metadata['parent_id'])]=Document(page_content=c.metadata['parent_content'],metadata=c.metadata)
++    traces=json.loads((a.root/'evaluation/results/context_v2_1_regression/traces.json').read_text(encoding='utf-8'))['rows']
++    gold={t['turn_id']:t for c in map(json.loads,(a.root/'evaluation/holdout_v1_1/answer_key.jsonl').read_text(encoding='utf-8').splitlines()) for t in c['turns']}
++    rows=[]
++    for r in traces:
++        if r['transport']!='http':continue
++        searches=r['result'].get('diagnostics',{}).get('searches',[])
++        if not searches or not searches[0].get('rerank'):continue
++        candidates=searches[0]['rerank'];docs=[parents[(x['doc_id'],x['block_id'])] for x in candidates]
++        before=score_parents(model,r['question'],docs,'parent');after=score_parents(model,r['question'],docs,'window_max')
++        target={e['doc_id'] for e in gold[r['turn_id']]['evidence'] if e.get('role')=='support' and e.get('eligible_at_as_of')}
++        detail=[]
++        for d,b,n in zip(docs,before,after):
++            detail.append({'doc_id':d.metadata['doc_id'],'block_id':d.metadata['parent_id'],'is_gold_support_doc':d.metadata['doc_id'] in target,'parent_score':b['score'],'window_score':n['score'],'window_count':n['window_count'],'winning_window':n['winning_window'],
++                'parent_pair_tokens':len(model.tokenizer.encode(r['question'],d.page_content,truncation=False)), 'model_max_length':model.max_length})
++        rows.append({'turn_id':r['turn_id'],'expected_action_provisional':gold[r['turn_id']]['expected_action'],'candidates':detail})
++        if len(rows)%10==0:print('RERANK_REPLAY',len(rows),flush=True)
++    def stats(mode):
++        key=mode+'_score';answer=[r for r in rows if r['expected_action_provisional']=='answer'];abstain=[r for r in rows if r['expected_action_provisional']=='abstain']
++        return {'answer_cases_with_candidates':len(answer),'answer_cases_retaining_gold_support_doc':sum(any(c['is_gold_support_doc'] and c[key]>=.15 for c in r['candidates']) for r in answer),
++            'abstain_cases_with_candidates':len(abstain),'abstain_cases_retaining_any_candidate':sum(any(c[key]>=.15 for c in r['candidates']) for r in abstain)}
++    result={'meaning':'Same original-query candidates, source-document retention proxies against provisional gold; abstain candidate retention is NOT automatically false-positive evidence. No independent semantic precision claim.',
++        'threshold_unchanged':.15,'window_chars':WINDOW_CHARS,'window_overlap':WINDOW_OVERLAP,'models':'local unchanged bge-reranker-large','parent':stats('parent'),'window':stats('window'),'rows':rows}
++    if a.out.exists():raise ValueError('refuse overwrite replay')
++    a.out.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps({k:v for k,v in result.items() if k!='rows'},ensure_ascii=False),flush=True)
++if __name__=='__main__':main()

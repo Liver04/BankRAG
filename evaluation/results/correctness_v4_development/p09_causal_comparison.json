@@ -1,0 +1,300 @@
+{
+  "scope": "offline comparison on separate diagnostic replay, not original first-run raw text",
+  "before_passed": false,
+  "after_passed": true,
+  "before": {
+    "passed": false,
+    "checks": [
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "6E+1",
+          "%"
+        ],
+        "scope": "discount_factor",
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "2",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "unsupported"
+      }
+    ],
+    "unsupported": [
+      {
+        "atom": [
+          "2",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ]
+      }
+    ],
+    "scenario": {
+      "status": "not_found",
+      "values": {},
+      "remaining_derived": false
+    },
+    "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+  },
+  "after": {
+    "passed": true,
+    "checks": [
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "1",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "6E+1",
+          "%"
+        ],
+        "scope": "discount_factor",
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": false,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "cited_rule"
+      },
+      {
+        "atom": [
+          "2",
+          "年"
+        ],
+        "scope": null,
+        "local_citation_numbers": [
+          1
+        ],
+        "elapsed_marker": false,
+        "negated_term_marker": true,
+        "supporting_citation_numbers": [
+          1
+        ],
+        "alternative_context_numbers": [],
+        "bound_sources": [
+          {
+            "number": 1,
+            "doc_id": "fdef3c8853cea2055cce083e8a4c3d78",
+            "block_id": "c9dee6df4f5eaa018113ac2e6de3ff9cc8368aa7100b0c13",
+            "version": "29e04bc770977ad0"
+          }
+        ],
+        "origin": "negated_query_term_above_cited_cap"
+      }
+    ],
+    "unsupported": [],
+    "scenario": {
+      "status": "not_found",
+      "values": {},
+      "remaining_derived": false
+    },
+    "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "dataset_version": "bankrag_holdout_v1.0.0",
+  "as_of_date": 20261013,
+  "timezone": "Asia/Shanghai",
+  "status": "frozen_candidate_pending_independent_human_gold_review",
+  "runtime_evaluation": "not_run",
+  "formal_human_reviews": 0,
+  "model_questions_executed": 0,
+  "source_scope": "Existing local CN demonstration knowledge snapshot; no claim of all legal rules being current",
+  "independence": "Post-development held-out candidates authored with implementation access. Not third-party/double-blind. Semantic review pending.",
+  "artifacts_sha256": {
+    "docs/holdout_preparation_report.md": "c4b3100babf3f146a983b3acdd58d951a8077855d656db32ae99d625f2358ec5",
+    "docs/holdout_review_standard.md": "3b6f9361ec36f8fc9181118b0a8d1d06370f3df34b004b38ef2d0f44f465a03c",
+    "evaluation/holdout_v1/answer_key.jsonl": "f99a9ce23ae3fd1b55030aa46644cff7bb34824b9e15d50d0ea6993a506c7f31",
+    "evaluation/holdout_v1/casebook.md": "9c0e2315a24bf63e001acffe588dc6ca977b8606dffd029aae10758aa1ff839d",
+    "evaluation/holdout_v1/contamination_audit.json": "aedd9c8e5aed9d622cff222aa13f0d435daf30b9ea1b23f14dd9848f5237ec13",
+    "evaluation/holdout_v1/design_summary.json": "82ba843004ee17ee76fc092ec4e14ad2af0bf5e7e630808ff6adbeeb2f6bf288",
+    "evaluation/holdout_v1/questions.jsonl": "7f142c1553b9ca4cfb38229b67074e90b8f77c696114bb1d9b3fe571e14b75c8",
+    "evaluation/holdout_v1/README.md": "b135fe17cbdb0edaf05b218f3d41682a3caecd19c1063c703db15bfa191d1169",
+    "evaluation/holdout_v1/review_examples.md": "0c59f89a1751365c116af371cb960f4bc6efc97445ed2e39324e1dae69f5ac73",
+    "evaluation/holdout_v1/review_records.jsonl": "3b34d5e8bb849ebc48d91c581998bb579b3c6a600f5d504d0853d18dcc2a5cf1",
+    "evaluation/holdout_v1/runtime_freeze.json": "1254960f460cc320672776d7a5d83d423766e339314e60bf370d8953acfe934d",
+    "evaluation/holdout_v1/source_checks.json": "a804ab62288cb5013f8ff56e0078b3f729f58f7d7251b16aa83e3a22db1c0cc4",
+    "evaluation/holdout_v1/source_snapshot.json": "f8230bf58e21464dba9fd85771dd19dfceb6a027a6ff31ea78658dd419f372ae",
+    "evaluation/holdout_v1/validate_pack.py": "6101526dc2b1747d6857483576fdcf3e058278b32ee44ab038d189259ecb19c8"
+  }
+}

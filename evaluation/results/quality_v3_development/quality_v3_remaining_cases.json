@@ -1,0 +1,203 @@
+{
+  "meaning": "Decision-label mismatches against provisional gold, require semantic/human review; no silent relabeling",
+  "rows": [
+    {
+      "turn_id": "H-B05/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-B09/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "missing_or_invalid_citation",
+      "issues": []
+    },
+    {
+      "turn_id": "H-B10/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "missing_or_invalid_citation",
+      "issues": []
+    },
+    {
+      "turn_id": "H-C05/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-F02/T1",
+      "transport": "http",
+      "expected_action_provisional": "abstain",
+      "decision": "refused",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "transport": "http",
+      "expected_action_provisional": "abstain",
+      "decision": "answered",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "transport": "http",
+      "expected_action_provisional": "abstain",
+      "decision": "answered",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-R12/T1",
+      "transport": "http",
+      "expected_action_provisional": "refuse",
+      "decision": "clarify",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-S04/T1",
+      "transport": "http",
+      "expected_action_provisional": "handoff",
+      "decision": "clarify",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "transport": "http",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "missing_or_invalid_citation",
+      "issues": []
+    },
+    {
+      "turn_id": "H-B10/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "missing_or_invalid_citation",
+      "issues": []
+    },
+    {
+      "turn_id": "H-C05/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-F02/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "abstain",
+      "decision": "refused",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "abstain",
+      "decision": "answered",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "abstain",
+      "decision": "answered",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "evidence_guard_failed",
+      "issues": [
+        "unsupported_numeric_atom"
+      ]
+    },
+    {
+      "turn_id": "H-R12/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "refuse",
+      "decision": "clarify",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-S04/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "handoff",
+      "decision": "clarify",
+      "error_code": "",
+      "issues": []
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "transport": "websocket",
+      "expected_action_provisional": "answer",
+      "decision": "insufficient_evidence",
+      "error_code": "",
+      "issues": []
+    }
+  ]
+}

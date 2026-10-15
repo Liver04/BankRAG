@@ -1,0 +1,24 @@
+{
+  "review_kind": "coding_agent_partial_source_crosscheck_not_human",
+  "as_of_date": 20261013,
+  "verified_topics": [
+    "temporary vs formal loss-report procedure",
+    "deposit insurance cap vs liquidation recovery",
+    "BOC certificate is a general deposit included in insurance",
+    "BOC account agreement identities, phone use, I/II/III account limits",
+    "BOC regular/instalment/flexible/notice deposit product pages",
+    "proof of deposit currency/freeze/all copies",
+    "Australia account closing scope",
+    "mobile and net transfer caps including VIP real-time single cap",
+    "login/password recovery prerequisites"
+  ],
+  "unresolved": [
+    "age identity page unavailable",
+    "resident interest original URL inaccessible",
+    "interest-withdrawal product original URL timed out",
+    "directed-recipient details",
+    "current comprehensive fee concessions",
+    "full legal current-effectiveness audit"
+  ],
+  "action": "Unverified FAQ rows kept pending; diagnostics on local excerpt gold explicitly provisional. No independent human reviewer claimed."
+}

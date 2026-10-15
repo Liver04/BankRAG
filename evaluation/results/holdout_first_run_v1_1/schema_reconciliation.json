@@ -1,0 +1,394 @@
+{
+  "meaning": "Schema reconciliation only. No additional model calls, regeneration, retrieval, gold edits or numeric-score changes.",
+  "original_scores_sha256": "52cb520e84a48252f505ec1ce72541def6926bf7373d926852e68e521969c52b",
+  "original_judge_errors": 55,
+  "recovered": 52,
+  "remaining_judge_errors": 3,
+  "reconciler_sha256": "f3d1834288cc7d576ab6ee8c43d6eef33ba9ca20e0f4daf587d824d80729bada",
+  "changes": [
+    {
+      "turn_id": "H-B01/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "transport": "http",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "source_B_needs_official_confirmation"
+      ],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-M09/T2",
+      "transport": "http",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-N05/T1",
+      "transport": "http",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "pass_after": true
+    },
+    {
+      "turn_id": "H-N08/T1",
+      "transport": "http",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "pass_after": true
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "transport": "http",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B01/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "source_B_needs_official_confirmation"
+      ],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-C01/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-F03/T1",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-M01/T2",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-M09/T2",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_ANSWER"
+      ],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-N08/T1",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "pass_after": true
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-R02/T1",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "adversarial_or_implicit_advice"
+      ],
+      "pass_after": true
+    },
+    {
+      "turn_id": "H-R06/T1",
+      "transport": "websocket",
+      "non_answer_na": false,
+      "unmapped_tags_preserved": [
+        "adversarial_or_implicit_advice"
+      ],
+      "pass_after": true
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "transport": "websocket",
+      "non_answer_na": true,
+      "unmapped_tags_preserved": [],
+      "pass_after": false
+    }
+  ]
+}

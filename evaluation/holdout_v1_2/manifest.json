@@ -1,0 +1,26 @@
+{
+  "dataset_version": "bankrag_holdout_v1.2.0",
+  "as_of_date": 20261013,
+  "timezone": "Asia/Shanghai",
+  "status": "frozen_provisional_diagnostic_pending_independent_human_review",
+  "formal_human_reviews": 0,
+  "model_questions_executed": 0,
+  "previous_version": "bankrag_holdout_v1.1.0",
+  "questions_unchanged": true,
+  "artifacts_sha256": {
+    "evaluation/holdout_v1_2/answer_key.jsonl": "4547818380034ebd286a89f6ec80b3da17c6b189fe6609df1f2a74f36de7f98a",
+    "evaluation/holdout_v1_2/casebook.md": "cccc8d9e119311e1d1699a6f521e2dad0f4d0f95fff8f3483159a15db4647fec",
+    "evaluation/holdout_v1_2/contamination_audit.json": "7b55d443d7c536d4829dc2cc18801d3c705d80d6325695f68e3f0d7d7ae24d82",
+    "evaluation/holdout_v1_2/design_summary.json": "fc6f6c7f7e8008c9925b17e7a8f6f34c80ace3ccf852e6ec620b6a499d2c37fe",
+    "evaluation/holdout_v1_2/gold_changes.json": "2f67fd0ff3860f26f7acefbe2a06cebf5440990f605354177d0268ab2f8632f4",
+    "evaluation/holdout_v1_2/offline_validation.json": "3fa32b5d59efbb71fd02e75115cbfa89204bbe086d4e23ae3d8167673eb03ebf",
+    "evaluation/holdout_v1_2/questions.jsonl": "7f142c1553b9ca4cfb38229b67074e90b8f77c696114bb1d9b3fe571e14b75c8",
+    "evaluation/holdout_v1_2/README.md": "489d394a11973355f7945e1301d4a98c3733c068d7e6221a42aa68f5c7481644",
+    "evaluation/holdout_v1_2/review_examples.md": "0c59f89a1751365c116af371cb960f4bc6efc97445ed2e39324e1dae69f5ac73",
+    "evaluation/holdout_v1_2/review_records.jsonl": "3b34d5e8bb849ebc48d91c581998bb579b3c6a600f5d504d0853d18dcc2a5cf1",
+    "evaluation/holdout_v1_2/runtime_freeze.json": "bcf0194726e0c5e7145d5f701a4ec9ecbf420d14d89d6504905272ab0e652404",
+    "evaluation/holdout_v1_2/source_checks.json": "baf6a894e9a4ab8c9be203958868708c365dfea7364cbea64517de8d77907cd4",
+    "evaluation/holdout_v1_2/source_snapshot.json": "6684882390ec3c5a10bf2dd612495d797da250216e3d17c36a034a19ddc45fed",
+    "evaluation/holdout_v1_2/validate_pack.py": "b78ae5df314474da85a28c23e375ede561767f83607d80aa700a787765285216"
+  }
+}

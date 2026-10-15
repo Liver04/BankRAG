@@ -1,0 +1,106 @@
+{
+  "scope": "Targeted source/trace comparisons, not complete independent human grading",
+  "findings": [
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "http",
+      "severity": "P1",
+      "actual_body": "信息不足，无法回答，请联系人工客服，电话：95566。",
+      "human_review_status": "pending",
+      "review_kind": "coding_agent_source_comparison_not_human",
+      "finding": "title_validation_intercept",
+      "context_titles": [
+        "个人存款账户实名制规定",
+        "个人存款账户实名制规定",
+        "个人开户业务规则",
+        "未成年人开户规则"
+      ],
+      "basis": "Evidence retrieved, output rejected by title validation. Raw generated text unavailable: fabrication vs title alias cannot be determined."
+    },
+    {
+      "turn_id": "H-N07/T1",
+      "transport": "http",
+      "severity": "P1",
+      "actual_body": "不认可。根据《个人存款账户实名制规定》，开立个人存款账户必须出示本人身份证件原件，金融机构需进行核对并登记姓名和号码[2]。电子身份证目前不属于该规定所列明的有效实名证件范围，且中国银行各网点尚未实现全国统一支持电子身份证办理开户业务。  \n信息不足，无法回答，请联系人工客服，电话：95566。",
+      "human_review_status": "pending",
+      "review_kind": "coding_agent_source_comparison_not_human",
+      "finding": "unsupported_nationwide_current_policy_claim",
+      "basis": "Actual contexts contain identity requirements, not nationwide electronic-ID deployment. Missing evidence is not a universal prohibition.",
+      "cited_blocks": [
+        {
+          "number": 2,
+          "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+          "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+          "title": "个人存款账户实名制规定",
+          "source_url": "https://www.gov.cn/gongbao/content/2000/content_60110.htm",
+          "version": "b92264e3a032d38f",
+          "review_status": "demo_approved",
+          "effective_date": 20000401,
+          "expiry_date": 0
+        }
+      ]
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "transport": "http",
+      "severity": "P1",
+      "actual_body": "不能直接认定满足留存要求。根据规定，人民币通知存款最低留存金额为5万元；支取后留存金额为4万元，低于最低留存金额，需按账户实际规则办理相应支取或结清 [1]。",
+      "human_review_status": "pending",
+      "review_kind": "coding_agent_source_comparison_not_human",
+      "finding": "missing_parallel_withdrawal_constraint",
+      "basis": "Frozen gold requires both withdrawal and remaining-balance constraints; only remaining balance is addressed.",
+      "cited_blocks": [
+        {
+          "number": 1,
+          "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+          "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+          "title": "通知存款产品说明",
+          "source_url": "https://www.bankofchina.com/pbservice/pb1/200806/t20080626_707.html",
+          "version": "b1ec6d2358e5ba9c",
+          "review_status": "demo_approved",
+          "effective_date": 0,
+          "expiry_date": 20270109
+        }
+      ]
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "websocket",
+      "severity": "P1",
+      "actual_body": "信息不足，无法回答，请联系人工客服，电话：95566。",
+      "human_review_status": "pending",
+      "review_kind": "coding_agent_source_comparison_not_human",
+      "finding": "title_validation_intercept",
+      "context_titles": [
+        "个人存款账户实名制规定",
+        "个人存款账户实名制规定",
+        "个人开户业务规则",
+        "未成年人开户规则"
+      ],
+      "basis": "Evidence retrieved, output rejected by title validation. Raw generated text unavailable: fabrication vs title alias cannot be determined."
+    },
+    {
+      "turn_id": "H-N07/T1",
+      "transport": "websocket",
+      "severity": "P1",
+      "actual_body": "不认可。根据《个人存款账户实名制规定》，开立个人存款账户必须出示本人有效身份证件原件，金融机构需进行核对并登记姓名和号码 [2]。电子身份证目前不属于该规定所列明的法定实名证件范围，且中国银行各网点尚未实现全国统一支持电子身份证办理开户业务。具体可否使用，需以受理网点现场审核为准。",
+      "human_review_status": "pending",
+      "review_kind": "coding_agent_source_comparison_not_human",
+      "finding": "unsupported_nationwide_current_policy_claim",
+      "basis": "Actual contexts contain identity requirements, not nationwide electronic-ID deployment. Missing evidence is not a universal prohibition.",
+      "cited_blocks": [
+        {
+          "number": 2,
+          "doc_id": "4b95c5b6d6f33cd0e8ec928fd6f3de2c",
+          "block_id": "f9493cf732a467d3872e577702eefdbaa64c1537b32cb79b",
+          "title": "个人存款账户实名制规定",
+          "source_url": "https://www.gov.cn/gongbao/content/2000/content_60110.htm",
+          "version": "b92264e3a032d38f",
+          "review_status": "demo_approved",
+          "effective_date": 20000401,
+          "expiry_date": 0
+        }
+      ]
+    }
+  ]
+}

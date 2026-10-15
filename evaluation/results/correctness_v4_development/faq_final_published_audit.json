@@ -1,0 +1,2612 @@
+{
+  "scope": "final published serving-guard checks, not human truth grading",
+  "eligible": 43,
+  "passed": 43,
+  "actual_today": 20261014,
+  "rows": [
+    {
+      "faq_id": "7dede2f409e6ff10cdb16ee7f7b86eecf411cb2de9fd77c899bc1d57d8bf993d",
+      "question": "中行个人银行账户分为哪几类？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+3",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "9d6ad556dd154e7c3f3ae25fbb07ee11362c981e472cd89a",
+                  "version": "942c2d4a1116c604"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "b3a12d9ddc7c4e9af8581cd716ec6c0651c0a59da2e8757dac56f92b55235aa9",
+      "question": "一个人可以在中国银行开立几个Ⅰ类账户？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "75e2370719dffde4a6e270bff53f01c5d882a9cfc2dea27df100b6812a1bd7ea",
+      "question": "开立个人账户需要出示什么证件？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "1af0951c2f620d2fb6392c46ed8e7037b38e8a4b4c86931b35c66d0b72a52aaf",
+      "question": "办理具有通存通兑或结算功能的账户时，是否需要设置密码？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "d31e47d30aac6dc6716988327592b05caaf5f7565a48be374db4c88d599e92ca",
+      "question": "开户时预留手机号有什么用途？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "d93e428cd915938de0d342f2d6da5d18883337ca631d618ee7c902f98aff2122",
+      "question": "忘记网银用户名或登录密码怎么办？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "1e03b2bc7db7b08e342e1293d630b24b9d9b2c837503ee0e11072f1dd6ca4164",
+      "question": "网银用户名可以修改吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "58f24a8c9de022c57f249a2807fd97a73a714fa1bdc9d9c376f42f9d77472ca4",
+      "question": "网银密码可以修改吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "81e38a150390c94fb0538a6d3d2a86adee5bbc4a44b1cf4b9516bb002c1c7e63",
+      "question": "中国银行转账汇款包括哪些常见类型？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "5fd14c5cd1fc828dc9cf174e3f26ea4fc08dcdb82e8881bb874ba206f761872a",
+      "question": "中行内转账选择“实时”“普通”“次日”分别多久到账？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "1ef778936590c999fab0ca71b8f9673f18e6d8e677c937b2130397ad1b1416b1",
+      "question": "跨行转账选择“实时”方式是否一定实时到账？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "99bb8cc35bf5693d04cdb1a9d7fe6b244f1b7b1c6bd3f21b7a8903d17728f458",
+      "question": "跨行普通转账什么时候汇出？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "e1ffcb2ae01081ec4dacd5ae6832b77bd8e483847eb651553fe91c3be509c3b9",
+      "question": "跨行次日转账什么时候发报？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "ed9999f24181825f47468d588b84b582a3c3dee71f3490474fe2ef05db6e268c",
+      "question": "中国银行是否承诺跨行转账到账时间？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "27af700c9c9962f51232f0d648b528d5765e69ce2724552580258b87bf5136fe",
+      "question": "个人网银使用“动态口令+手机交易码”转账限额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2026",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "2E+6",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1E+6",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "2E+6",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "fcdef1eeaa7387d1cbeb366a21cb600c61f6081c3bc2d06b8af645979af98200",
+      "question": "个人网银使用手机交易码的转账限额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+3",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+3",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "53b4d2d4d303f4914aa777122571f924b84c0e1352c6f9236be23bc40960fc66",
+      "question": "个人手机银行使用手机交易码的转账限额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "09d85d8184846b6f7e53e18fe97043c9d4391b2b9869cc550b8d89f1f04723a1",
+      "question": "个人手机银行使用中银E盾的转账限额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1E+7",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1E+7",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1E+6",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1E+7",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "03d9ca497f6d8ef287015fcec1bfb9698210354492193220ce2912f9fee06d0e",
+      "question": "线上自助注册手机银行的转账限额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "2E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "e7af4ccd814d94ff71a396878359b1ba5b5398448c96e2968a038074faf1fbce",
+      "question": "电子银行日累计转账笔数上限是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "1c7ca9ad66dec8efa24538533778bc5f88e8268b2dbc7113db8390880c02fc9e",
+      "question": "如何设置定向收款人限额？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "e675f0bf57c258230881bea6dd4f92d2f9129b00281f1f714f50442f3df09e0b",
+      "question": "转账汇出后可以撤销吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "b0d17b9098a1877932fb303e7cf8b148e65f45c034ecccec6f977406ae108e2d",
+      "question": "汇款信息填写错误造成损失，由谁承担？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "c2b1825cc93c40a424104338c9b77b2a301cf1a314b2ff87a3eba9d2b798246a",
+      "question": "密码汇款有效期是多久？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "264b998866c19711a912244511ac349a854570854de9c45dcb5e1e341074ab44",
+      "question": "密码汇款ATM收款有什么限制？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+3",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "2a8cf46df5d1570ef0847c87804b76d5",
+                  "block_id": "58b0c2bf4cbd588cf2964194708f35bb0d7d729cbd822604",
+                  "version": "058ebeed59b30b41"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "02a6b9c08f3b6a64689944d652d1fce1129b21042a1b6e6a2119a93148659539",
+      "question": "密码汇款收款人连续输错密码怎么办？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "9ed759715f190c5713c3966d927e84602c61f4bc6432a84986431c0d7bc2ebde",
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+1",
+                "元"
+              ],
+              "scope": "minimum_opening",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "74b3c6788f8a7cf01e97d5ff2b21133cc5ff75a2af8fc3e73b8c88fb4c7bc75e",
+      "question": "整存整取定期存款有哪些存期可选？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "3",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "6",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "2",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ec0f64d148cff685d7ebbde25ee7f821",
+                  "block_id": "0efb2a0ea8cc8aad873758d726f9c3e64d432658b1ddd22f",
+                  "version": "c2638041b1ded475"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "9bcc985c9411747216345ce740c20ab96e8e2b7b675e1e344dba7c825442c528",
+      "question": "整存整取定期存款提前支取如何计息？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "1880930260d2690c7e82a7a2f15df8faa50b19476d520ebf68fdff08c2f7f80d",
+      "question": "整存整取定期存款到期后会自动转存吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "42ec406888090754fd4bc22f85e5d96cfc5ae2785753325813f9a7c5952a72c3",
+      "question": "大额存单起存金额是多少？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "d773c328fd28e787faebb916c91a55a5fa2e8514302c0e3c561ed252757734cd",
+      "question": "大额存单有哪些存期可选？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "6",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "9",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "18",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "2",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "8c99505ab345d9c90f2a02c1503cbad37cc7db875b6ad3e1fe54a7dfc89bcc6f",
+      "question": "大额存单可以提前支取吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "c180edb652947463e84a2e2e3e02d2cc31bb7d7851e20858808f9beb8249ef0c",
+      "question": "大额存单到期后会自动转存吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "f188c9ec3a9d7dd5c0bf4935567a2f9d6c351289636c0bd385c3242e1603d50d",
+      "question": "零存整取存款是什么？如何计息？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5",
+                "元"
+              ],
+              "scope": "minimum_opening",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "7ce3130de285346c95622ce9093d70b2bbad3c51972d0eb8bf7caf054d8155c1",
+      "question": "零存整取存款漏存了一个月怎么办？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "explicit_missed_deposit_scenario"
+            },
+            {
+              "atom": [
+                "2",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "3220a2d08618777b47987ee54c047b31660f6d3b867d8d70",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "0fa3b78cf3a4df16adb38a2362179b4b8ea71eec57f6de62d0932edff7aa95fe",
+      "question": "通知存款最低起存金额和存期是怎样的？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_opening",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_opening",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "1",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "c719442acfc41c1914438f1c50baba634961da3cf189c735",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "2c1c556c61c414b5200fa7cebf0a3426f85ef81dfbf56e068805514d1239b4fd",
+      "question": "存款保险最高能保障多少金额？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "e7814536504481ff7092c681065eb4d9",
+                  "block_id": "54354ea8f637a746fb3219bdf3c89b67fd85cda71cd0319c",
+                  "version": "3a551d34270a4433"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "943393369b0d3ef83ec61fe9be54344183293777e403188081c8d1e76d4a14ce",
+      "question": "哪些存款受存款保险保障？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "ec47c2c48ced3208d7480524bb509891111e5594b197fb339ebcb80ec59a706a",
+      "question": "临时挂失有效期是多久？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "6",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "5afeb94b866506bf8c741e8f0370c1148207b2600103d8e4",
+                  "version": "db622c6cfb037852"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "9e624fdfd40ae29fc20272a37953dc1d9adf7643fe80101757e1bd211c89c653",
+      "question": "存折丢失了怎么处理？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "aae1f26616b3a8c47e0b0f4e8a8704f7df9dfd99ef67542f8fc428c457ff93c3",
+      "question": "定期存款到期后不取会怎样？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "faq_id": "035e57ed7f42a928e379ebcfcaae537cbb388f9b345fb168aea95f7734ff64f9",
+      "question": "港币存款有存款保险保障吗？",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1,
+                2
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "e7814536504481ff7092c681065eb4d9",
+                  "block_id": "54354ea8f637a746fb3219bdf3c89b67fd85cda71cd0319c",
+                  "version": "3a551d34270a4433"
+                },
+                {
+                  "number": 2,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "f6c7c06f3601cc20c8f501f1733adec1772e9fedd206f6fa",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    }
+  ]
+}

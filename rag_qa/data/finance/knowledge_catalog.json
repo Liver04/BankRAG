@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "approval_meaning": "demo_approved means local demonstration allowlist, not bank/legal approval",
+  "documents": {
+    "business_rule/个人开户业务规则__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "942c2d4a1116c604bf6e7c256370142569932e5a37a6748da3cf5ed89777247b",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "business_rule/存款挂失服务__20260923.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "db622c6cfb03785262a44b0df4e0b21968a54fb4f26feee82324ed61f823aa87",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "business_rule/存款证明业务__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "4dc275a3be1185383f273a5af116cab03c06777f75d34ea5140c03fc88f36fe0",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "business_rule/未成年人开户规则__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "1020d33c964f2867dafaa81209a0e5d095b4ef2a1d35f84fb33465dea761f48c",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "business_rule/转账汇款业务规则__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "058ebeed59b30b41058ad66df34b33af8a19fb3068fc4dd1419e71d40ed47ec2",
+      "jurisdiction": "CN",
+      "review_note": "Source corrections by coding agent; per-FAQ review controls actual eligibility. Not independent human/legal approval."
+    },
+    "business_rule/销户业务规则__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "9787dc31b90d9ebe4ae38a090686ffca274b92cc3acc25e7c198d7f13fc40589",
+      "jurisdiction": "AU",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "faq/存款常见问题__20260923.md": {
+      "review_status": "rejected",
+      "content_sha256": "da67d22a7f131a24271e2c65aa9224b4bffc977d387c213dc82e767444985e88",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "faq/开户销户FAQ__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "f96013c11d4c6c0591d58843f6b24969553a73a84784c8e427ab8987296529ee",
+      "jurisdiction": "CN",
+      "review_note": "Source corrections by coding agent; per-FAQ review controls actual eligibility. Not independent human/legal approval."
+    },
+    "faq/转账汇款FAQ__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "2f41e3812525eebcfc624e8b56966a14c376818a717f6d2ac6cfdd18f8ceb1a7",
+      "jurisdiction": "CN",
+      "review_note": "Source corrections by coding agent; per-FAQ review controls actual eligibility. Not independent human/legal approval."
+    },
+    "faq/银行常见问题_自建演示数据.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "dca5f272e8bf370c298ec70172e2ebd50c0bc5aa24b35d496dafa2805c6f67f6",
+      "jurisdiction": "CN",
+      "review_note": "Source corrections by coding agent; per-FAQ review controls actual eligibility. Not independent human/legal approval.",
+      "effective_date": 0,
+      "reviewed_at": 20261012
+    },
+    "product/个人大额存单产品说明__20260923.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "8a4ea06df8440933a6e8fbc413dd4f671da918d211d6ea9c792c1248b92df868",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/存本取息存款说明__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "46d737206cbacbcc9a85de44a728acee29dc2d7436e4f9eca1162451f9fa41bb",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/定活两便存款说明__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "29e04bc770977ad0f4bb2bb29fc59a855c8047d1cfdf119ce9072c97c06635de",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/教育储蓄存款说明__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "b0de8067c2fd630ba5a948403c5ced66cfee088f7f0f0c89f47426b79e199f52",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/整存整取定期存款产品说明__20260923.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "c2638041b1ded475af483e4a6577a0a9d0d69d56fd06948e71ff282e5cbdf784",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/活期存款产品说明__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "bcf8e728f97a9b7622c34d6a97e232d3bf36c2952cfb86c4aa0bf12b514a8abb",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "product/通知存款产品说明__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "b1ec6d2358e5ba9c387cc8d5e7f8b5b97860bf1cfdb354d03915d20ceb5ab403",
+      "jurisdiction": "CN",
+      "review_note": "Source corrections by coding agent; per-FAQ review controls actual eligibility. Not independent human/legal approval."
+    },
+    "product/零存整取存款产品说明__20260923.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "1ca1f61bf0928029e55158bb1d151e9481770b517d9b08cacc1eb70a277ae7bb",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "rate_table/人民币存款利率表__20250520.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "9ef004214e6ead7eb18e0a65c3d007e5ab5c205ed2a4828f25bbc05da28c69f7",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "rate_table/外币存款利率表__20261011.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "566c25da2679e8f482c5ae0f28e44310816e4c6cfab0f6711eed2349e1dac900",
+      "jurisdiction": "ZA",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "regulation/个人存款账户实名制规定__20000401.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "b92264e3a032d38fd3737d013310086cced898da52330569b8429c18702f8404",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "regulation/人民币银行结算账户管理办法__20030901.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "921d1d1356e98526c86dbc69af644dcb7d82651c974588f3868184f349614278",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "regulation/储蓄管理条例__19930301.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "5a94d3d291f80db10c86514c5078d72ba22fde01e4b882c3cf81483402a3668a",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    },
+    "regulation/存款保险条例__20150501.md": {
+      "review_status": "demo_approved",
+      "content_sha256": "3a551d34270a4433a69fafd69e4633c5c542fb1a2cf51fe005febeddb0e99ee8",
+      "jurisdiction": "CN",
+      "review_note": "Local demo structure/provenance check only; not independent legal/factual approval"
+    }
+  },
+  "faq_row_registry_required": true
+}

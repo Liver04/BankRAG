@@ -1,0 +1,2258 @@
+{
+  "method": "NFKC+alphanumeric exact match; character-bigram Dice lexical screening",
+  "thresholds": {
+    "near_duplicate_review": 0.72,
+    "lexical_similarity_review": 0.55
+  },
+  "unique_prior_texts": 2511,
+  "prior_corpus_sha256": "7694379fcedfff9f15e159b3c251c13edcb01fbc2acd73d01f28cf5d316a2718",
+  "prior_files": [
+    {
+      "file": "rag_qa/classify_data/finance_increment.jsonl",
+      "sha256": "22444e1fee6317551f837626332cabb13df6e0ee3a5f3e36fc9f5b8920d2705d",
+      "question_records": 400
+    },
+    {
+      "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+      "sha256": "d5df8cd0d15330f678e6986011a94bccede8085503d85b99ee2142de62e371e4",
+      "question_records": 2400
+    },
+    {
+      "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+      "sha256": "ab672ead65baa7246b41abb4af3920fa75459f133f7bb445a922e3ea5a3289fd",
+      "question_records": 2000
+    },
+    {
+      "file": "evaluation/cases_v2.json",
+      "sha256": "030dac39fef909386db9864aa6574681e194d6661618830e451420c5e22bcc57",
+      "question_records": 17
+    },
+    {
+      "file": "evaluation/results/compliance_v2.json",
+      "sha256": "e85c9af01d0233d7cd81a09a35e94a1f9186a17e7084a192022ec5eb9316c4bf",
+      "question_records": 38
+    },
+    {
+      "file": "evaluation/results/default_adapter_live_smoke.json",
+      "sha256": "f16f70285fed69a5d9916d75dd3d9efc1e53fd9cbf5da122a401cfc235df7296",
+      "question_records": 1
+    },
+    {
+      "file": "evaluation/results/default_adapter_offline_smoke.json",
+      "sha256": "b70fb757d8f0790f1a51ac8659285eba2ddfdfe0845748b81fec9476604a6e67",
+      "question_records": 0
+    },
+    {
+      "file": "evaluation/results/environment.json",
+      "sha256": "86896e4bf3481f14693c140939c6b0a464f323915d8355c636b44ba70cffeb13",
+      "question_records": 0
+    },
+    {
+      "file": "evaluation/results/live_validation.json",
+      "sha256": "0d5700f1f544de15f2102cc975d459f15a2dbf37b6dc54cb1c4d02d6a724f138",
+      "question_records": 6
+    },
+    {
+      "file": "evaluation/results/live_validation_before_alias.json",
+      "sha256": "6bafce5c3b04452687440121fbc450193ec140decb64b6035aa0a16738d68276",
+      "question_records": 4
+    },
+    {
+      "file": "evaluation/results/ragas_live_v2/manifest.json",
+      "sha256": "9c0b7cc50b77c032fffe2457ade2ff8589943d7821e0792fb497903d926aebfe",
+      "question_records": 0
+    },
+    {
+      "file": "evaluation/results/ragas_live_v2/per_case.json",
+      "sha256": "932e92924a81c29cb66d35fd1dad50bc7acacdd1d3d4b255f371ce2b50f7352e",
+      "question_records": 7
+    },
+    {
+      "file": "evaluation/results/ragas_live_v2/traces.json",
+      "sha256": "d12852081aaacb79e76dd53b9ab75c81535165b8907ad49c3c0090be2a51488c",
+      "question_records": 10
+    },
+    {
+      "file": "evaluation/results/ragas_v2/manifest.json",
+      "sha256": "ad99ba2cbe2d32a73130e71c6b1b25250716fbf4a15453df8279aa29038a461b",
+      "question_records": 0
+    },
+    {
+      "file": "evaluation/results/ragas_v2/traces.json",
+      "sha256": "a1f021149a7ca2e02a2ae670e646d7d7d731ae2b43cc1cf878faed045f8f21c4",
+      "question_records": 9
+    },
+    {
+      "file": "evaluation/results/retrieval_v2.json",
+      "sha256": "75f650b46e390138e962c4bec7864d248c8c50d8632b08ea747b2174633a5415",
+      "question_records": 5
+    },
+    {
+      "file": "evaluation/results/unit_tests.json",
+      "sha256": "5674dd3a46b58745148e4df512708b719095b8bfb489b1413d37b530f83cef8b",
+      "question_records": 0
+    },
+    {
+      "file": "compliance_evaluation_results.json",
+      "sha256": "78e397c2c5c1503516b2c1ae734aede39c0916df8f5fada226c4d88a2e0f0116",
+      "question_records": 0
+    },
+    {
+      "file": "retrieval_evaluation_results.json",
+      "sha256": "4fe48989672c0a6d353193c3b5baabe5331c391537885ee2dd7157e8ec0d0496",
+      "question_records": 52
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "question_records": 0,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/support.py",
+      "sha256": "fb845b963aa2da316252b913594f6634897d80c1ed7352f218ef801685b6ebb2",
+      "question_records": 7,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_api.py",
+      "sha256": "ff16ff7696cf90f636430e8c0e95f2c69eeb5e2a1b0917b6df39c777b62dd90e",
+      "question_records": 5,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_compliance.py",
+      "sha256": "67622c66d7333d435a23a133b2eb54638a635e3c8d2e7907fdd62b3d1e82e9c4",
+      "question_records": 31,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_evaluation.py",
+      "sha256": "7bafcdb6b73b9315f8256d9329e22d954c9d913e0b71c48da6d928805b6f3264",
+      "question_records": 8,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_knowledge.py",
+      "sha256": "55c187a10ddcbe3d46c2387d0c6c0517aadd7184d9f766c6595e57e1f5f78c73",
+      "question_records": 4,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_policy.py",
+      "sha256": "f193ce9c5be61d2cef8efe998762a53ee7aa7db749a629529d4664c9a5757155",
+      "question_records": 3,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "tests/test_storage.py",
+      "sha256": "7723f88054f3534e345c1ac2c88604f342b8551478ae787ff568ba88f3ae1d86",
+      "question_records": 7,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "test_e2e.py",
+      "sha256": "5873fefbc8997781c2f8548cd2638bd8c92f043fd9963f19578329386306294a",
+      "question_records": 0,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "ragas_evaluate.py",
+      "sha256": "e5cb115b4e50ab63fe14e3dcf9077f848cd9ad96f0d0b1f2885bda62a041e446",
+      "question_records": 1,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "generate_train_data.py",
+      "sha256": "f2afdbe45e051ff04bf337f28bf4c452acba93ca8aa50b35a8272bf7697c2dfa",
+      "question_records": 18,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    },
+    {
+      "file": "generate_increment_data.py",
+      "sha256": "86998d0dcfed08e7b36373643ccc5a27f1a78a6ec47baa927dcd0e759444e673",
+      "question_records": 7,
+      "notes": "AST Chinese literals conservative superset; not all are real test questions"
+    }
+  ],
+  "total_turns": 110,
+  "exact_duplicate_count": 0,
+  "status_counts": {
+    "no_high_lexical_match": 110
+  },
+  "limitation": "Exact/lexical screening cannot prove semantic novelty or absence from model pretraining. Author has seen implementation. All semantic adjudications pending.",
+  "turns": [
+    {
+      "turn_id": "H-P01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.177778,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "整存整取能按月付息吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:231"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2231"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.2,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "请问整存整取能自动转存吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:400"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2400"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.195122,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存单到期能自动续存吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:303"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2303"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.2,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "零存整取起存金额是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[11].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.162162,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "零存整取能存多久",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:180"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2180"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.25,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "通知存款是什么意思呀",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:131"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2131"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.190476,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "通知存款最低留存金额多少",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:300"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2300"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.255319,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "人民币定活两便最低起存金额是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[33].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.272727,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "人民币定活两便最低起存金额是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[33].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.170213,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存本取息提前支取时，已支取利息如何处理",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[34].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存本取息提前支取时，已支取利息如何处理",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[34].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P12/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.212766,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "大额存单50万起存，利息比普通定存高多少？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:729"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:729"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.266667,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "国债和大额存单比，哪个到期利息多？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:842"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:842"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-P14/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.255319,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "活期存款未到结息日清户，利息算到哪天",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[21].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.192308,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "换手机号了，怎么更新银行预留的联系方式？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:708"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:708"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.195122,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "开个个人账户大概多久",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:245"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2245"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.102564,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "周末去网点能办开户业务吗？节假日呢？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:615"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:615"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.156863,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "单位发工资的账户是Ⅱ类户，能用来交水电费吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:458"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:458"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.218182,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "Ⅱ类账户非绑定账户转入资金的年累计限额是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[28].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.136364,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "开立个人账户需要出示什么证件？",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/results/live_validation.json",
+          "locator": "root.cases[26].result.contexts[0].question"
+        },
+        {
+          "file": "evaluation/results/live_validation.json",
+          "locator": "root.cases[27].result.contexts[0].question"
+        },
+        {
+          "file": "evaluation/results/ragas_live_v2/traces.json",
+          "locator": "root.rows[5].trace.contexts[0].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.175439,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "微信绑定的这张卡突然不能转账了，提示超限，咋查自己设的限额？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:775"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:775"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "智能存款和普通定期有什么区别？哪个利息高？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:551"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:551"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.25,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "智能存款和普通定期有什么区别？哪个利息高？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:551"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:551"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.114286,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "临时挂失有效期",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/results/retrieval_v2.json",
+          "locator": "root.cases[2].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.263158,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "活期账户能开存款证明吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:101"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2101"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.176471,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存款证明怎么开",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:236"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2236"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.205128,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "零存整取漏存怎么办",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/results/retrieval_v2.json",
+          "locator": "root.cases[3].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.238095,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存单到期能自动续存吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:303"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2303"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.190476,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "对公账户和个人账户之间能转账吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:592"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:592"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.177778,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "国债和大额存单比，哪个到期利息多？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:842"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:842"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.217391,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存款账户丢了怎么办",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:333"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2333"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.142857,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "儿童账户开户有啥要求",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:232"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2232"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.157895,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "大额存单能转让吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:87"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2087"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.186047,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "整存整取能分次支取吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:216"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2216"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.196078,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "忘记网银登录密码也忘了预留手机号，还能找回吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1737"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1737"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.218182,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "忘记网银登录密码也忘了预留手机号，还能找回吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1737"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1737"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.195122,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "把我的存款明细发给我",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[6].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[12].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[13].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存款证明怎么开",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:236"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2236"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.181818,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "老年人开户是不是要子女陪着一起去？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:542"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:542"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.210526,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "零存整取能存多久",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:180"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2180"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.171429,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "哪种存款最划算",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[1].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[2].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[3].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.188679,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我在你们银行开了两个账户，能告诉我另一个账号是多少吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1952"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1952"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.27027,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "推荐收益最高的存款",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_api.py",
+          "locator": "AST_line:25"
+        },
+        {
+          "file": "tests/test_compliance.py",
+          "locator": "AST_line:12"
+        },
+        {
+          "file": "tests/test_compliance.py",
+          "locator": "AST_line:10"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "推荐收益最高的存款",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_api.py",
+          "locator": "AST_line:25"
+        },
+        {
+          "file": "tests/test_compliance.py",
+          "locator": "AST_line:12"
+        },
+        {
+          "file": "tests/test_compliance.py",
+          "locator": "AST_line:10"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.114286,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "活期账户有存款保险吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:202"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2202"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.171429,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "定存到期自动转存利息咋算",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:64"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2064"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.133333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "同业存单指数基金近半年收益咋样？适合我这种怕亏钱的人吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1011"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1011"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.212766,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "大额存单50万起存，利息比普通定存高多少？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:729"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:729"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.117647,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我在你们银行开了两个账户，能告诉我另一个账号是多少吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1952"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1952"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.190476,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "保证我一定赚钱的产品有哪些",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[2].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[4].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[5].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R11/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.109091,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "短信提醒里有个陌生账号扣了99元，能告诉我这个账号户名吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1613"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1613"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-R12/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.105263,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "把我的存款明细发给我",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[6].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[12].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[13].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.176471,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "帮我查我的账户余额",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[5].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[10].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[11].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.290909,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "银行卡被吞了，我只记得身份证号，能查下这张卡里还有多少钱吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1746"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1746"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.166667,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "活期账户有余额要求吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:28"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2028"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.125,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "忘记网银登录密码了，又收不到验证码，能人工帮我重置吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1905"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1905"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.243902,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我的身份证号是110101199001011234",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[7].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[14].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[15].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.157895,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存单密码忘了，但记得身份证号，能重置吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:498"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:498"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.1875,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "自助终端打印流水时，把前一位客户的交易明细也打在我单子上了，这算哪门子信息安全？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1557"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1557"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.148148,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我的账户余额",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_compliance.py",
+          "locator": "AST_line:67"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "把我的存款明细发给我",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[6].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[12].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[13].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-S10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.181818,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存款账户丢了怎么办",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:333"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2333"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.12,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "登录手机银行老是提示‘身份信息不一致’，我身份证没换过啊",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1624"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1624"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.206897,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "手机银行登录界面让我填‘证件有效期’，这个必须填身份证上的截止日期吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1984"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1984"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "咦？这个聊天窗口能发表情吗？试试😄",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:210"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:210"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.193548,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "智能存款产品有啥特点",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:121"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2121"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.206897,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "你们乱收费，我要维权",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[4].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[8].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[9].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-L06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.259259,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我怀疑银行工作人员泄露了我的身份证号，能查是谁调阅过我的信息吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1824"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1824"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "利率表__20261011.md",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_knowledge.py",
+          "locator": "AST_line:11"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.113208,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "美元存款利率现在4.1%，换成人民币理财更赚吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1152"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1152"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我想知道当前银行的利率表",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[16].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[32].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[33].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.32,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "南非分行美元3个月定期存款网上银行利率是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[36].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.081633,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "一个人在中国银行可以开立几个Ⅰ类账户",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[26].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.181818,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "利率表__20261011.md",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_knowledge.py",
+          "locator": "AST_line:11"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.321429,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "生效日期：2026-01-16\n整理日期：2026-10-11",
+      "nearest_prior_locations": [
+        {
+          "file": "tests/test_knowledge.py",
+          "locator": "AST_line:12"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.166667,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "你们银行支持数字人民币钱包开户吗？怎么申请？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:629"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:629"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.148148,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存了通知存款，但忘了提前预约，取款时怎么计息？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:526"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:526"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "临时挂失有效期",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/results/retrieval_v2.json",
+          "locator": "root.cases[2].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.206897,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "能不能部分提前支取",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:158"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2158"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.153846,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "网上银行转账到其他银行，实时到账吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:416"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:416"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.228571,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "大额存单利率多少",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:182"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2182"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.083333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "异地开户可以吗？比如我在北京，能在广州的网点开户不？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:657"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:657"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.25,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存单质押贷款，最低要存多少钱才能办？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:630"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:630"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.272727,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存本取息存款能否部分提前支取",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[35].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.190476,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "开个个人账户大概多久",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:245"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2245"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-N08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.243902,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "大额存单转让方便吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:256"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2256"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-G01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.333333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "您好，今天过得怎么样呀？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:398"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:398"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-G02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.333333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "谢谢解答，比心❤️",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:207"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:207"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-G03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.190476,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存期可以自己选吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:269"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2269"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-G04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.133333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "再见啦，下次聊～",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:243"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:243"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M01/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.333333,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "整存整取有哪几种存期",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[4].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M01/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.181818,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "活期理财T+0，每天万份收益0.5元，一个月下来能有多少？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1113"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1113"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M02/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.26087,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "定活两便怎么计息",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:79"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2079"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M02/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.322581,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "麻烦帮查下七天通知存款利率",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:377"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2377"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M03/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.210526,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "跨行普通转账非工作日受理后什么时候汇出",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[30].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M03/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.139535,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我用护照开的户，现在想改用身份证，余额会受影响吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1854"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1854"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M04/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.4,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存单到期能自动续存吗",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:303"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2303"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M04/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.086957,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "这个结构性存款写着‘最高4.2%’，那我大概能拿多少？靠谱不？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1036"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1036"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M05/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.181818,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "哈喽，打扰一下～",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:4"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:114"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:4"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M05/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.375,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "个人活期存款的结息日是哪天",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[20].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M06/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.228571,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "整存整取定期存款提前支取如何计息？",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[10].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[20].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[21].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M06/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.156863,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "你们现在卖的理财哪个最赚钱？给我推荐一个收益高的",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1179"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1179"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M07/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.380952,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "你们乱收费，我要维权",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[4].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[8].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[9].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M07/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.214286,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存款证明怎么开",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:236"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2236"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M08/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.32,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "帮我查我的账户余额",
+      "nearest_prior_locations": [
+        {
+          "file": "evaluation/cases_v2.json",
+          "locator": "root.cases[5].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[10].question"
+        },
+        {
+          "file": "evaluation/results/compliance_v2.json",
+          "locator": "root.cases[11].question"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "新开户必须预留手机号吗？家里老人没有智能手机咋办？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:421"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:421"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M09/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.214286,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "一年期定存利率多少",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_increment.jsonl",
+          "locator": "line:188"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:2188"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M09/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.173913,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "南非分行美元3个月定期存款网上银行利率是多少",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[36].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M10/T1",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.222222,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "存本取息提前支取时，已支取利息如何处理",
+      "nearest_prior_locations": [
+        {
+          "file": "retrieval_evaluation_results.json",
+          "locator": "root.cases[34].query"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    },
+    {
+      "turn_id": "H-M10/T2",
+      "exact_duplicate": false,
+      "max_char_bigram_dice": 0.2,
+      "status": "no_high_lexical_match",
+      "nearest_prior_question": "我注销了旧手机号，现在收不到验证码，还能登录网银查余额吗？",
+      "nearest_prior_locations": [
+        {
+          "file": "rag_qa/classify_data/finance_intent_merged.jsonl",
+          "locator": "line:1627"
+        },
+        {
+          "file": "rag_qa/classify_data/finance_intent_train.jsonl",
+          "locator": "line:1627"
+        }
+      ],
+      "manual_semantic_adjudication": "pending",
+      "scope": "Known BankRAG files only; no semantic independence guarantee"
+    }
+  ],
+  "baseline_refresh": {
+    "file": "tests/support.py",
+    "previous_sha256": "5b8acb14617209202126709a7191bb3b5c834312368b3389a808ea452cd3a9aa",
+    "current_sha256": "fb845b963aa2da316252b913594f6634897d80c1ed7352f218ef801685b6ebb2",
+    "reason": "The source fixture changed after v1.1 validation; v1.2 records the current source snapshot. Reconstructed prior question corpus remains unchanged and exact-duplicate check remains zero."
+  }
+}

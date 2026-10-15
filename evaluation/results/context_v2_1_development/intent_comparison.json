@@ -1,0 +1,1338 @@
+{
+  "meaning": "Development regression with provisional labels; NOT blind independent accuracy",
+  "models": {
+    "old": {
+      "bert_only_correct": 57,
+      "pipeline_correct": 80,
+      "model_sha256": "c84d6dcf898090afe8de8cb2242aa4e890879c32f9c44704bd9da9567c44083b"
+    },
+    "candidate": {
+      "bert_only_correct": 106,
+      "pipeline_correct": 109,
+      "model_sha256": "bd1a46cb3f403ea8db63814c618ee2640e66743ee99d99ff3f975e824ef7b48a"
+    }
+  },
+  "rows": [
+    {
+      "turn_id": "H-P01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P08/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P09/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P10/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P12/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-P14/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B08/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B09/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B10/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U07/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-R01/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R02/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R03/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R04/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R05/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R06/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R07/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R08/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R09/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R10/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R11/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-R12/T1",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-S01/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S02/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S03/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S04/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S05/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S06/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S07/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S08/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S09/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "投诉",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-S10/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-L01/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-L02/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-L03/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-L04/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-L05/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-L06/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-F01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-F03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F08/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F09/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N05/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N07/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-N08/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-G01/T1",
+      "expected_provisional": "闲聊",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      }
+    },
+    {
+      "turn_id": "H-G02/T1",
+      "expected_provisional": "闲聊",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "闲聊"
+      }
+    },
+    {
+      "turn_id": "H-G03/T1",
+      "expected_provisional": "闲聊",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      }
+    },
+    {
+      "turn_id": "H-G04/T1",
+      "expected_provisional": "闲聊",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      }
+    },
+    {
+      "turn_id": "H-M01/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M01/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M02/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M02/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M03/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M03/T2",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-M04/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M04/T2",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-M05/T1",
+      "expected_provisional": "闲聊",
+      "old": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      },
+      "candidate": {
+        "bert": "闲聊",
+        "effective": "闲聊"
+      }
+    },
+    {
+      "turn_id": "H-M05/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M06/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M06/T2",
+      "expected_provisional": "收益预测",
+      "old": {
+        "bert": "投诉",
+        "effective": "收益预测"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "收益预测"
+      }
+    },
+    {
+      "turn_id": "H-M07/T1",
+      "expected_provisional": "投诉",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "投诉",
+        "effective": "投诉"
+      }
+    },
+    {
+      "turn_id": "H-M07/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M08/T1",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M09/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "收益预测",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "收益预测",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M09/T2",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "投诉",
+        "effective": "投诉"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M10/T1",
+      "expected_provisional": "业务咨询",
+      "old": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      },
+      "candidate": {
+        "bert": "业务咨询",
+        "effective": "业务咨询"
+      }
+    },
+    {
+      "turn_id": "H-M10/T2",
+      "expected_provisional": "账户敏感",
+      "old": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      },
+      "candidate": {
+        "bert": "账户敏感",
+        "effective": "账户敏感"
+      }
+    }
+  ],
+  "turns": 110
+}

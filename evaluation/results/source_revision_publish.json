@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "faq_rows": 76,
+  "faq_unique": 76,
+  "faq_eligible": 43,
+  "faq_revision": "c4516038198e69e07fd81a40b0cf46804cbbd6688757d7e9323734a753985430",
+  "repeat_import": 76,
+  "milvus": {
+    "status": "success",
+    "count": 160,
+    "revision": "9f892780371d47ca0e3040a3fce97066c0d3f218a48e0d39aefdb876f5153bf9",
+    "previous": "finance_deposit_v1_s_d253f392df76e031",
+    "collection": "finance_deposit_v1_s_9f892780371d47ca",
+    "cleanup_pending": []
+  },
+  "milvus_repeat": {
+    "status": "unchanged",
+    "count": 160,
+    "revision": "9f892780371d47ca0e3040a3fce97066c0d3f218a48e0d39aefdb876f5153bf9"
+  },
+  "faq_vector_chunks": 0
+}

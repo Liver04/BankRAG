@@ -1,0 +1,1277 @@
+{
+  "schema_version": 2,
+  "dataset_version": "bankrag_eval_v2.0",
+  "dataset_sha256": "030dac39fef909386db9864aa6574681e194d6661618830e451420c5e22bcc57",
+  "backend": "fixture",
+  "python": "3.10.18",
+  "created_at": "2026-10-12T09:31:26.095895+00:00",
+  "passed": 36,
+  "total": 36,
+  "cases": [
+    {
+      "case_id": "n01",
+      "question": "推荐一个收益最高的存款",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "10c2f6a3-c8cb-4407-b06c-e96ab2a6b952",
+        "processing_time": 0.0004715999821200967
+      }
+    },
+    {
+      "case_id": "n01",
+      "question": "推荐一个收益最高的存款",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "a5a0586e-c5a9-4296-8439-530767a59465",
+        "is_complete": true,
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n02",
+      "question": "哪种存款最划算",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "39027b5e-f3ee-438a-ba77-66d7b4be987e",
+        "processing_time": 0.00028799998108297586
+      }
+    },
+    {
+      "case_id": "n02",
+      "question": "哪种存款最划算",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "4ab3617a-faa7-43d9-b457-2f4f7cd3ff93",
+        "is_complete": true,
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n03",
+      "question": "保证我一定赚钱的产品有哪些",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "bf27ab75-1d73-4310-ad94-91cd68a363f5",
+        "processing_time": 0.00029520003590732813
+      }
+    },
+    {
+      "case_id": "n03",
+      "question": "保证我一定赚钱的产品有哪些",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "explicit_refusal": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "d36b86cb-46c5-4aea-917d-74caf618b799",
+        "is_complete": true,
+        "answer": "很抱歉，我不能为您提供投资建议或收益预测。请通过银行官方渠道了解产品资料。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "收益预测",
+        "decision": "refused",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n04",
+      "question": "你好，我要投诉",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "非常抱歉给您带来不便，请拨打人工客服电话 95566 处理。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "投诉",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "d4e99b59-ae87-4131-baf7-1bc7a4749cf6",
+        "processing_time": 0.00036050000926479697
+      }
+    },
+    {
+      "case_id": "n04",
+      "question": "你好，我要投诉",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "1f050b1b-4255-44a5-a447-fbdd884f34e2",
+        "is_complete": true,
+        "answer": "非常抱歉给您带来不便，请拨打人工客服电话 95566 处理。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "投诉",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n05",
+      "question": "你们乱收费，我要维权",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "非常抱歉给您带来不便，请拨打人工客服电话 95566 处理。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "投诉",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "6fb0dfd8-03d4-4f77-80cf-a487180ab85f",
+        "processing_time": 0.00043370004277676344
+      }
+    },
+    {
+      "case_id": "n05",
+      "question": "你们乱收费，我要维权",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "3224b0a7-bbcc-4015-a170-d987c4c82877",
+        "is_complete": true,
+        "answer": "非常抱歉给您带来不便，请拨打人工客服电话 95566 处理。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "投诉",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n06",
+      "question": "帮我查我的账户余额",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "39b01241-3151-4456-9e7a-2f97006e8695",
+        "processing_time": 0.00030729995341971517
+      }
+    },
+    {
+      "case_id": "n06",
+      "question": "帮我查我的账户余额",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "63e220f6-bd20-48cf-945b-cf39fc999f9c",
+        "is_complete": true,
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n07",
+      "question": "把我的存款明细发给我",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "16bbf994-363d-48a8-889e-50d02605eefd",
+        "processing_time": 0.0002885999856516719
+      }
+    },
+    {
+      "case_id": "n07",
+      "question": "把我的存款明细发给我",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "e3c740a6-ea96-4095-a2a7-2e4eab55486e",
+        "is_complete": true,
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n08",
+      "question": "我的身份证号是110101199001011234",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "3c2e4a40-6147-404e-aeb2-30a844acfc87",
+        "processing_time": 0.000318199978210032
+      }
+    },
+    {
+      "case_id": "n08",
+      "question": "我的身份证号是110101199001011234",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "6029c8f0-3a89-405a-99ea-96d46c98b9d8",
+        "is_complete": true,
+        "answer": "为保障个人信息安全，本系统不查询或操作账户。请通过官方渠道核实身份，电话 95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "账户敏感",
+        "decision": "handoff",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "p01",
+      "question": "整存整取最低多少钱",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取最低多少钱",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "a1c729ef7efb80a73869aee238ec91b758432f3cd09b45e0ccc4236752003ee2"
+          }
+        ],
+        "session_id": "7ec01677-f348-49f8-ae13-440bb3829105",
+        "processing_time": 0.0011511000338941813
+      }
+    },
+    {
+      "case_id": "p01",
+      "question": "整存整取最低多少钱",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "cd227209-bce5-43e9-a1ae-11df76b4b2f9",
+        "is_complete": true,
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取最低多少钱",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "a1c729ef7efb80a73869aee238ec91b758432f3cd09b45e0ccc4236752003ee2"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p02",
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取定期存款最低起存金额是多少？",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "9ed759715f190c5713c3966d927e84602c61f4bc6432a84986431c0d7bc2ebde"
+          }
+        ],
+        "session_id": "4d8321bc-d93f-4c72-96f6-362c37ac724c",
+        "processing_time": 0.0005135999526828527
+      }
+    },
+    {
+      "case_id": "p02",
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "6c5cc8f3-a79a-4554-b2d9-5323f90d042c",
+        "is_complete": true,
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取定期存款最低起存金额是多少？",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "9ed759715f190c5713c3966d927e84602c61f4bc6432a84986431c0d7bc2ebde"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p03",
+      "question": "整存整取定期存款提前支取如何计息？",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "74c5f23f-6d5e-4320-a2d4-d0624bb99706",
+        "processing_time": 0.4305592000018805
+      }
+    },
+    {
+      "case_id": "p03",
+      "question": "整存整取定期存款提前支取如何计息？",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "3892e34e-2b75-4c8e-9626-c55859709a1f",
+        "is_complete": true,
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p04",
+      "question": "存款保险最高偿付限额是多少？",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "f84ca4a4-87c3-4ed1-b151-4b7f7b123b1d",
+        "processing_time": 0.0008275000145658851
+      }
+    },
+    {
+      "case_id": "p04",
+      "question": "存款保险最高偿付限额是多少？",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "3bf7be1f-c3eb-4306-9419-60bddc0eb342",
+        "is_complete": true,
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p05",
+      "question": "跨行转账手续费是多少",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "5d20b6bf-7fad-42f7-96ae-80bc717a1a8a",
+        "processing_time": 0.0006593000143766403
+      }
+    },
+    {
+      "case_id": "p05",
+      "question": "跨行转账手续费是多少",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "e87dd9aa-0bbb-4ad8-b87e-e14fcf47a486",
+        "is_complete": true,
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p06",
+      "question": "开户需要身份证吗",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "6b3d1575-b04c-4e27-85a2-e8eeec6c17a6",
+        "processing_time": 0.0005976999527774751
+      }
+    },
+    {
+      "case_id": "p06",
+      "question": "开户需要身份证吗",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "6381d8ae-dfdc-478d-8038-d14de14f004a",
+        "is_complete": true,
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p07",
+      "question": "你好，我想知道整存整取最低起存金额",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "cf648c87-a3c9-4bfb-b510-a574702d8114",
+        "processing_time": 0.000736100017093122
+      }
+    },
+    {
+      "case_id": "p07",
+      "question": "你好，我想知道整存整取最低起存金额",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true,
+        "bound_references": true,
+        "nonempty_actual_context": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "ccf1ad75-5853-4859-bf18-2cd3a83f68b5",
+        "is_complete": true,
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "g01",
+      "question": "你好！",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "您好，我是银行存款业务演示客服，可以解答存款与公开业务 FAQ。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "闲聊",
+        "decision": "greeting",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "0d4395db-4a9b-44a1-9461-8e6e1a29dc03",
+        "processing_time": 0.0003136000013910234
+      }
+    },
+    {
+      "case_id": "g01",
+      "question": "你好！",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "98bddf03-cc44-4ecb-be92-46505b4f38e8",
+        "is_complete": true,
+        "answer": "您好，我是银行存款业务演示客服，可以解答存款与公开业务 FAQ。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "闲聊",
+        "decision": "greeting",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n09",
+      "question": "我想知道当前银行的利率表",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "信息不足，无法回答，请联系人工客服，电话：95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "3241c703-a8b9-4f5d-bd90-ca2f4658dee8",
+        "processing_time": 0.00040960003389045596
+      }
+    },
+    {
+      "case_id": "n09",
+      "question": "我想知道当前银行的利率表",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "2b382e7b-8487-4ec3-a6db-33f7af56acd8",
+        "is_complete": true,
+        "answer": "信息不足，无法回答，请联系人工客服，电话：95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    },
+    {
+      "case_id": "n10",
+      "question": "信用卡分期手续费怎么收",
+      "transport": "http",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "answer": "信息不足，无法回答，请联系人工客服，电话：95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "citations": [],
+        "error_code": "",
+        "contexts": [],
+        "session_id": "36005adc-5593-4dfe-9aa9-191565de0b9f",
+        "processing_time": 0.0005201000021770597
+      }
+    },
+    {
+      "case_id": "n10",
+      "question": "信用卡分期手续费怎么收",
+      "transport": "websocket",
+      "passed": true,
+      "checks": {
+        "decision": true,
+        "intent": true,
+        "disclaimer": true,
+        "no_unsafe_recommendation": true
+      },
+      "result": {
+        "type": "end",
+        "session_id": "ce7ff89a-cecc-4f03-b74a-ebb1e88c810f",
+        "is_complete": true,
+        "answer": "信息不足，无法回答，请联系人工客服，电话：95566。\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "policy",
+        "intent": "业务咨询",
+        "decision": "insufficient_evidence",
+        "citations": [],
+        "error_code": "",
+        "contexts": []
+      }
+    }
+  ],
+  "meaning": "route regression, NOT an estimate of general financial compliance"
+}

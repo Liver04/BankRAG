@@ -1,0 +1,19 @@
+{
+  "backend": "real_local_dependencies_mocked_cloud",
+  "passed": true,
+  "http_channel": "rag",
+  "websocket_channel": "rag",
+  "history_count": 2,
+  "health": {
+    "status": "healthy",
+    "dependencies": {
+      "mysql": true,
+      "redis": true,
+      "milvus": true,
+      "classifier": true
+    }
+  },
+  "model_calls": 4,
+  "provider_stream_calls": 1,
+  "meaning": "Real default adapter and local models/DB; external HTTP blocked, cloud completion/stream replaced; NOT a financial accuracy result"
+}

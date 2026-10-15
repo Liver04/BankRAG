@@ -1,0 +1,22 @@
+{
+  "version": "reserve_v2_candidates",
+  "status": "unexecuted_pending_independent_human_gold",
+  "cases": 30,
+  "turns": 33,
+  "model_inference_executed": false,
+  "cloud_questions_sent": 0,
+  "exact_overlap": 0,
+  "independent_blind_benchmark": false,
+  "model_sha256_at_freeze": "bd1a46cb3f403ea8db63814c618ee2640e66743ee99d99ff3f975e824ef7b48a",
+  "files_sha256": {
+    "contamination_screen.json": "d94415f76e97f5dcc97b33005fadbac85bfd541199f119c4360a2b3d4e582f2e",
+    "gold_review_draft.jsonl": "07bed78696dcda41c00ed21edf106ff381b51b64d8b294f81bf5c6ba8a2b7e65",
+    "questions.jsonl": "286b9fa1b6ffd6dedcd38fe0b71af18c97cc347b0a9c70208031810a693e47a8",
+    "source_snapshot.json": "46baf08d7e8779c2ed82171d2ef253189f7d4e29bf6add46069da3af785855fa"
+  },
+  "limits": [
+    "Author has seen previous failures and implementation",
+    "Character similarity is only a screen; semantic independence and financial gold require real reviewers",
+    "Do not train/tune on this reserve; a run requires reviewed complete gold and separate external-send scope if using cloud"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "tests_passed": 6,
+  "tests_total": 6,
+  "meaning": "Six negative tests of the offline data validator, not model regression or human scoring",
+  "tests": [
+    {
+      "test": "missing_case_rejected",
+      "passed": true,
+      "expected_check": "scenario_count",
+      "observed_failures": [
+        "scenario_count",
+        "turn_count",
+        "multi_turn_count",
+        "review_form_complete_and_unscored",
+        "question_only_payloads_match_gold"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    },
+    {
+      "test": "out_of_range_evidence_rejected",
+      "passed": true,
+      "expected_check": "exact_quote:",
+      "observed_failures": [
+        "exact_quote:H-P01/T1:E1"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    },
+    {
+      "test": "heading_only_anchor_rejected",
+      "passed": true,
+      "expected_check": "substantive_quote:",
+      "observed_failures": [
+        "substantive_quote:H-P01/T1:E1"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    },
+    {
+      "test": "forged_doc_binding_rejected",
+      "passed": true,
+      "expected_check": "document_binding:",
+      "observed_failures": [
+        "document_binding:H-P01/T1:E1"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    },
+    {
+      "test": "old_training_question_rejected",
+      "passed": true,
+      "expected_check": "no_exact_old_question_duplicates",
+      "observed_failures": [
+        "question_only_payloads_match_gold",
+        "no_exact_old_question_duplicates"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    },
+    {
+      "test": "fake_human_completion_rejected",
+      "passed": true,
+      "expected_check": "review_form_complete_and_unscored",
+      "observed_failures": [
+        "review_form_complete_and_unscored"
+      ],
+      "scope": "Deliberately invalid artifact copy, no runtime requests"
+    }
+  ]
+}

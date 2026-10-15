@@ -1,0 +1,97 @@
+{
+  "question_texts_changed": false,
+  "model_answers_seen": false,
+  "reason": "Pre-run official-source corrections and missing withdrawal constraint, never score-driven relabeling.",
+  "changes": [
+    {
+      "turn_id": "H-P06/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "product/通知存款产品说明__20261011.md",
+      "before": "1570601d5982dbcf",
+      "after": "b1ec6d2358e5ba9c"
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "kind": "gold_condition_completion_before_model_run",
+      "before": "留存四万元低于最低留存五万元；应按实际规则支取或结清，不能保证这笔操作可执行。",
+      "after": "计划支取3万元低于最低支取5万元，剩余4万元也低于最低留存5万元；不能认定该计划满足通知存款条件，需按实际规则支取或结清。"
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "product/通知存款产品说明__20261011.md",
+      "before": "1570601d5982dbcf",
+      "after": "b1ec6d2358e5ba9c"
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "product/通知存款产品说明__20261011.md",
+      "before": "1570601d5982dbcf",
+      "after": "b1ec6d2358e5ba9c"
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "business_rule/转账汇款业务规则__20261011.md",
+      "before": "039dc0d666138d0a",
+      "after": "058ebeed59b30b41"
+    },
+    {
+      "turn_id": "H-B08/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "business_rule/转账汇款业务规则__20261011.md",
+      "before": "039dc0d666138d0a",
+      "after": "058ebeed59b30b41"
+    },
+    {
+      "turn_id": "H-B09/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "business_rule/转账汇款业务规则__20261011.md",
+      "before": "039dc0d666138d0a",
+      "after": "058ebeed59b30b41"
+    },
+    {
+      "turn_id": "H-B10/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "business_rule/转账汇款业务规则__20261011.md",
+      "before": "039dc0d666138d0a",
+      "after": "058ebeed59b30b41"
+    },
+    {
+      "turn_id": "H-U04/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "faq/开户销户FAQ__20261011.md",
+      "before": "59196112d5662547",
+      "after": "f96013c11d4c6c05"
+    },
+    {
+      "turn_id": "H-M02/T2",
+      "kind": "source_version_refreeze",
+      "document_path": "product/通知存款产品说明__20261011.md",
+      "before": "1570601d5982dbcf",
+      "after": "b1ec6d2358e5ba9c"
+    },
+    {
+      "turn_id": "H-M03/T1",
+      "kind": "source_version_refreeze",
+      "document_path": "business_rule/转账汇款业务规则__20261011.md",
+      "before": "039dc0d666138d0a",
+      "after": "058ebeed59b30b41"
+    },
+    {
+      "turn_id": "H-N02/T1 + H-N04/T1",
+      "kind": "acceptable_decisions_schema_correction",
+      "before": [
+        "answered",
+        "insufficient_evidence"
+      ],
+      "after": [
+        "answered",
+        "insufficient_evidence",
+        "clarify"
+      ],
+      "reason": "v1.1 diagnostic traces returned a direct clarification; this is an action-contract correction based on intended dialogue behavior, not answer-score optimization."
+    }
+  ]
+}

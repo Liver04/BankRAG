@@ -1,0 +1,11 @@
+{
+  "dataset_version": "bankrag_eval_v2.0",
+  "dataset_sha256": "b4493b380a4bf0b44c4413df291489ef4509af8028e3595b72fdc8d88cf6e051",
+  "backend": "fixture",
+  "created_at": "2026-10-12T09:15:07.734524+00:00",
+  "status": "collected",
+  "metrics": null,
+  "meaning": "answerable subset only; refusals scored separately; no retriever re-execution",
+  "answered": 7,
+  "excluded": 0
+}

@@ -1,0 +1,337 @@
+{
+  "rows": [
+    {
+      "case_id": "p01",
+      "question": "整存整取最低多少钱",
+      "answer": "起存50元。",
+      "contexts": [
+        "起存50元。"
+      ],
+      "ground_truth": "整存整取最低起存金额为50元。",
+      "trace": {
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取最低多少钱",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "a1c729ef7efb80a73869aee238ec91b758432f3cd09b45e0ccc4236752003ee2"
+          }
+        ],
+        "session_id": "8e60f14a-a4a6-46e0-9334-e21e557c294e",
+        "processing_time": 0.0014479999663308263
+      }
+    },
+    {
+      "case_id": "p02",
+      "question": "整存整取定期存款最低起存金额是多少？",
+      "answer": "起存50元。",
+      "contexts": [
+        "起存50元。"
+      ],
+      "ground_truth": "整存整取最低起存金额为50元。",
+      "trace": {
+        "answer": "起存50元。\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=faq-block 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "faq",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "faq-block",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "起存50元。",
+            "doc_id": "doc-1",
+            "parent_id": "faq-block",
+            "title": "存款公开规则",
+            "source": "faq",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN",
+            "question": "整存整取定期存款最低起存金额是多少？",
+            "answer": "起存50元。",
+            "block_id": "faq-block",
+            "faq_id": "faq-1",
+            "question_hash": "9ed759715f190c5713c3966d927e84602c61f4bc6432a84986431c0d7bc2ebde"
+          }
+        ],
+        "session_id": "d86de15a-aae3-4096-b009-eec149c1e979",
+        "processing_time": 0.0010144999832846224
+      }
+    },
+    {
+      "case_id": "p03",
+      "question": "整存整取定期存款提前支取如何计息？",
+      "answer": "整存整取起存金额为50元。[1]",
+      "contexts": [
+        "整存整取起存金额50元。"
+      ],
+      "ground_truth": "提前支取部分按支取日活期利率计息，未支取部分仍按原存期原利率计息。",
+      "trace": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "75a32f2a-5f5e-4987-9a2b-3e206665a8f2",
+        "processing_time": 0.4383897000225261
+      }
+    },
+    {
+      "case_id": "p04",
+      "question": "存款保险最高偿付限额是多少？",
+      "answer": "整存整取起存金额为50元。[1]",
+      "contexts": [
+        "整存整取起存金额50元。"
+      ],
+      "ground_truth": "同一存款人在同一家投保机构的被保险存款本金和利息合并计算，最高偿付限额为人民币50万元。",
+      "trace": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "d4038d17-7600-41aa-ad41-2da2c2c6b39f",
+        "processing_time": 0.0008970000199042261
+      }
+    },
+    {
+      "case_id": "p05",
+      "question": "跨行转账手续费是多少",
+      "answer": "整存整取起存金额为50元。[1]",
+      "contexts": [
+        "整存整取起存金额50元。"
+      ],
+      "ground_truth": "费用因办理渠道和金额而异，应依据所引用中国银行业务资料说明具体适用范围。",
+      "trace": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "5bcf0135-9121-4497-a0d3-11c938db3458",
+        "processing_time": 0.0006695999763906002
+      }
+    },
+    {
+      "case_id": "p06",
+      "question": "开户需要身份证吗",
+      "answer": "整存整取起存金额为50元。[1]",
+      "contexts": [
+        "整存整取起存金额50元。"
+      ],
+      "ground_truth": "开户需要有效身份证明文件，具体材料依申请人身份及办理渠道而定。",
+      "trace": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "e75eb4da-3734-47cf-afc6-e774d5b0793b",
+        "processing_time": 0.0006234999746084213
+      }
+    },
+    {
+      "case_id": "p07",
+      "question": "你好，我想知道整存整取最低起存金额",
+      "answer": "整存整取起存金额为50元。[1]",
+      "contexts": [
+        "整存整取起存金额50元。"
+      ],
+      "ground_truth": "整存整取最低起存金额为50元。",
+      "trace": {
+        "answer": "整存整取起存金额为50元。[1]\n\n【服务端来源】\n[1]《存款公开规则》 doc=doc-1 block=block-1 审核状态=demo_approved 有效期=20260101~20991231 来源=https://example.invalid/demo\n\n以上内容仅供参考，不构成投资建议或收益承诺。存款产品受《存款保险条例》保障，具体利率、规则及收费标准以银行最新官方公布为准；如涉及理财/基金产品，请注意：理财非存款、产品有风险、投资需谨慎。",
+        "channel": "rag",
+        "intent": "业务咨询",
+        "decision": "answered",
+        "citations": [
+          {
+            "number": 1,
+            "doc_id": "doc-1",
+            "block_id": "block-1",
+            "title": "存款公开规则",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231
+          }
+        ],
+        "error_code": "",
+        "contexts": [
+          {
+            "text": "整存整取起存金额50元。",
+            "doc_id": "doc-1",
+            "parent_id": "block-1",
+            "title": "存款公开规则",
+            "source": "product",
+            "source_url": "https://example.invalid/demo",
+            "version": "v1",
+            "review_status": "demo_approved",
+            "effective_date": 20260101,
+            "expiry_date": 20991231,
+            "jurisdiction": "CN"
+          }
+        ],
+        "session_id": "6b8be9e8-ec51-44c6-9bfa-b981cbe2ebb2",
+        "processing_time": 0.0012563999625854194
+      }
+    }
+  ],
+  "excluded": []
+}

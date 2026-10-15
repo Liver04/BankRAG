@@ -1,0 +1,485 @@
+{
+  "hit_rate": 0.9615384615384616,
+  "total_cases": 52,
+  "hit_cases": 50,
+  "pass_rate": 0.8,
+  "threshold": 0.15,
+  "cases": [
+    {
+      "query": "活期存款利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "product",
+        "rate_table",
+        "faq"
+      ]
+    },
+    {
+      "query": "一年定期存款利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "rate_table",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "通知存款七天利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "product",
+        "rate_table",
+        "faq"
+      ]
+    },
+    {
+      "query": "协定存款利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "rate_table",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "整存整取有哪几种存期",
+      "expected": "product",
+      "sources": [
+        "product",
+        "product",
+        "faq"
+      ]
+    },
+    {
+      "query": "整存整取起存金额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "product",
+        "faq"
+      ]
+    },
+    {
+      "query": "定期存款提前支取怎么计息",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "定期存款到期自动转存吗",
+      "expected": "product",
+      "sources": [
+        "faq",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "大额存单起存金额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "大额存单有哪些期限",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "大额存单可以提前支取吗",
+      "expected": "product",
+      "sources": [
+        "faq",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "零存整取起存金额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "product",
+        "faq"
+      ]
+    },
+    {
+      "query": "零存整取漏存了怎么办",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存款保险最高偿付限额是多少",
+      "expected": "regulation",
+      "sources": [
+        "regulation",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存款保险保障哪些存款",
+      "expected": "regulation",
+      "sources": [
+        "regulation",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "银行卡挂失怎么办理",
+      "expected": "business_rule",
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "临时挂失有效期多久",
+      "expected": "business_rule",
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存折丢了怎么办",
+      "expected": "faq",
+      "sources": [
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "定期存款到期忘记取会怎样",
+      "expected": "faq",
+      "sources": [
+        "faq",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存款利息怎么计算",
+      "expected": "faq",
+      "sources": [
+        "faq",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "个人活期存款的结息日是哪天",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "活期存款未到结息日清户，利息算到哪天",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "人民币七天通知存款最低起存金额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "没有提前通知就支取通知存款，利息怎么算",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "定期存款全部提前支取，利息按什么利率计算",
+      "expected": "regulation",
+      "sources": [
+        "product",
+        "regulation",
+        "faq"
+      ]
+    },
+    {
+      "query": "存单或存折丢失后应如何申请挂失",
+      "expected": "regulation",
+      "sources": [
+        "business_rule",
+        "regulation",
+        "faq"
+      ]
+    },
+    {
+      "query": "一个人在中国银行可以开立几个Ⅰ类账户",
+      "expected": "business_rule",
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "16岁以下未成年人开户需要哪些材料",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "Ⅱ类账户非绑定账户转入资金的年累计限额是多少",
+      "expected": "business_rule",
+      "sources": [
+        "business_rule",
+        "faq"
+      ]
+    },
+    {
+      "query": "手机银行使用中银E盾跨行实时转账限额是多少",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "business_rule",
+        "business_rule",
+        "faq"
+      ]
+    },
+    {
+      "query": "跨行普通转账非工作日受理后什么时候汇出",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "5万元以上跨行柜台实时转账手续费最高是多少",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "business_rule",
+        "business_rule",
+        "faq"
+      ]
+    },
+    {
+      "query": "定活两便存款存满8个月，利率按什么规则计算",
+      "expected": "product",
+      "sources": [
+        "product",
+        "rate_table",
+        "faq"
+      ]
+    },
+    {
+      "query": "人民币定活两便最低起存金额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存本取息提前支取时，已支取利息如何处理",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "存本取息存款能否部分提前支取",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "南非分行美元3个月定期存款网上银行利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "rate_table",
+        "rate_table",
+        "faq"
+      ]
+    },
+    {
+      "query": "港币活期存款利率是多少",
+      "expected": "rate_table",
+      "sources": [
+        "rate_table",
+        "rate_table",
+        "product"
+      ]
+    },
+    {
+      "query": "开个人存款账户必须出示什么证件",
+      "expected": "regulation",
+      "sources": [
+        "regulation",
+        "regulation",
+        "faq"
+      ]
+    },
+    {
+      "query": "可以代理他人开立个人存款账户吗",
+      "expected": "regulation",
+      "sources": [
+        "regulation",
+        "business_rule",
+        "regulation"
+      ]
+    },
+    {
+      "query": "公司日常经营和工资奖金支取应通过哪个账户办理",
+      "expected": "regulation",
+      "sources": [
+        "regulation"
+      ]
+    },
+    {
+      "query": "储蓄账户能否办理转账结算",
+      "expected": "regulation",
+      "sources": [
+        "regulation",
+        "business_rule",
+        "regulation"
+      ]
+    },
+    {
+      "query": "账户有欠款能否申请销户",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "business_rule",
+        "regulation",
+        "faq"
+      ]
+    },
+    {
+      "query": "账户关闭后能否重新开启",
+      "expected": [
+        "business_rule",
+        "faq"
+      ],
+      "sources": [
+        "faq"
+      ]
+    },
+    {
+      "query": "存款证明每份手续费是多少",
+      "expected": "business_rule",
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "开具存款证明期间资金能否自由支取",
+      "expected": "business_rule",
+      "sources": [
+        "product",
+        "business_rule",
+        "faq"
+      ]
+    },
+    {
+      "query": "教育储蓄本金最高限额是多少",
+      "expected": "product",
+      "sources": [
+        "product",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "教育储蓄到期支取享受优惠需要提供什么证明",
+      "expected": "product",
+      "sources": [
+        "product",
+        "business_rule",
+        "faq"
+      ]
+    },
+    {
+      "query": "什么是定向转账",
+      "expected": "faq",
+      "sources": [
+        "business_rule",
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "开通定向转账功能是否收费",
+      "expected": "faq",
+      "sources": [
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "双零账户是什么意思",
+      "expected": "faq",
+      "sources": [
+        "faq",
+        "faq"
+      ]
+    },
+    {
+      "query": "借记卡主账户被清理后，借记卡还能继续使用吗",
+      "expected": "faq",
+      "sources": [
+        "faq"
+      ]
+    }
+  ]
+}

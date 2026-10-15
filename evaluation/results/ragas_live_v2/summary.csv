@@ -1,0 +1,5 @@
+metric,mean,valid_count,total
+faithfulness,0.9821428571428571,7,7
+answer_relevancy,0.8842804588792357,7,7
+context_precision,0.9047619046869048,7,7
+context_recall,1.0,7,7

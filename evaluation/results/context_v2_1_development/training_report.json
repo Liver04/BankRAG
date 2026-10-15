@@ -1,0 +1,95 @@
+{
+  "status": "candidate_trained_not_promoted",
+  "device": "cpu",
+  "full_encoder_finetuned": true,
+  "epochs": 5,
+  "seconds": 281.4371109008789,
+  "train_rows": 368,
+  "validation_rows": 112,
+  "semantic_group_overlap": 0,
+  "data_sha256": "6c4be658707fd111830df33cbc9c2a86a70b5de106f31feb9ebdd7a7929e1f48",
+  "accuracy": 0.9732142857142857,
+  "classification_report": {
+    "闲聊": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 28.0
+    },
+    "业务咨询": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1-score": 0.9411764705882353,
+      "support": 24.0
+    },
+    "收益预测": {
+      "precision": 1.0,
+      "recall": 0.8928571428571429,
+      "f1-score": 0.9433962264150944,
+      "support": 28.0
+    },
+    "投诉": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "账户敏感": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "accuracy": 0.9732142857142857,
+    "macro avg": {
+      "precision": 0.9777777777777779,
+      "recall": 0.9785714285714284,
+      "f1-score": 0.976914539400666,
+      "support": 112.0
+    },
+    "weighted avg": {
+      "precision": 0.9761904761904762,
+      "recall": 0.9732142857142857,
+      "f1-score": 0.9732440145869669,
+      "support": 112.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      28,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      25,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      16
+    ]
+  ],
+  "limits": "Synthetic development validation; neither independent human labels nor blind generalization accuracy"
+}

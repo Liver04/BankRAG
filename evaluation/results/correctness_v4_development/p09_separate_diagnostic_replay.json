@@ -1,0 +1,13 @@
+{
+  "scope": "Separate one-call diagnostic replay using frozen final-run context. NOT original rejected text, no score, no serving change",
+  "question": "一笔中行人民币定活两便留了十三个月，计息档次会跟着延长到两年吗？",
+  "prompt_sha256": "16ab271b047fbf23831951e33948e014ca8e048577af49dae9ff3ecfbb50536b",
+  "two_year_mentions": [
+    {
+      "raw": "两年",
+      "prefix": "长，人民币定活两便存款一年以上（含一年）的，整个存期均按支取日整存整取定期存款1年期利率打六折计息，不因存期延长而升档至",
+      "suffix": "期利率 [1]。"
+    }
+  ],
+  "redacted_generated_text": "不会。无论存期多长，人民币定活两便存款一年以上（含一年）的，整个存期均按支取日整存整取定期存款1年期利率打六折计息，不因存期延长而升档至两年期利率 [1]。"
+}

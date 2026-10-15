@@ -1,0 +1,53 @@
+# BankRAG Windows 演示与部署步骤
+
+本文按项目现有 Docker Compose 拓扑编写：FastAPI、MySQL、Redis 使用 Compose；Milvus 继续使用宿主机已有实例；BGE-M3、重排器和 BERT 权重从本地目录挂载。此步骤用于本机求职演示，不代表生产部署。
+
+## 启动前检查
+
+1. Docker Desktop 已启动，`docker info` 能连接 Engine。
+2. 本机已有 Milvus，并且集合别名 `finance_deposit_v1_active` 已发布。Compose 容器通过 `host.docker.internal:19530` 访问它。
+3. `rag_qa/models/` 中有 BGE-M3、BGE-Reranker-Large 和 `finance_intent_classifier` 模型文件。
+4. `.env` 已在本机创建并填写 DashScope 环境变量；不要把该文件提交到仓库或贴进聊天/日志。项目的 `.gitignore` 已忽略 `.env`。
+5. 首次构建需要能访问 Docker 镜像源和 Python 包源；如果镜像源拒绝请求，Compose 配置检查仍可通过，但镜像构建不能视为成功。
+
+## PowerShell 启动
+
+在 `qa_system` 目录执行：
+
+```powershell
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+notepad .env
+docker compose config --quiet
+docker compose up -d --build
+docker compose ps
+Invoke-RestMethod http://127.0.0.1:8090/health
+```
+
+在编辑器中只在本机填写 `.env`。`docker compose config --quiet` 检查 Compose 展开结果，不会拉取镜像或证明服务可用。应用容器等待 MySQL/Redis 健康后启动；应用的健康状态还要求 Milvus 与分类模型可用。
+
+## 首次准备数据
+
+等 `docker compose ps` 显示 MySQL、Redis 健康且 app 可访问后，在 app 容器内执行：
+
+```powershell
+docker compose exec app python faq_to_mysql.py --dry-run
+docker compose exec app python ingest.py --dry-run
+docker compose exec app python faq_to_mysql.py
+docker compose exec app python ingest.py --ingest-only
+Invoke-RestMethod http://127.0.0.1:8090/health
+```
+
+FAQ 会写入 Compose 的 `bank-rag-mysql` 服务；向量快照发布到外部 Milvus。不要把这些命令指向 EduRAG 数据库或集合。重复执行导入应按项目幂等规则处理；先看 dry-run 输出再发布。
+
+## 检查与停止
+
+- 查看状态：`docker compose ps`
+- 查看应用日志：`docker compose logs --tail 100 app`
+- 访问网页：`http://127.0.0.1:8090/`
+- 停止容器但保留命名卷：`docker compose down`
+
+Compose 暴露的宿主机端口为 app `8090`、MySQL `3308`、Redis `6380`；容器之间使用服务名和容器端口通信。删除命名卷会清除演示数据库数据，只有在确认不再需要这些数据时才手动清理。
+
+## 当前验证边界
+
+本轮 `docker compose config --quiet` 可通过；没有在本轮重新构建镜像或启动一套新 Compose 服务。因此 Docker Hub/Python 包源是否可达、干净机器上的首次构建、网页浏览器端体验仍未验证。

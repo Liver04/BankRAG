@@ -1,0 +1,4034 @@
+{
+  "scope": "final v2.3.3 offline guard replay of frozen v2.2 text and actual contexts; not new generation or human grading",
+  "total": 95,
+  "passed": 95,
+  "rows": [
+    {
+      "turn_id": "H-B01/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B02/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B03/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B08/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C01/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C02/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C03/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C04/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "agent_identity",
+          "principal_identity",
+          "authorization"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "agent_identity",
+            "principal_identity",
+            "authorization"
+          ],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "6",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "version": "db622c6cfb037852"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M01/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M01/T2",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M02/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M02/T2",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "withdrawal_minimum",
+          "remaining_minimum"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_withdrawal",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "withdrawal_minimum",
+            "remaining_minimum"
+          ],
+          "rules": {
+            "withdrawal_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ],
+            "remaining_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ]
+          },
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M03/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M04/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M05/T2",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "3",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "6",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "9",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "12",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M07/T2",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M10/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P01/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P02/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P03/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P05/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": true,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "withdrawal_minimum",
+          "remaining_minimum"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_withdrawal",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "explicit_scenario"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "4E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "explicit_scenario"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "parsed",
+            "values": {
+              "total": "7E+4",
+              "withdrawal": "3E+4",
+              "remaining": "4E+4"
+            },
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "withdrawal_minimum",
+            "remaining_minimum"
+          ],
+          "rules": {
+            "withdrawal_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ],
+            "remaining_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ]
+          },
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P10/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P12/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P14/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U07/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "transport": "http",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B01/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B02/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B03/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B04/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B05/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+3",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "version": "942c2d4a1116c604"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "version": "942c2d4a1116c604"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "427eda3a7de6fa47892d4ecb3c788370",
+                  "block_id": "3d82a9aade04be1a023c9ecf3cfb52283d3b0a35db2137c1",
+                  "version": "942c2d4a1116c604"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B07/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B08/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B09/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B11/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-B12/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C01/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C02/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C03/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C04/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-C06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "agent_identity",
+          "principal_identity",
+          "authorization"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "agent_identity",
+            "principal_identity",
+            "authorization"
+          ],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-F07/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-F10/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "6",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9b41f7e585690144a58c2c08396a2402",
+                  "block_id": "3f6e98c501cd9456745b226218a5ae795c663615b286ff0b",
+                  "version": "db622c6cfb037852"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M01/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "1",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5",
+                "年"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M01/T2",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M02/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M02/T2",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "withdrawal_minimum",
+          "remaining_minimum"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_withdrawal",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "withdrawal_minimum",
+            "remaining_minimum"
+          ],
+          "rules": {
+            "withdrawal_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ],
+            "remaining_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ]
+          },
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M03/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M04/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M05/T2",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "3",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "6",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "9",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "12",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "c033ec3564a58ab78ba28c0c59f1efaa",
+                  "block_id": "59423763efdf2be2f61afc978e541b0cc7e0dcc886bed94a",
+                  "version": "bcf8e728f97a9b76"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M07/T2",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M08/T2",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-M10/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-N06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P01/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P02/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P03/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P04/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2",
+                "月"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "19a24077f42acbf75d10b3a65d94c2e0",
+                  "block_id": "6c606bd4f362b75a23e3b597a0ab1dd2d191f8b403ff3985",
+                  "version": "1ca1f61bf0928029"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P05/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": true,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "7",
+                "天"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P07/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [
+          "withdrawal_minimum",
+          "remaining_minimum"
+        ],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_withdrawal",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "3E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "explicit_scenario"
+            },
+            {
+              "atom": [
+                "5E+4",
+                "元"
+              ],
+              "scope": "minimum_remaining",
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "cited_rule"
+            },
+            {
+              "atom": [
+                "4E+4",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "9f1ac339ebcde7d4b3f00fb3802717dd",
+                  "block_id": "b6a2e011beae74c2da9cf1aaea54b89320b3681d08d7a95d",
+                  "version": "b1ec6d2358e5ba9c"
+                }
+              ],
+              "origin": "explicit_scenario"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "parsed",
+            "values": {
+              "total": "7E+4",
+              "withdrawal": "3E+4",
+              "remaining": "4E+4"
+            },
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [
+            "withdrawal_minimum",
+            "remaining_minimum"
+          ],
+          "rules": {
+            "withdrawal_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ],
+            "remaining_minimum": [
+              {
+                "amount": "5E+4",
+                "number": 1,
+                "quote": "人民币通知存款最低起存金额、最低支取金额和最低留存金额均为5万元。"
+              }
+            ]
+          },
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P10/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P11/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P12/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P13/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [
+            {
+              "atom": [
+                "2E+5",
+                "元"
+              ],
+              "scope": null,
+              "local_citation_numbers": [
+                1
+              ],
+              "elapsed_marker": false,
+              "negated_term_marker": false,
+              "repair_cap_context_numbers": [],
+              "supporting_citation_numbers": [
+                1
+              ],
+              "alternative_context_numbers": [],
+              "bound_sources": [
+                {
+                  "number": 1,
+                  "doc_id": "ef80ecb260190d0b3fc426c8b436bfb8",
+                  "block_id": "a625dcd5ac134920bef379897caa51d83f8b3dc167124a24",
+                  "version": "8a4ea06df8440933"
+                }
+              ],
+              "origin": "cited_rule"
+            }
+          ],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-P14/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U01/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U02/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U03/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U05/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U06/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U07/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    },
+    {
+      "turn_id": "H-U08/T1",
+      "transport": "websocket",
+      "passed": true,
+      "check": {
+        "version": "bounded_evidence_v3",
+        "passed": true,
+        "issues": [],
+        "required_conditions": [],
+        "numeric_support": {
+          "passed": true,
+          "checks": [],
+          "unsupported": [],
+          "scenario": {
+            "status": "not_found",
+            "values": {},
+            "remaining_derived": false
+          },
+          "limits": "Bounded scopes and exact total-minus-withdrawal only; no arbitrary arithmetic, interest prediction or complete entailment"
+        },
+        "condition_plan": {
+          "requirements": [],
+          "rules": {},
+          "profile": "source_bound_conditions_v2"
+        },
+        "limits": "Cited numeric scopes/explicit scenarios/exact subtraction/selected conditions only; no complete semantic proof"
+      }
+    }
+  ]
+}

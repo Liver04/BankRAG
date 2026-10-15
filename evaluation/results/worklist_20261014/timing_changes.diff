@@ -1,0 +1,193 @@
+--- evaluation/results/worklist_20261014/timing_before/integrated_qa.py
++++ integrated_qa.py
+@@ -11,6 +11,7 @@
+ from base.faq_provenance import load_faq_sources
+ from pathlib import Path
+ from base.clarification import public_business_clarification
++from time import perf_counter
+ 
+ class IntegratedQASystem:
+     def __init__(self,mysql_client=None,redis_client=None,rag_system=None,initialize=True):
+@@ -37,10 +38,15 @@
+ 
+     def query_result(self,query,source_filter=None,session_id=None,use_stream=False):
+         validate_source(source_filter)
++        route_started=perf_counter();timings={}
++        phase=perf_counter()
+         intent,blocked=self.rag_system.gate(query)
++        timings['policy_gate_seconds']=round(perf_counter()-phase,6)
+         resolution={'status':'not_attempted_policy_gate'}
+         try:
++            phase=perf_counter()
+             history=self.get_session_history(session_id) if session_id else []
++            timings['history_read_seconds']=round(perf_counter()-phase,6)
+             effective_query=query
+             # Risk decisions bind the original request, including model-only
+             # decisions. Product resolution cannot downgrade them to clarification.
+@@ -48,7 +54,9 @@
+             if protected:
+                 resolution={'status':'not_attempted_protected_intent','intent':intent}
+             else:
++                phase=perf_counter()
+                 effective_query,resolution=resolve_query(query,history)
++                timings['query_resolution_seconds']=round(perf_counter()-phase,6)
+                 if effective_query is None:
+                     if blocked is None:
+                         blocked=Answer(finalize('请明确您指的是哪一种存款产品。'),'policy',intent,'clarify')
+@@ -62,17 +70,23 @@
+             if blocked:result=blocked
+             else:
+                 has_notice_scenario='通知存款' in effective_query and money_scenario(effective_query)['status']!='not_found'
++                phase=perf_counter()
+                 row=None if current_rate_query(effective_query) or has_notice_scenario else self.bm25_search.search_record(effective_query,config.FAQ_THRESHOLD,source_filter)
++                timings['faq_lookup_seconds']=round(perf_counter()-phase,6)
+                 if row and eligible(row) and not safe_answer_text(row['answer']):
+                     result=Answer(finalize('资料未通过输出规则检查，请联系人工客服。'),'faq',intent,'insufficient_evidence',error_code='unsafe_faq_output')
+                 elif row and eligible(row):
+                     doc=Document(page_content=row['answer'],metadata=dict(row,parent_id=row['block_id']))
++                    phase=perf_counter()
+                     try:
+                         support=self.faq_sources(row)
+                         check=check_evidence(effective_query,row['answer'],support,list(range(1,len(support)+1)))
+                     except (ValueError,KeyError,TypeError,OSError):check={'passed':False,'issues':['faq_support_invalid']}
++                    timings['faq_provenance_validation_seconds']=round(perf_counter()-phase,6)
+                     if not check['passed']:
++                        phase=perf_counter()
+                         result=self.rag_system.generate_result(effective_query,source_filter,history,intent,use_stream)
++                        timings['rag_generation_seconds']=round(perf_counter()-phase,6)
+                         result.diagnostics['faq_rejection']=check
+                     else:
+                         contexts=[doc]+support
+@@ -80,14 +94,20 @@
+                         result=Answer(finalize(row['answer']+'\n\n【服务端来源】\n'+render_citations(refs)),
+                             'faq',intent,'answered',refs,[{'text':d.page_content,**d.metadata} for d in contexts],diagnostics={'evidence_check':check})
+                 else:
++                    phase=perf_counter()
+                     result=self.rag_system.generate_result(effective_query,source_filter,history,intent,use_stream)
++                    timings['rag_generation_seconds']=round(perf_counter()-phase,6)
+         except Exception:
+             result=Answer(finalize('服务暂时异常，请联系人工客服。'),'system',intent,'error',error_code='query_failed')
+         result.diagnostics['reference_resolution']=resolution
+         if session_id:
++            phase=perf_counter()
+             try:self.mysql_client.save_history(session_id,query,result.answer)
+             except Exception:
+                 result=Answer(finalize('会话保存失败，请稍后重试。'),'system',intent,'error',error_code='history_failed')
++            timings['history_write_seconds']=round(perf_counter()-phase,6)
++        timings['orchestration_total_seconds']=round(perf_counter()-route_started,6)
++        result.diagnostics['route_phase_timings']=timings
+         return result
+ 
+     def query(self,query,source_filter=None,session_id=None):
+--- evaluation/results/worklist_20261014/timing_before/rag_system.py
++++ rag_qa/core/rag_system.py
+@@ -1,6 +1,7 @@
+ """One-pass traceable RAG; citations are validated BEFORE any generated text is emitted."""
+ import re
+ import inspect
++from time import perf_counter
+ from langchain_core.documents import Document
+ from base.config import config
+ from base.safety import Answer,finalize,citation,render_citations,eligible,validate_source,current_rate_query,safe_answer_text,redact
+@@ -113,15 +114,27 @@
+             intent,blocked=self.gate(query)
+             if blocked:return blocked
+         trace={}
++        timings={}
++        started=perf_counter()
++        def finish(result):
++            timings['total_seconds']=round(perf_counter()-started,6)
++            result.diagnostics.setdefault('rag_phase_timings',{}).update(timings)
++            return result
+         try:
++            phase=perf_counter()
+             docs=self.retrieve_and_merge(query,source_filter=source_filter,trace=trace)
++            timings['retrieval_and_rerank_seconds']=round(perf_counter()-phase,6)
+             contexts=[{'text':d.page_content,**d.metadata} for d in docs]
+-            if not docs:return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',diagnostics=trace)
++            if not docs:return finish(Answer(self._no_answer(),'rag',intent,'insufficient_evidence',diagnostics=trace))
++            phase=perf_counter()
+             structured=notice_answer(query,docs,intent)
++            timings['structured_answer_seconds']=round(perf_counter()-phase,6)
+             if isinstance(structured,Answer):
+                 structured.contexts=contexts;structured.diagnostics.update(trace)
+-                return structured
++                return finish(structured)
++            phase=perf_counter()
+             plan=condition_plan(query,docs)
++            timings['condition_plan_seconds']=round(perf_counter()-phase,6)
+             trace['condition_plan']=plan
+             prompt=self.rag_prompt.format(context=self._format_context(docs),question=query,
+                 history=self._format_history(history),phone=config.CUSTOMER_SERVICE_PHONE)
+@@ -130,11 +143,16 @@
+             # Buffer model streaming until citations and output rules pass.
+             if structured:
+                 raw=structured['raw'];trace.update(generation_mode=structured['mode'],scenario=structured['scenario'])
++                timings['generation_seconds']=0.0
+             else:
++                phase=perf_counter()
+                 raw=''.join(self.llm_stream(prompt)) if use_stream else self.llm(prompt)
++                timings['generation_seconds']=round(perf_counter()-phase,6)
+                 trace['generation_mode']='vendor_stream_buffered' if use_stream else 'vendor_completion'
++            phase=perf_counter()
+             try: citations=self._validated(raw,docs,query,trace)
+             except ValueError as e:
++                timings['validation_seconds']=round(perf_counter()-phase,6)
+                 check=trace.get('evidence_check',{})
+                 issues=check.get('issues',[])
+                 omitted=bool(issues) and all(x.startswith('missing_condition:') for x in issues)
+@@ -149,18 +167,26 @@
+                     trace['repair']={'attempts':1,'kind':kind,'initial_issues':issues,'initial_evidence_check':check}
+                     instruction=('首次回答遗漏了以下受原文支持的条件：'+str(issues)) if omitted else ('首次回答中数值没有被实际引用块支持。以下仅为重新核对线索，不是事实证明：'+str(unsupported))
+                     if cap_repair:instruction+='只解释所列repair_cap_context_numbers的原文明示计息档上限。不要复述客户猜测但原文未列的年数；不要把客户猜测当成实际档次，不能预测收益。'
++                    phase=perf_counter()
+                     raw=self.llm(prompt+'\n【重新作答】\n'+instruction+'。请逐句核对相同上下文、业务属性和适用范围后重新回答；每句紧接真实支持它的编号，无法支持则明确资料不足，不增加新事实。')
++                    timings['generation_seconds']=round(timings.get('generation_seconds',0.0)+perf_counter()-phase,6)
++                    phase=perf_counter()
+                     try:citations=self._validated(raw,docs,query,trace);trace['repair']['passed']=True
+                     except ValueError as repaired:
++                        timings['validation_seconds']=round(timings.get('validation_seconds',0.0)+perf_counter()-phase,6)
+                         trace['repair']['passed']=False
+-                        return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(repaired),diagnostics=trace)
++                        return finish(Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(repaired),diagnostics=trace))
++                    else:
++                        timings['validation_seconds']=round(timings.get('validation_seconds',0.0)+perf_counter()-phase,6)
+                 else:
+-                    return Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(e),diagnostics=trace)
+-            return Answer(finalize(raw+'\n\n【服务端来源】\n'+render_citations(citations)),
+-                'rag',intent,'answered',citations,contexts,diagnostics=trace)
++                    return finish(Answer(self._no_answer(),'rag',intent,'insufficient_evidence',contexts=contexts,error_code=str(e),diagnostics=trace))
++            else:
++                timings['validation_seconds']=round(perf_counter()-phase,6)
++            return finish(Answer(finalize(raw+'\n\n【服务端来源】\n'+render_citations(citations)),
++                'rag',intent,'answered',citations,contexts,diagnostics=trace))
+         except Exception:
+-            return Answer(finalize('服务暂时异常，未输出未经校验的答案，请联系人工客服。'),
+-                'rag',intent or '未知','error',error_code='rag_failed',diagnostics=trace)
++            return finish(Answer(finalize('服务暂时异常，未输出未经校验的答案，请联系人工客服。'),
++                'rag',intent or '未知','error',error_code='rag_failed',diagnostics=trace))
+ 
+     def generate_answer(self,query,source_filter=None,history=None):
+         return self.generate_result(query,source_filter,history).answer
+--- evaluation/results/worklist_20261014/timing_before/test_review_followup.py
++++ tests/test_review_followup.py
+@@ -9,6 +9,19 @@
+ from langchain_core.documents import Document
+ 
+ class FollowupGuardTests(unittest.TestCase):
++    def test_phase_timings_are_reported_and_nonnegative(self):
++        s=build_system()
++        r=s.query_result('整存整取起存金额是多少？')
++        self.assertEqual(r.decision,'answered')
++        route=r.diagnostics['route_phase_timings']
++        rag=r.diagnostics['rag_phase_timings']
++        self.assertIn('orchestration_total_seconds',route)
++        self.assertIn('retrieval_and_rerank_seconds',rag)
++        self.assertIn('generation_seconds',rag)
++        self.assertIn('validation_seconds',rag)
++        self.assertTrue(all(isinstance(v,(int,float)) and v>=0 for v in route.values()))
++        self.assertTrue(all(isinstance(v,(int,float)) and v>=0 for v in rag.values()))
++
+     def test_stale_rate_table_question_overrides_advice_label(self):
+         query='那张截至2025年5月的中行人民币表能直接代表现在的报价吗？给我肯定答案。'
+         c=QueryClassifier(predictor=lambda _: '收益预测')

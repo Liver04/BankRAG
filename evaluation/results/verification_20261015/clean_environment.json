@@ -1,0 +1,62 @@
+{
+  "schema": "bankrag_clean_environment_v1",
+  "recorded_at": "2026-10-15T06:40:00.484370+00:00",
+  "python": "3.10.18",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "installation": {
+    "command": "python -m pip install -r requirements.txt",
+    "exit_code": 0,
+    "result": "passed"
+  },
+  "pip_check": {
+    "exit_code": 0,
+    "result": "passed",
+    "output": "No broken requirements found."
+  },
+  "unittest": {
+    "command": "python -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests_run": 255,
+    "duration_seconds": 4.274,
+    "result": "passed",
+    "output_file": "unit_tests_clean_env.txt"
+  },
+  "direct_dependencies": {
+    "fastapi": "0.115.12",
+    "uvicorn": "0.50.0",
+    "pymilvus": "3.0.0",
+    "milvus-model": "0.2.12",
+    "FlagEmbedding": "1.3.5",
+    "sentence-transformers": "3.0.1",
+    "transformers": "4.45.0",
+    "torch": "2.12.1",
+    "langchain": "1.2.10",
+    "langchain-community": "0.4.1",
+    "langchain-core": "1.4.8",
+    "langchain-text-splitters": "1.1.2",
+    "langchain-openai": "1.3.3",
+    "openai": "2.44.0",
+    "PyMuPDF": "1.28.0",
+    "python-docx": "1.2.0",
+    "python-pptx": "1.0.2",
+    "rapidocr-onnxruntime": "1.4.4",
+    "opencv-python": "5.0.0.93",
+    "Pillow": "12.3.0",
+    "PyMySQL": "1.2.0",
+    "redis": "8.0.1",
+    "ragas": "0.2.6",
+    "jieba": "0.42.1",
+    "rank-bm25": "0.2.2",
+    "numpy": "2.2.6",
+    "httpx": "0.28.1",
+    "pandas": "2.3.3",
+    "datasets": "5.0.0",
+    "scikit-learn": "1.7.2",
+    "websockets": "15.0.1",
+    "accelerate": "1.14.0"
+  },
+  "notes": [
+    "Installed and tested in a new Python venv outside the shared EduRAG conda environment.",
+    "Does not validate Docker image build or live external service deployment."
+  ]
+}
