@@ -15,11 +15,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1 libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# 先复制依赖清单，利用 Docker 层缓存
-COPY requirements.txt .
+# CPU 容器使用官方 CPU wheel；其余依赖与本地 requirements.txt 保持同一版本。
+COPY requirements-docker.txt .
 
-# 安装 Python 依赖（国内镜像加速）
-RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+# 升级 pip 并以 PyPI 镜像提供通用依赖，CPU wheel 源只提供 PyTorch CPU 构建。
+RUN pip install --no-cache-dir --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple/ \
+    && pip install --no-cache-dir torch==2.12.1+cpu \
+        -i https://pypi.tuna.tsinghua.edu.cn/simple/ \
+        --extra-index-url https://download.pytorch.org/whl/cpu \
+    && pip install --no-cache-dir -r requirements-docker.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 # 复制项目代码
 COPY . .

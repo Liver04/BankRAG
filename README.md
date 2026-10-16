@@ -1,8 +1,8 @@
 # BankRAG：银行存款与公开业务 FAQ 演示项目
 
-从 EduRAG 迁移的学生求职作品。核心链路已实现并有断言回归，但不等同于银行生产系统、投资顾问或法律合规认证。
+面向银行存款与公开业务 FAQ 的金融 RAG 问答系统，是个人独立完成的求职项目。核心链路已实现并有断言回归，但不等同于银行生产系统、投资顾问或法律合规认证。
 
-> 当前验证快照：2026-10-15。最新代码的验证范围与限制见第15节；此前章节中的阶段结果按历史记录保留。
+> 当前验证快照：2026-10-16。2026-10-15 的代码验证范围见第15节，最新 Docker Compose 部署验收见第17节；此前章节中的阶段结果按历史记录保留。
 
 ## 1. 已实现的能力与边界
 
@@ -54,11 +54,13 @@
 
 ## 4. 本地启动（Windows CMD）
 
-先进入项目目录，激活自己的 Python 环境。模型仍使用本地目录。API Key 从进程环境或根目录 `local_secrets.env` 读取；该文件被 Git 与 Docker 忽略。Compose 测试使用 `docker compose --env-file local_secrets.env ...`。不要提交或打包本地凭据。
+先进入项目目录并激活 Python 环境。模型使用本地目录。API Key 从进程环境或本地 `local_secrets.env` 读取；该文件被 Git 与 Docker 忽略。Compose 可通过 `docker compose --env-file local_secrets.env ...` 读取本机变量。不要提交或打包本地凭据。
 
 ```cmd
-cd /d D:\pythonProject\EduRAG_project\Bank_RAG_code\qa_system
-conda activate EduRAG
+cd /d C:\path\to\BankRAG\qa_system
+conda create -n bankrag python=3.10 -y
+conda activate bankrag
+pip install -r requirements.txt
 python faq_to_mysql.py --dry-run
 python ingest.py --dry-run
 python faq_to_mysql.py
@@ -66,11 +68,11 @@ python ingest.py --ingest-only
 python -m uvicorn app:app --host 127.0.0.1 --port 8090
 ```
 
-前两个命令仅检查；后两个命令分别发布 FAQ 和向量知识快照。首次升级会迁移 BankRAG 自己的 FAQ 表并增加唯一约束；旧数据不再作为自动审核通过的数据使用。不要对 EduRAG 数据库执行这些命令。
+前两个命令仅检查；后两个命令分别发布 FAQ 和向量知识快照。FAQ 导入按稳定标识幂等更新，并校验来源审核状态与有效期。
 
-MySQL、Redis、Milvus 连接仍使用项目现有配置。模型默认放在 `rag_qa/models`，也可用 `MODELS_DIR` 指向既有模型。不要把整个模型目录链接到 EduRAG 后再向其中训练写入。
+MySQL、Redis、Milvus 连接按本地配置提供。模型默认放在 `rag_qa/models`，也可用 `MODELS_DIR` 指定模型目录。
 
-依赖直接版本见 requirements.txt，实际测试环境见 evaluation/results/environment.json。2026-10-15 已在全新 Python 3.10.18 虚拟环境中安装 requirements.txt，pip check 无依赖冲突，255 条自动化测试通过。共享 EduRAG 环境额外安装的 langchain-experimental 0.4.2 与项目锁定的 langchain-community 0.4.1 不兼容；这项冲突未出现在隔离环境。Docker Compose 配置解析通过，但应用镜像构建未完成，原因和边界见第15节。
+依赖直接版本见 `requirements.txt`，实际测试环境见 `evaluation/results/environment.json`。2026-10-15 已在全新 Python 3.10.18 虚拟环境中安装依赖，`pip check` 无依赖冲突，255 条自动化测试通过。Docker 镜像使用 CPU 版 PyTorch；构建与部署验证结果见第17节。
 
 ## 5. API 使用
 
@@ -101,7 +103,7 @@ python ragas_evaluate.py --backend live
 - 历史根目录结果文件属于旧版本，不能代表本版本。旧 README 的 100% 合规、85% 检索、RAGAS .66/.80 已撤下。
 - BERT 历史 checkpoint 验证准确率约 98.33%，来自合成数据随机验证切分；不是本轮独立测试成绩。
 - 2026-10-12改造历史结果见docs/remediation_report.md；2026-10-13来源修订后的首轮诊断见docs/first_holdout_evaluation_report.md。知识版本不同，旧36/36回归和7条RAGAS不能代表新测试集成绩；不承诺“零漏判”或“100%合规”。
-- 2026-10-12 的默认适配器真实云端冒烟是历史结果，见 evaluation/results/default_adapter_live_smoke.json；它不代表后续代码状态。2026-10-15 最新代码的实时后端验证见第15节。
+- 2026-10-12 的默认适配器真实云端冒烟是历史结果，见 evaluation/results/default_adapter_live_smoke.json；它不代表后续代码状态。2026-10-15 最新代码的实时后端验证见第15节，Docker Compose 部署路径的实时冒烟见第17节。
 
 评测问题与隐私测试标识为合成示例，不应输入真实客户账户或身份数据。
 
@@ -142,7 +144,7 @@ python ragas_evaluate.py --backend live
 ```cmd
 python -B -m unittest discover -s tests -v
 python -B scripts/build_context_intents.py --version context_v2_1
-python -B scripts/train_context_intent.py --root D:\pythonProject\EduRAG_project\Bank_RAG_code\qa_system --version context_v2_1 --epochs 5
+python -B scripts/train_context_intent.py --root . --version context_v2_1 --epochs 5
 ```
 
 训练器仅写候选目录；目录存在时拒绝覆盖，应使用新的版本名复现。构建数据后先人工检查语义族；不要运行历史随机切分脚本覆盖当前服务模型。本轮训练没有使用原2400条随机划分数据。若重新训练、增加数据或改gold，应新增版本并保留原结果。
@@ -208,18 +210,25 @@ python -B scripts/train_context_intent.py --root D:\pythonProject\EduRAG_project
 
 ## 15. 2026-10-15 最新代码验证
 
-- **隔离环境复现**：新建 Python 3.10.18 虚拟环境，按 `requirements.txt` 安装成功；`pip check` 输出 `No broken requirements found.`；全量自动化测试 `Ran 255 tests ... OK`。完整依赖版本、pip check 和测试输出保存在 `evaluation/results/verification_20261015/clean_environment.json`、`pip_check_clean_env.txt` 与 `unit_tests_clean_env.txt`。共享 EduRAG 环境中的 `langchain-experimental 0.4.2` 额外依赖冲突不影响隔离环境验证。
+- **隔离环境复现**：新建 Python 3.10.18 虚拟环境，按 `requirements.txt` 安装成功；`pip check` 输出 `No broken requirements found.`；全量自动化测试 `Ran 255 tests ... OK`。完整依赖版本、pip check 和测试输出保存在 `evaluation/results/verification_20261015/clean_environment.json`、`pip_check_clean_env.txt` 与 `unit_tests_clean_env.txt`。
 - **真实后端 ASGI 集成冒烟**：通过当前默认适配器、真实 MySQL/Redis/Milvus、意图分类器和配置的 DashScope 调用 HTTP 与 WebSocket。公开存款问题在两种通道均返回 `answered`、各有1条引用；服务端引用与本次实际上下文绑定，HTTP 数值答案在被引材料中有支持；免责声明检查通过。投资建议请求在两种通道均返回 `refused` 并带免责声明。另验证健康检查 HTTP 200（MySQL、Redis、Milvus、分类器均健康）及同一会话四轮历史写入。共15/15项断言通过，机器可读结果为 `evaluation/results/verification_20261015/live_e2e.json`。报告保存检查结果和代码哈希，不保存完整回答、上下文或凭据。
 - **验证边界**：这是针对一个公开存款问法和一个拒答问法的定向集成冒烟，不是独立盲测、准确率或 RAGAS 评测。请求经 FastAPI `TestClient` 实际 ASGI 路由执行，未验证浏览器、公网网络链路或生产部署。
-- **Docker**：凭据清理后重新检查，`docker compose --env-file local_secrets.env config --quiet` 通过；Docker 构建上下文由约896 MB缩至56.28 kB。`.dockerignore` 已排除本地配置、密钥、模型/知识数据、评测结果和备份。镜像构建最终状态见第16节。
+- **Docker**：使用 CPU 版 PyTorch，模型与知识数据通过挂载提供；实际构建、容器健康检查与请求验证结果见第17节。
 
 以上结果仅代表 2026-10-15 记录的代码和本地知识快照。历史回归数字不与本次定向冒烟合并，也不据此声称金融事实经过独立专业审核。
 
-## 16. 2026-10-15 上传前凭据清理
+## 16. 公开发布与本地凭据管理
 
 - DashScope API Key 已从源码和普通配置中移除，保存在项目根目录的本地 `local_secrets.env`，仅供本机测试；文件 ACL 已限制为当前 Windows 用户。运行时从进程环境或该文件加载。Compose 通过 `--env-file local_secrets.env` 获取本地测试所需变量；`.env.example` 只保留占位符。
 - `base/config.py` 不再含 API Key 或数据库/Redis 密码默认值；Compose 改为要求运行时注入相应变量。历史文本副本中的 Token 格式内容已清理。
 - 候选源码、README、差异文档和配置模板扫描：Token 格式命中0，硬编码凭据赋值候选0。Git 忽略规则已验证会排除 `local_secrets.env`、`config.ini` 和历史备份；Docker 忽略规则也覆盖这些文件以及评测产物。
-- `docker compose --env-file local_secrets.env config --quiet` 通过。
-- 镜像构建状态：未完成。安全构建上下文已缩至56.28 kB，随后在下载 PyTorch（约532 MB）及 CUDA 依赖阶段主动中止，避免上传前检查继续拉取数 GB 依赖；未生成/启动应用容器。因此 Docker 镜像仍未验证。
+- `docker compose --env-file local_secrets.env config --quiet` 通过。Docker 镜像改为安装 CPU 版 PyTorch，完整部署验收见第17节。
 - 2026-10-15 已将首个公开版本推送到 [GitHub 仓库](https://github.com/Liver04/BankRAG)，分支 `main`，首个提交 `22e9c00`。本地 API Key、配置文件、模型、Node 依赖和人工复核私有映射未纳入提交；首个提交前的候选文本凭据扫描为0命中。
+
+## 17. 2026-10-16 Docker Compose 部署验收
+
+- **镜像构建**：`docker compose --env-file local_secrets.env build app` 成功，生成 `bank-rag:1.0`，镜像大小约883 MB。使用官方 `torch==2.12.1+cpu` wheel（下载约192 MB），避免安装 CUDA 运行库；其余直接依赖版本与 `requirements.txt` 对齐。
+- **服务状态**：`docker compose --env-file local_secrets.env up -d` 成功。app、MySQL 8.0、Redis 7 均为 `healthy`；`GET /health` 返回 HTTP 200，MySQL、Redis、Milvus、分类器四项依赖全部为 true。MySQL 和 Redis 使用 BankRAG 独立 Compose 网络及命名卷，宿主机端口为 3308/6380；Milvus 使用宿主机已运行实例，模型和知识数据从本地目录挂载。
+- **端到端定向冒烟**：容器内经 HTTP 与 WebSocket 分别请求公开存款问题和投资建议请求，共4个业务路径；公开问题两通道均为 `answered` 且各返回1条引用，风险问题两通道均为 `refused`。四条路径的固定免责声明检查通过；WebSocket 首帧免责声明检查通过；同一会话历史保存4轮。该结果是定向部署冒烟，不代表准确率、独立盲测或生产验收。
+- **启动问题修复**：首次启动发现 Redis 健康检查缺少容器内认证变量；Compose 已改用 `REDISCLI_AUTH`，随后 Redis 与 app 均通过健康检查。
+- **验收范围**：没有执行 FAQ/向量重新导入；本次业务问题使用宿主机 Milvus 中已有的公开演示知识快照。Docker 浏览器访问、干净新机器构建和生产环境行为仍未验证。

@@ -37,7 +37,7 @@ docker compose exec app python ingest.py --ingest-only
 Invoke-RestMethod http://127.0.0.1:8090/health
 ```
 
-FAQ 会写入 Compose 的 `bank-rag-mysql` 服务；向量快照发布到外部 Milvus。不要把这些命令指向 EduRAG 数据库或集合。重复执行导入应按项目幂等规则处理；先看 dry-run 输出再发布。
+FAQ 会写入 Compose 的 `bank-rag-mysql` 服务；向量快照发布到外部 Milvus。重复执行导入应按项目幂等规则处理；先看 dry-run 输出再发布。
 
 ## 检查与停止
 
@@ -48,6 +48,10 @@ FAQ 会写入 Compose 的 `bank-rag-mysql` 服务；向量快照发布到外部 
 
 Compose 暴露的宿主机端口为 app `8090`、MySQL `3308`、Redis `6380`；容器之间使用服务名和容器端口通信。删除命名卷会清除演示数据库数据，只有在确认不再需要这些数据时才手动清理。
 
-## 当前验证边界
+## 2026-10-16 部署验证记录
 
-本轮 `docker compose config --quiet` 可通过；没有在本轮重新构建镜像或启动一套新 Compose 服务。因此 Docker Hub/Python 包源是否可达、干净机器上的首次构建、网页浏览器端体验仍未验证。
+- `docker compose --env-file local_secrets.env config --quiet` 通过；`docker compose --env-file local_secrets.env build app` 成功，CPU 镜像约883 MB。
+- `docker compose --env-file local_secrets.env up -d` 后，app、MySQL、Redis 均为 `healthy`；`GET /health` 返回 200，MySQL、Redis、Milvus、分类器均通过。
+- 容器内 HTTP 和 WebSocket 分别测试公开存款问答和投资建议拒答，共4个定向业务路径通过；答案引用、固定免责声明、WebSocket 首帧免责声明、会话历史4轮均通过。
+- 本次使用宿主机 Milvus 中已有的演示知识快照，未重新导入 FAQ 或向量数据。首次启动时修复了 Redis 健康检查认证配置。
+- 该记录是本机部署冒烟，不代表干净机器构建、浏览器访问、公网链路或生产验收；金融知识仍是演示资料。

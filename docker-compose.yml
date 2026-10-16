@@ -73,10 +73,12 @@ services:
     ports:
       - "6380:6379"   # 宿主机 6380 映射，避免与本机 6379 冲突
     command: ["redis-server", "--requirepass", "${BANKRAG_REDIS_PASSWORD:?BANKRAG_REDIS_PASSWORD_required}"]
+    environment:
+      - REDISCLI_AUTH=${BANKRAG_REDIS_PASSWORD:?BANKRAG_REDIS_PASSWORD_required}
     volumes:
       - redis_data:/data
     healthcheck:
-      test: ["CMD-SHELL", "redis-cli -h 127.0.0.1 -p 6379 -a \"$$REDIS_PASSWORD\" ping | grep -q PONG"]
+      test: ["CMD-SHELL", "redis-cli -h 127.0.0.1 -p 6379 ping | grep -q PONG"]
       interval: 10s
       timeout: 5s
       retries: 12
